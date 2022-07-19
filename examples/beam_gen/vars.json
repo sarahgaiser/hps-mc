@@ -1,7 +1,7 @@
 {
     "bunches": [250000],
     "nevents": [250000],
-    "run_params": ["4pt55"],
-    "target_z": [-7.51],
+    "run_params": ["3pt74"],
+    "target_z": [0.0],
     "run_number": [10666]
 }
