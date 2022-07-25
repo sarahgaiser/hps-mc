@@ -16,11 +16,14 @@
         "ana": "anaVtxTuple_cfg.py"
     },
     "output_files": {
-        "tritrig-beam_recon.slcio": "recon/tritrig-beam_recon_{{ job_id }}.slcio"
+        "tritrig-beam_readout.slcio": "{{detector}}/tritrig_beam_readout_{{job_id}}.slcio",
+        "tritrig-beam_recon.slcio": "{{detector}}/tritrig_beam_recon_{{job_id}}.slcio",
+        "beam.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id}}.slcio"
     },
     "input_files": {
-        "{{ input_files['tritrig'][0] }}": "tritrig_events.lhe.gz",
-        "{{ input_files['beam'][0] }}": "beam.stdhep"
+        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen/output3pt74/tritrig_8um_rot_{{job_id}}.lhe.gz": "tritrig_events.lhe.gz",
+        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10-9}}.stdhep": "beam.stdhep"
     },
+    "seed": {{ 10399311 + job_id }},
     "output_dir": "output/{{ run_params }}/{{ detector }}"
 }

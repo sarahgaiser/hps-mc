@@ -7,8 +7,9 @@
 #SBATCH --output=/dev/null
 
 source /sdf/group/hps/users/sgaiser/src/hps-mc/install/bin/hps-mc-env.sh
+export LD_LIBRARY_PATH=/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH
 
-export FIRST_ID=0
+export FIRST_ID=9000
 export JOB_ID=$(($SLURM_ARRAY_TASK_ID+$FIRST_ID))
 export JOBDIR=/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen
 export RUNDIR=/scratch/sgaiser/tritrig/$JOB_ID

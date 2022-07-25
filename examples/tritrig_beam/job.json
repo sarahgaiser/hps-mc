@@ -1,5 +1,5 @@
 {
-    "run_number": 7984, 
+    "run_number": 10031, 
     "job_id": 1, 
     "steering_files": {
         "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC.lcsim", 
@@ -10,16 +10,17 @@
         "ana": "anaVtxTuple_cfg.py"
     }, 
     "input_files": {
-        "/work/slac/hps-mc/examples/tritrig_gen/output/tritrig_recon_1.lhe.gz": "tritrig_events.lhe.gz", 
-        "/work/slac/hps-mc/examples/egs5_beam_v3/output/2pt3/egs_v3/beam_egs_v3_2pt3_1.stdhep": "beam.stdhep"
+        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen/output3pt74/tritrig_8um_rot_1000.lhe.gz": "tritrig_events.lhe.gz", 
+        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_1000.stdhep": "beam.stdhep"
     }, 
-    "target_z": -4.3, 
-    "nevents": 1000, 
-    "output_dir": "output/2pt3/HPS-PhysicsRun2016-Pass2", 
-    "run_params": "2pt3", 
-    "detector": "HPS-PhysicsRun2016-Pass2", 
+    "target_z": -7.51, 
+    "nevents": 10000, 
+    "output_dir": "output/3pt74/HPS_Run2021Pass0_v0", 
+    "run_params": "3pt74", 
+    "detector": "HPS_Run2021Pass0_v0", 
     "output_files": {
         "tritrig-beam_recon.slcio": "recon/tritrig-beam_recon_1.slcio"
-    }, 
-    "run_mode": 0
+    },
+    "run_mode": 0,
+    "seed": 10299311
 } 
