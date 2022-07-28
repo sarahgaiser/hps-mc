@@ -124,8 +124,8 @@ class SLIC(Component):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-
         Optional parameters are: **nevents**, **macros**, **run_number**
+
         @return  list of optional parameters
         """
         return ['nevents', 'macros', 'run_number']
@@ -133,8 +133,8 @@ class SLIC(Component):
     def required_parameters(self):
         """!
         Return list of required parameters.
-
         Required parameters are: **detector**
+
         @return  list of required parameters
         """
         return ['detector']
@@ -142,8 +142,8 @@ class SLIC(Component):
     def required_config(self):
         """!
         Return list of required configurations.
-        
         Required configurations are: **slic_dir**, **hps_fieldmaps_dir**, **detector_dir**
+
         @return  list of required configurations
         """
         return ['slic_dir', 'hps_fieldmaps_dir', 'detector_dir']
@@ -316,8 +316,8 @@ class JobManager(Component):
     def required_parameters(self):
         """!
         Return list of required parameters.
-
         Required parameters are: **steering_files**
+
         @return  list of required parameters
         """
         return ['steering_files']
@@ -325,8 +325,8 @@ class JobManager(Component):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **detector**, **run_number**, **defs**
+
         @return list of optional parameters
         """
         return ['detector', 'run_number', 'defs']
@@ -381,8 +381,8 @@ class HPSTR(Component):
     def required_parameters(self):
         """!
         Return list of required parameters.
-
         Required parameters are: **config_files**
+
         @return  list of required parameters
         """
         return ['config_files']
@@ -390,8 +390,8 @@ class HPSTR(Component):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-
         Optional parameters are: **year**, **run_mode**, **nevents**
+
         @return  list of optional parameters
         """
         return ['year', 'run_mode', 'nevents']
@@ -399,8 +399,8 @@ class HPSTR(Component):
     def required_config(self):
         """!
         Return list of required configs.
-
         Required configs are: **hpstr_install_dir**, **hpstr_base**
+
         @return  list of required configs
         """
         return ['hpstr_install_dir', 'hpstr_base']
@@ -542,9 +542,9 @@ class BeamCoords(StdHepTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **beam_sigma_x**, **beam_sigma_y**, **beam_rot_x**,
         **beam_rot_y**, **beam_rot_z**, **target_x**, **target_y**, **target_z**
+
         @return list of optional parameters
         """
         return['beam_sigma_x', 'beam_sigma_y', 'beam_rot_x',
@@ -599,8 +599,8 @@ class RandomSample(StdHepTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **nevents**, **mu**
+
         @return list of optional parameters
         """
         return ['nevents','mu']
@@ -644,8 +644,8 @@ class DisplaceTime(StdHepTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **ctau**
+
         @return list of optional parameters
         """
         return ['ctau']
@@ -677,8 +677,8 @@ class DisplaceUni(StdHepTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **ctau**
+
         @return list of optional parameters
         """
         return ['ctau']
@@ -755,8 +755,8 @@ class MergePoisson(StdHepTool):
     def required_parameters(self):
         """!
         Return list of required parameters.
-        
         Required parameters are: **run_params**
+
         @return list of required parameters
         """
         return ['run_params']
@@ -875,8 +875,8 @@ class JavaTool(Component):
     def required_config(self):
         """!
         Return list of required config.
-        
         Required config are: **hps_java_bin_jar**
+
         @return list of required config
         """
         return ['hps_java_bin_jar']
@@ -902,7 +902,6 @@ class EvioToLcio(JavaTool):
     """!
     Convert EVIO events to LCIO using the hps-java EvioToLcio command line tool.
 
-
     Required parameters are: **detector**, **steering_files** \n 
     Optional parameters are: **run_number**, **skip_events**, **nevents**, **event_print_interval**
     """
@@ -923,8 +922,8 @@ class EvioToLcio(JavaTool):
     def required_parameters(self):
         """!
         Return list of required parameters.
-        
         Required parameters are: **detector**, **steering_files**
+
         @return list of required parameters
         """
         return ['detector', 'steering_files']
@@ -932,8 +931,8 @@ class EvioToLcio(JavaTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **run_number**, **skip_events**, **nevents**, **event_print_interval**
+
         @return list of optional parameters
         """
         return ['run_number', 'skip_events', 'nevents', 'event_print_interval']
@@ -1071,9 +1070,9 @@ class FilterBunches(JavaTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **filter_ecal_hit_ecut**, **filter_event_interval**,
         **filter_nevents_read**, **filter_nevents_write**, **filter_no_cuts** \n 
+
         @return list of optional parameters
         """
         return ['filter_ecal_hit_ecut',
@@ -1085,8 +1084,8 @@ class FilterBunches(JavaTool):
     def required_config(self):
         """!
         Return list of required config.
-        
         Required config are: **hps_java_bin_jar**
+
         @return list of required config
         """
         return ['hps_java_bin_jar']
@@ -1141,8 +1140,8 @@ class ExtractEventsWithHitAtHodoEcal(JavaTool):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **num_hodo_hits**, **event_interval**
+
         @return list of optional parameters
         """
         return ['num_hodo_hits', 'event_interval']
@@ -1215,8 +1214,8 @@ class LCIODumpEvent(Component):
     def required_config(self):
         """!
         Return list of required config.
-        
         Required config are: **lcio_dir**
+
         @return list of required config
         """
         return ['lcio_dir']
@@ -1358,8 +1357,8 @@ class LCIOTool(Component):
     def required_config(self):
         """!
         Return list of required config.
-        
         Required config are: **lcio_bin_jar**
+
         @return list of required config
         """
         return ['lcio_bin_jar']
@@ -1480,8 +1479,8 @@ class SimBase(Component):
     def optional_parameters(self):
         """!
         Return list of optional parameters.
-        
         Optional parameters are: **nevents**, **macros**, **run_number**
+
         @return list of optional parameters
         """
         return ['nevents', 'macros', 'run_number']
@@ -1489,8 +1488,8 @@ class SimBase(Component):
     def required_parameters(self):
         """!
         Return list of required parameters.
-        
         Required parameters are: **detector**
+
         @return list of required parameters
         """
         return ['detector']
@@ -1600,8 +1599,8 @@ class Sim(SimBase):
     def required_config(self):
         """!
         Return list of required config.
-        
         Required config are: **hps_sim_dir**, **hps_fieldmaps_dir**, **detector_dir**
+
         @return list of required config
         """
         return ['hps_sim_dir', 'hps_fieldmaps_dir', 'detector_dir']

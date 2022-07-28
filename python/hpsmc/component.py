@@ -163,7 +163,7 @@ class Component(object):
     def required_parameters(self):
         """!
         Return a list of required parameters.
-
+        
         The job will fail if these are not present in the JSON file.
         """
         return []
