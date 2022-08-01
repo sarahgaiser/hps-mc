@@ -1,26 +1,48 @@
 {
-    "run_number": 10031, 
-    "job_id": 1, 
-    "steering_files": {
-        "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC.lcsim", 
-        "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairs1_NoTruth.lcsim"
-    }, 
-    "config_files": {
-        "recon": "recoTuple_cfg.py", 
-        "ana": "anaVtxTuple_cfg.py"
-    }, 
-    "input_files": {
-        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen/output3pt74/tritrig_8um_rot_1000.lhe.gz": "tritrig_events.lhe.gz", 
-        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_1000.stdhep": "beam.stdhep"
-    }, 
-    "target_z": -7.51, 
-    "nevents": 10000, 
-    "output_dir": "output/3pt74/HPS_Run2021Pass0_v0", 
-    "run_params": "3pt74", 
-    "detector": "HPS_Run2021Pass0_v0", 
-    "output_files": {
-        "tritrig-beam_recon.slcio": "recon/tritrig-beam_recon_1.slcio"
-    },
-    "run_mode": 0,
-    "seed": 10299311
-} 
+  "nevents": 10000,
+  "run_params": "3pt74",
+  "target_z": -7.51,
+  "run_number": 10031,
+  "detector": "HPS_Run2021Pass0_v0",
+  "event_interval": 250,
+  "ecal_hit_ecut": 0.05,
+  "steering_files": {
+      "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairs1_NoTruth.lcsim",
+      "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC.lcsim"
+  },
+  "run_mode": 0,
+  "config_files": {
+      "recon": "recoTuple_cfg.py",
+      "ana": "anaVtxTuple_cfg.py"
+  },
+  "output_files": {
+      "tritrig-beam_readout.slcio": "HPS_Run2021Pass0_v0/tritrig_beam_readout_1.slcio",
+      "tritrig-beam_recon.slcio": "HPS_Run2021Pass0_v0/tritrig_beam_recon_1.slcio",
+      "beam_1.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_1.slcio",
+      "beam_2.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_2.slcio",
+      "beam_3.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_3.slcio",
+      "beam_4.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_4.slcio",
+      "beam_5.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_5.slcio",
+      "beam_6.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_6.slcio",
+      "beam_7.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_7.slcio",
+      "beam_8.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_8.slcio",
+      "beam_9.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_9.slcio",
+      "beam_10.slcio": "HPS_Run2021Pass0_v0/beam/beam_4pt55_8um100nA_10.slcio"
+  },
+  "input_files": {
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen/output3pt74/tritrig_8um_rot_1.lhe.gz": "tritrig_events.lhe.gz",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_1.stdhep": "beam_1.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_2.stdhep": "beam_2.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_3.stdhep": "beam_3.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_4.stdhep": "beam_4.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_5.stdhep": "beam_5.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_6.stdhep": "beam_6.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_7.stdhep": "beam_7.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_8.stdhep": "beam_8.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_9.stdhep": "beam_9.stdhep",
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_10.stdhep": "beam_10.stdhep"
+  },
+  "seed": 10399312,
+  "output_dir": "output/3pt74/HPS_Run2021Pass0_v0",
+  "job_id": 1
+}
