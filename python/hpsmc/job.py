@@ -459,7 +459,7 @@ class Job(object):
         """
 
         logger.info('Job ID: ' + str(self.job_id))
-        logger.info('Description: %s' % self.description)
+        logger.info('Description: %s' % self.description)  # this will always print HPS MC job b/c the script is not loaded yet
 
         # Print config to the log
         logger.info(str(self.job_config))

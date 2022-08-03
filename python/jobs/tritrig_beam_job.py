@@ -3,7 +3,7 @@ Merge tritrig and beam events, simulate signal events, and detector readout.
 """
 from hpsmc.generators import StdHepConverter
 from hpsmc.tools import BeamCoords, AddMother, MergePoisson, RandomSample, MergeFiles
-from hpsmc.tools import SLIC, JobManager, FilterBunches, HPSTR, LCIOCount, LCIOMerge, StdHepCount
+from hpsmc.tools import SLIC, JobManager, FilterBunches, HPSTR, LCIOCount, LCIOMerge, StdHepCount, ExtractEventsWithHitAtHodoEcal
 
 ## Get job input file targets
 inputs = list(job.input_files.values())
@@ -24,13 +24,19 @@ else:
 tritrig_file_name = 'tritrig_events.lhe.gz'
 
 ## Input beam events (StdHep format)
-beam_file_name = 'beam.stdhep'
+beam_file_names = []
+#beam_rot_file_names = []
+beam_slic_file_names = []
+for i in range(1,11):
+    beam_file_names.append('beam_%i.stdhep'%i)
+    #beam_rot_file_names.append('rot_beam_%i.stdhep'%i)
+    beam_slic_file_names.append('beam_%i.slcio'%i)
 
 ## Check for expected input file targets
 if tritrig_file_name not in inputs:
     raise Exception("Missing required input file '%s'" % tritrig_file_name)
-if beam_file_name not in inputs:
-    raise Exception("Missing required input file '%s'" % beam_file_name)
+if beam_file_names[1] not in inputs:
+    raise Exception("Missing required input file '%s'" % beam_file_names[1])
 
 ## Base name of intermediate tritrig files
 tritrig_name = 'tritrig'
@@ -58,36 +64,49 @@ slic = SLIC(inputs=rot.output_files(),
             outputs=['%s.slcio' % tritrig_name])
 
 ## Space signal events before merging
-filter_bunches = FilterBunches(inputs=slic.output_files(),
-                               outputs=['%s_filt.slcio' % tritrig_name])
+filter_bunches = ExtractEventsWithHitAtHodoEcal(inputs=slic.output_files(),
+                                                   outputs=['%s_filt.slcio' % tritrig_name],
+                                                   event_interval=event_interval, num_hodo_hits=0)
+#filter_bunches = FilterBunches(inputs=slic.output_files(),
+#                               outputs=['%s_filt.slcio' % tritrig_name])
 
 ## Count filtered events
 count_filter = LCIOCount(inputs=filter_bunches.output_files())
 
 ## Transform beam events
-rot_beam = BeamCoords(inputs=[beam_file_name],
-                      outputs=['%s_rot.stdhep' % beam_name])
+#rot_beams = []
+#for i in range(len(beam_file_names)):
+#  rot_beams.append(BeamCoords(inputs=[beam_file_names[i]],
+#                              outputs=[beam_rot_file_names[i]])
+#                              )
 
-## Sample the beam events
-sample_beam = RandomSample(inputs=rot_beam.output_files(),
-                           outputs=['%s_sampled.stdhep' % beam_name],
-                           nevents=500000,
-                           ignore_job_params=['nevents'])
 
 ## Print number of beam sampled events
-count_beam = StdHepCount(inputs=sample_beam.output_files())
+#count_beam = StdHepCount(inputs=sample_beam.output_files())
 
 ## Simulate beam events
-slic_beam = SLIC(inputs=sample_beam.output_files(),
-                 outputs=['%s.slcio' % beam_name],
-                 nevents=nevents*event_interval,
-                 ignore_job_params=['nevents'])
+slic_beams = []
+for i in range(len(beam_file_names)):
+    slic_beams.append(SLIC(inputs=[beam_file_names[i]],
+                      outputs=[beam_slic_file_names[i]],
+                      nevents=nevents*event_interval,
+                      ignore_job_params=['nevents'])
+                      )
+
+## concatonate beam events before merging
+slic_beam_cat = ExtractEventsWithHitAtHodoEcal(inputs=beam_slic_file_names,
+                                                   outputs=['beam_cat.slcio'],
+                                                   event_interval=0, num_hodo_hits=0)
 
 ## Merge signal and beam events
-merge = LCIOMerge(inputs=[filter_bunches.output_files()[0],
-                          slic_beam.output_files()[0]],
+merge = LCIOMerge(inputs=[filter_bunches.outputs[0],
+                          slic_beam_cat.outputs[0]],
                   outputs=['%s.slcio' % tritrig_beam_name],
                   ignore_job_params=['nevents'])
+#merge = LCIOMerge(inputs=[filter_bunches.output_files()[0],
+#                          slic_beam_cat.outputs[0]],
+#                  outputs=['%s.slcio' % tritrig_beam_name],
+#                  ignore_job_params=['nevents'])
 
 ## Print number of merged events
 count_merge = LCIOCount(inputs=merge.output_files())
@@ -119,8 +138,13 @@ count_recon = LCIOCount(inputs=recon.output_files())
 #            outputs=['%s_ana.root' % tritrig_beam_name])
  
 ## Add the components
-job.add([cnv, mom, rot, slic, filter_bunches, count_filter, rot_beam, sample_beam,
-         count_beam, slic_beam, merge, count_merge, readout, count_readout, 
-         recon, count_recon])
+#job.add([cnv, mom, rot, slic, filter_bunches, count_filter,
+#         count_beam, slic_beam, merge, count_merge, readout, count_readout, 
+#         recon, count_recon])
+
+comps = [cnv, mom, rot, slic, filter_bunches, count_filter]
+for i in range(len(slic_beams)): comps.append(slic_beams[i])
+comps.extend([slic_beam_cat, merge, count_merge, readout, count_readout, recon, count_recon])
+job.add(comps)
 
 ## \todo cleanup

@@ -62,7 +62,7 @@ for i in range(len(beam_file_names)):
                       outputs=[beam_slic_file_names[i]],
                       nevents=nevents*event_int,
                       ignore_job_params=['nevents'] )
-                     )
+                      )
 
 ## concatonate beam events before merging
 slic_beam_cat = ExtractEventsWithHitAtHodoEcal(inputs=beam_slic_file_names,
