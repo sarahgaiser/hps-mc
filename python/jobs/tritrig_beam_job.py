@@ -20,8 +20,8 @@ if 'nevents' in job.params:
 else:
     nevents = 10000
 
-## Input tritrig events (LHE format)
-tritrig_file_name = 'tritrig_events.lhe.gz'
+## Input tritrig events (stdhep format)
+tritrig_file_name = 'tritrig_events.stdhep'
 
 ## Input beam events (StdHep format)
 beam_file_names = []
@@ -48,19 +48,19 @@ beam_name = 'beam'
 tritrig_beam_name = 'tritrig-beam'
 
 ## Convert LHE output to stdhep
-cnv = StdHepConverter(inputs=[tritrig_file_name],
-                      outputs=['%s.stdhep' % tritrig_name])
+#cnv = StdHepConverter(inputs=[tritrig_file_name],
+#                      outputs=['%s.stdhep' % tritrig_name])
 
 ## Add mother particle to tag trident particles
-mom = AddMother(inputs=cnv.output_files(),
-                outputs=['%s_mom.stdhep' % tritrig_name])
+#mom = AddMother(inputs=cnv.output_files(),
+#                outputs=['%s_mom.stdhep' % tritrig_name])
 
 ## Rotate events into beam coords
-rot = BeamCoords(inputs=mom.output_files(),
-                outputs=['%s_rot.stdhep' % tritrig_name])
+#rot = BeamCoords(inputs=mom.output_files(),
+#                outputs=['%s_rot.stdhep' % tritrig_name])
 
 ## Simulate signal events
-slic = SLIC(inputs=rot.output_files(),
+slic = SLIC(inputs=[tritrig_file_name],
             outputs=['%s.slcio' % tritrig_name])
 
 ## Space signal events before merging
@@ -99,7 +99,7 @@ slic_beam_cat = ExtractEventsWithHitAtHodoEcal(inputs=beam_slic_file_names,
                                                    event_interval=0, num_hodo_hits=0)
 
 ## Merge signal and beam events
-merge = LCIOMerge(inputs=[filter_bunches.outputs[0],
+merge = LCIOMerge(inputs=[filter_bunches.output_files()[0],
                           slic_beam_cat.outputs[0]],
                   outputs=['%s.slcio' % tritrig_beam_name],
                   ignore_job_params=['nevents'])
@@ -142,7 +142,7 @@ count_recon = LCIOCount(inputs=recon.output_files())
 #         count_beam, slic_beam, merge, count_merge, readout, count_readout, 
 #         recon, count_recon])
 
-comps = [cnv, mom, rot, slic, filter_bunches, count_filter]
+comps = [slic, filter_bunches, count_filter]
 for i in range(len(slic_beams)): comps.append(slic_beams[i])
 comps.extend([slic_beam_cat, merge, count_merge, readout, count_readout, recon, count_recon])
 job.add(comps)

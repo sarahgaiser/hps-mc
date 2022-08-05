@@ -18,19 +18,20 @@
     "output_files": {
         "tritrig-beam_readout.slcio": "{{detector}}/tritrig_beam_readout_{{job_id}}.slcio",
         "tritrig-beam_recon.slcio": "{{detector}}/tritrig_beam_recon_{{job_id}}.slcio",
-        "beam_1.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-9}}.slcio",
-        "beam_2.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-8}}.slcio",
-        "beam_3.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-7}}.slcio",
-        "beam_4.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-6}}.slcio",
-        "beam_5.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-5}}.slcio",
-        "beam_6.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-4}}.slcio",
-        "beam_7.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-3}}.slcio",
-        "beam_8.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-2}}.slcio",
-        "beam_9.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10-1}}.slcio",
-        "beam_10.slcio":  "{{detector}}/beam/beam_4pt55_8um100nA_{{job_id*10}}.slcio"
+
+        "beam_1.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-9}}.slcio",
+        "beam_2.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-8}}.slcio",
+        "beam_3.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-7}}.slcio",
+        "beam_4.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-6}}.slcio",
+        "beam_5.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-5}}.slcio",
+        "beam_6.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-4}}.slcio",
+        "beam_7.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-3}}.slcio",
+        "beam_8.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-2}}.slcio",
+        "beam_9.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10-1}}.slcio",
+        "beam_10.slcio":  "{{detector}}/beam/beam_3pt74_8um50nA_{{job_id*10}}.slcio"
     },
     "input_files": {
-        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen/output3pt74/tritrig_8um_rot_{{job_id}}.lhe.gz": "tritrig_events.lhe.gz",
+        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_gen/output3pt74/tritrig_8um_rot_{{job_id}}.stdhep": "tritrig_events.stdhep",
         "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10-9}}.stdhep": "beam_1.stdhep",
         "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10-8}}.stdhep": "beam_2.stdhep",
         "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10-7}}.stdhep": "beam_3.stdhep",
@@ -41,7 +42,6 @@
         "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10-2}}.stdhep": "beam_8.stdhep",
         "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10-1}}.stdhep": "beam_9.stdhep",
         "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/beam_gen/output3pt74/beam_3pt74_8um50nA_{{job_id*10}}.stdhep": "beam_10.stdhep"
-        
     },
     "seed": {{ 10399311 + job_id }},
     "output_dir": "output/{{ run_params }}/{{ detector }}"
