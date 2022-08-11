@@ -10,10 +10,10 @@ inputs = list(job.input_files.values())
 
 job.description = 'tritrig beam'
 
-if 'event_interval' in job.params:
-    event_interval = job.params['event_interval']
-else:
-    event_interval = 250
+#if 'event_interval' in job.params:
+#    event_interval = job.params['event_interval']
+#else:
+#    event_interval = 250
 
 if 'nevents' in job.params:
     nevents = job.params['nevents']
@@ -66,7 +66,7 @@ slic = SLIC(inputs=[tritrig_file_name],
 ## Space signal events before merging
 filter_bunches = ExtractEventsWithHitAtHodoEcal(inputs=slic.output_files(),
                                                    outputs=['%s_filt.slcio' % tritrig_name],
-                                                   event_interval=event_interval, num_hodo_hits=0)
+                                                   event_interval=250, num_hodo_hits=0)
 #filter_bunches = FilterBunches(inputs=slic.output_files(),
 #                               outputs=['%s_filt.slcio' % tritrig_name])
 
@@ -89,7 +89,7 @@ slic_beams = []
 for i in range(len(beam_file_names)):
     slic_beams.append(SLIC(inputs=[beam_file_names[i]],
                       outputs=[beam_slic_file_names[i]],
-                      nevents=nevents*event_interval,
+                      nevents=nevents*250,
                       ignore_job_params=['nevents'])
                       )
 
