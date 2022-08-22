@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --time=12:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=2-20
+#SBATCH --array=3-1000
 #SBATCH --partition=hps
 #SBATCH --output=/dev/null
 
@@ -17,4 +17,4 @@ export RUNDIR=/scratch/sgaiser/tritrig_beam/$JOB_ID
 mkdir -p $RUNDIR
 cd $RUNDIR
 
-/bin/python3 /sdf/group/hps/users/sgaiser/src/hps-mc/install/lib/python/hpsmc/job.py run -o $RUNDIR/../logs/job.${JOB_ID}.out -e $RUNDIR/../logs/job.${JOB_ID}.err -l $RUNDIR/../logs/job.${JOB_ID}.log -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} /sdf/group/hps/users/sgaiser/src/hps-mc/install/lib/python/jobs/tritrig_beam_job.py $JOBDIR/jobs.json
+/bin/python3 /sdf/group/hps/users/sgaiser/src/hps-mc/install/lib/python/hpsmc/job.py run -o $RUNDIR/../logs/job.${JOB_ID}.out -e $RUNDIR/../logs/job.${JOB_ID}.err -l $RUNDIR/../logs/job.${JOB_ID}.log -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} /sdf/group/hps/users/sgaiser/src/hps-mc/python/jobs/tritrig_beam_job.py $JOBDIR/jobs.json

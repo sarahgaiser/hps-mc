@@ -1,17 +1,17 @@
 {
-    "config_files": {
-        "recon": "recoTuple_cfg.py",
-        "ana": "anaVtxTuple_cfg.py"
-    },
-    "run_mode": 0,
-    "nevents": 50,
-    "year": 2016,
-    "input_files": {
-        "/work/slac/hps-mc/examples/readout_recon/output/tritrig_2016_recon_1.slcio": "recon_events.slcio"
-    },
-    "output_files": {
-        "recon_events.root": "recon_events.root",
-        "recon_events_ana.root": "tritrig_ana.root"
-    },
-    "output_dir": "output"
+  "config_files": {
+      "recon": "kalSimpTuple_cfg.py",
+      "ana": "anaVtxTuple_cfg.py"
+  },
+  "run_mode": 0,
+  "year": 2021,
+  "output_files": {
+      "recon_events.root": "recon_events_HPS_Run2021Pass0_v0_oldB_1.root",
+      "recon_events_ana.root": "tritrig_ana_HPS_Run2021Pass0_v0_oldB_1.root"
+  },
+  "input_files": {
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/run_reco/output3pt74/tritrig_beam_recon_1.slcio": "recon_events.slcio"
+  },
+  "output_dir": "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/hpstr/output3pt74/HPS_Run2021Pass0_v0_oldB",
+  "job_id": 1
 }

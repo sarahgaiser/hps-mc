@@ -1,7 +1,7 @@
 {
   "nevents": [10000],
   "run_params": ["3pt74"],
-  "detector": ["HPS_Run2021Pass0_v0"],
+  "detector": ["HPS_Run2021Pass0_v0_oldB"],
   "target_z": [0.0],
   "run_number": [10031]
 }

@@ -1,0 +1,16 @@
+{
+    "config_files": {
+        "recon": "kalSimpTuple_cfg.py",
+        "ana": "anaVtxTuple_cfg.py"
+    },
+    "run_mode": 0,
+    "year": 2021,
+    "output_files": {
+        "recon_events.root": "recon_events_{{detector}}_{{job_id}}.root",
+        "recon_events_ana.root": "tritrig_ana_{{detector}}_{{job_id}}.root"
+    },
+    "input_files": {
+        "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/run_reco/output3pt74/tritrig_beam_recon_{{job_id}}.slcio": "recon_events.slcio"
+    },
+    "output_dir": "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/hpstr/output3pt74/{{detector}}"
+}

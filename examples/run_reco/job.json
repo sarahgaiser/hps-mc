@@ -1,0 +1,18 @@
+{
+  "nevents": 10000,
+  "run_params": "3pt74",
+  "target_z": 0.0,
+  "run_number": 14166,
+  "detector": "HPS_Run2021Pass0_v0_oldB",
+  "steering_files": {
+      "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+  },
+  "output_files": {
+      "tritrig-beam_recon_oldB.slcio": "tritrig_beam_recon_1.slcio"
+  },
+  "input_files": {
+      "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/tritrig_beam/output3pt74/HPS_Run2021Pass0_v0/tritrig_beam_readout_1.slcio": "tritrig-beam_readout.slcio"
+  },
+  "output_dir": "/sdf/group/hps/users/sgaiser/src/hps-mc/examples/run_reco/output",
+  "job_id": 1
+}
