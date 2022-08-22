@@ -1,6 +1,0 @@
-      pmass(  1) = abs(ELEMASS)
-      pmass(  2) = abs(HPMASS)
-      pmass(  3) = abs(ELMASS)
-      pmass(  4) = abs(ELMASS)
-      pmass(  5) = abs(ELEMASS)
-      pmass(  6) = abs(HPMASS)

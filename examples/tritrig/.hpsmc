@@ -1,6 +1,0 @@
-[Job]
-log_level = INFO
-dry_run = False
-ignore_return_codes = True
-enable_copy_output_files = True
-check_output_files = True

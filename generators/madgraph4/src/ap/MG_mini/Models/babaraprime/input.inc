@@ -1,3 +1,0 @@
-c      Input values....
-      double precision epsilon   ,gDark     
-      common /USR_PARAM/  epsilon   ,gDark     
