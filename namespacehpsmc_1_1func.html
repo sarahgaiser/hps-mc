@@ -75,9 +75,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5e2f3e640717cdaf36081c6e82e7572c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehpsmc_1_1func.html#a5e2f3e640717cdaf36081c6e82e7572c">lint</a> (run_params, density=6.306e-2)</td></tr>
-<tr class="memdesc:a5e2f3e640717cdaf36081c6e82e7572c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate integrated luminosity.  <a href="namespacehpsmc_1_1func.html#a5e2f3e640717cdaf36081c6e82e7572c">More...</a><br /></td></tr>
-<tr class="separator:a5e2f3e640717cdaf36081c6e82e7572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39da3fed922028a250ebbfec130c849"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehpsmc_1_1func.html#af39da3fed922028a250ebbfec130c849">lint</a> (run_params, density=6.306e-14)</td></tr>
+<tr class="memdesc:af39da3fed922028a250ebbfec130c849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate integrated luminosity.  <a href="namespacehpsmc_1_1func.html#af39da3fed922028a250ebbfec130c849">More...</a><br /></td></tr>
+<tr class="separator:af39da3fed922028a250ebbfec130c849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099fa2b27956431d00747e396e02e21b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehpsmc_1_1func.html#a099fa2b27956431d00747e396e02e21b">csection</a> (filename)</td></tr>
 <tr class="memdesc:a099fa2b27956431d00747e396e02e21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract cross-section from gzipped LHE file.  <a href="namespacehpsmc_1_1func.html#a099fa2b27956431d00747e396e02e21b">More...</a><br /></td></tr>
 <tr class="separator:a099fa2b27956431d00747e396e02e21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +116,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Extract cross-section from gzipped LHE file. </p>
+<p>WARNING: This function does not work!</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>remove or replace by more useful function </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>name of input file </td></tr>
@@ -123,12 +125,12 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00018">18</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00019">19</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
 
 </div>
 </div>
-<a id="a5e2f3e640717cdaf36081c6e82e7572c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e2f3e640717cdaf36081c6e82e7572c">&#9670;&nbsp;</a></span>lint()</h2>
+<a id="af39da3fed922028a250ebbfec130c849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39da3fed922028a250ebbfec130c849">&#9670;&nbsp;</a></span>lint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +145,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>density</em> = <code>6.306e-2</code>&#160;</td>
+          <td class="paramname"><em>density</em> = <code>6.306e-14</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -157,10 +159,11 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="namespacehpsmc_1_1run__params.html">run_params</a></td><td>run parameter </td></tr>
-    <tr><td class="paramname">density</td><td>tbd </td></tr>
+    <tr><td class="paramname">density</td><td>1/(cm*pb), default value is for tungsten </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>integrated luminosity in 1/pb </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00008">8</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
 
@@ -193,6 +196,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate mu = number of events per bunch. </p>
+<p>WARNING: This function does not work properly because <a class="el" href="namespacehpsmc_1_1func.html#a099fa2b27956431d00747e396e02e21b" title="Extract cross-section from gzipped LHE file.">csection()</a> is broken!</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>name of input LHE input file containing cross section </td></tr>
@@ -200,8 +204,9 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>number of events per bunch (L_int[1/pb] * xsec[pb]) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00038">38</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00042">42</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
 
 </div>
 </div>
@@ -240,7 +245,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00072">72</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00079">79</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
 
 </div>
 </div>
@@ -279,7 +284,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00046">46</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="func_8py_source.html#l00053">53</a> of file <a class="el" href="func_8py_source.html">func.py</a>.</p>
 
 </div>
 </div>
