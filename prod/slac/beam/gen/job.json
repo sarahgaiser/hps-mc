@@ -1,14 +1,14 @@
 {
-    "bunches": 250,
-    "nevents": 250,
-    "run_params": "4pt55",
-    "target_thickness": 0.002,
-    "beam_energy": 4550.00,
-    "num_electrons": 1500,
-    "run_number": 10666,
+    "bunches": 2500000,
+    "nevents": 2500000,
+    "run_params": "3pt74",
+    "target_thickness": 0.000875,
+    "beam_energy": 3740.00,
+    "num_electrons": 625,
+    "run_number": 14166,
     "seed": 61029002,
     "output_files": {
-        "beam.stdhep": "beam_4pt55_1.stdhep"
+        "beam.stdhep": "beam_3pt74_1.stdhep"
     },
     "output_dir": "output",
     "job_id": 1

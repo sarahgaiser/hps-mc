@@ -1,5 +1,5 @@
 {
-    "nevents": [100],
+    "nevents": [10000],
     "run_params": ["4pt55"],
     "target_thickness": [0.002],
     "beam_energy": [4550.00],
