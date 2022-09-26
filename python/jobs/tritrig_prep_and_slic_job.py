@@ -4,7 +4,7 @@
 Add mother particle information to tritrig events and rotate them into beam coordinates before simulating detector response using slic.
 """
 from hpsmc.generators import StdHepConverter
-from hpsmc.tools import Unzip, AddMotherFullTruth, BeamCoords, SLIC
+from hpsmc.tools import Unzip, AddMother, AddMotherFullTruth, BeamCoords, SLIC
 
 job.description = 'Convert tritrig events to StdHep and simulate detector response'
 
@@ -18,7 +18,8 @@ unzip = Unzip(inputs=inputs, outputs=["tritrig.lhe"])
 cnv = StdHepConverter(inputs=inputs, outputs=['tritrig.stdhep'])
 
 ## Add mother particle to tag trident particles
-mom = AddMotherFullTruth(inputs=[cnv.output_files()[0], unzip.output_files()[0]], outputs=['tritrig_mom.stdhep'])
+#mom = AddMotherFullTruth(inputs=[cnv.output_files()[0], unzip.output_files()[0]], outputs=['tritrig_mom.stdhep'])
+mom = AddMother(inputs=[cnv.output_files()[0]], outputs=['tritrig_mom.stdhep'])
 
 ## Rotate events into beam coords
 rot = BeamCoords(inputs=['tritrig_mom.stdhep'])

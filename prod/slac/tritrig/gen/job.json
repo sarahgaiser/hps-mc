@@ -1,12 +1,12 @@
 {
-    "nevents": 100,
-    "run_params": "4pt55",
-    "target_thickness": 0.002,
-    "beam_energy": 4550.00,
-    "num_electrons": 1500,
+    "nevents": 10000,
+    "run_params": "3pt74",
+    "target_thickness": 0.000875,
+    "beam_energy": 3740.00,
+    "num_electrons": 625,
     "seed": 10399312,
     "output_files": {
-        "tritrig_unweighted_events.lhe.gz": "tritrig_4pt55_1.lhe.gz"
+        "tritrig_unweighted_events.lhe.gz": "tritrig_3pt74_1.lhe.gz"
     },
     "output_dir": "output",
     "job_id": 1

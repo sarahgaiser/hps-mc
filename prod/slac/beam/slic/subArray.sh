@@ -2,14 +2,14 @@
 #SBATCH --ntasks=1
 #SBATCH --time=04:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=1-10
+#SBATCH --array=1-1000
 #SBATCH --partition=hps
 #SBATCH --output=/dev/null
 
 source $HPSMC/install/bin/hps-mc-env.sh
 export LD_LIBRARY_PATH=/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH
 
-export FIRST_ID=0
+export FIRST_ID=8000
 export JOB_ID=$(($SLURM_ARRAY_TASK_ID+$FIRST_ID))
 export JOBDIR=$HPSMC/prod/slac/beam/slic
 export RUNDIR=$SCRATCH/beam/slic/$JOB_ID

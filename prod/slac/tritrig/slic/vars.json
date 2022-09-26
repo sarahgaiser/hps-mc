@@ -1,11 +1,11 @@
 {
-    "nevents": [100],
-    "run_params": ["4pt55"],
-    "target_thickness": [0.002],
-    "beam_energy": [4550.00],
-    "num_electrons": [1500],
-    "target_z": [-7.51],
-    "detector": ["HPS-PhysicsRun2019-v2-4pt5"],
-    "run_number": [10666],
-    "target_and_current": ["20um120nA"]
+    "nevents": [10000],
+    "run_params": ["3pt74"],
+    "target_thickness": [0.000875],
+    "beam_energy": [3740.00],
+    "num_electrons": [625],
+    "target_z": [0.0],
+    "detector": ["HPS_Run2021Pass0_v0"],
+    "run_number": [14166],
+    "target_and_current": ["8pt75um50nA"]
 }

@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --time=04:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=1
+#SBATCH --array=1-1000
 #SBATCH --partition=hps
 #SBATCH --output=/dev/null
 
@@ -11,8 +11,8 @@ export LD_LIBRARY_PATH=/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LI
 
 export FIRST_ID=0
 export JOB_ID=$(($SLURM_ARRAY_TASK_ID+$FIRST_ID))
-export JOBDIR=$HPSMC/prod/slac/tritrig_beam
-export RUNDIR=$SCRATCH/tritrig_beam/$JOB_ID
+export JOBDIR=$HPSMC/prod/slac/tritrig_beam/recon
+export RUNDIR=$SCRATCH/tritrig_beam/recon/$JOB_ID
 
 mkdir -p $RUNDIR
 cd $RUNDIR
