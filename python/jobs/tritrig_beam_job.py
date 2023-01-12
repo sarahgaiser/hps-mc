@@ -3,7 +3,7 @@
 
 Merge tritrig and beam events.
 """
-from hpsmc.tools import LCIOMerge, ExtractEventsWithHitAtHodoEcal
+from hpsmc.tools import LCIOMerge, ExtractEventsWithHitAtHodoEcal, LCIOCount
 
 ## Get job input file targets
 inputs = list(job.input_files.values())
@@ -47,5 +47,7 @@ merge = LCIOMerge(inputs=[filter_bunches.output_files()[0],
                   outputs=['%s.slcio' % tritrig_beam_name],
                   ignore_job_params=['nevents'])
 
-comps = [filter_bunches, slic_beam_cat, merge]
+count_merge = LCIOCount()
+
+comps = [filter_bunches, slic_beam_cat, merge, count_merge]
 job.add(comps)
