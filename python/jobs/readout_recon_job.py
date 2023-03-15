@@ -52,10 +52,5 @@ cnv = HPSTR(cfg='recon')
 ## Run an analysis on the ROOT file
 ana = HPSTR(cfg='ana')
 
-<<<<<<< HEAD
-job.add([readout, count_readout, reco, count_reco, cnv])
-# , ana])
-=======
 job.add([count_initial, readout, count_readout, reco, count_reco, cnv])
-#, ana])
->>>>>>> small changes to investigate event numbers
+# , ana])

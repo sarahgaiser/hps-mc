@@ -18,7 +18,7 @@ unzip = Unzip(inputs=inputs, outputs=["tritrig.lhe"])
 cnv = StdHepConverter(inputs=inputs, outputs=['tritrig.stdhep'])
 
 ## Add mother particle to tag trident particles
-#mom = AddMotherFullTruth(inputs=[cnv.output_files()[0], unzip.output_files()[0]], outputs=['tritrig_mom.stdhep'])
+# mom = AddMotherFullTruth(inputs=[cnv.output_files()[0], unzip.output_files()[0]], outputs=['tritrig_mom.stdhep'])
 mom = AddMother(inputs=[cnv.output_files()[0]], outputs=['tritrig_mom.stdhep'])
 
 ## Rotate events into beam coords
