@@ -1,19 +1,19 @@
 {
-    "nevents": 10000,
-    "run_params": "3pt74",
-    "target_thickness": 0.000875,
-    "beam_energy": 3740.00,
-    "num_electrons": 625,
-    "run_number": 14166,
-    "target_z": 0.0,
-    "detector": "HPS_Run2021Pass0_v0",
-    "seed": 10399312,
-    "input_files": {
-        "/sdf/group/hps/mc/tritrig/gen/3pt74/tritrig_3pt74_1.lhe.gz": "tritrig_unweighted_events.lhe.gz"
-    },
-    "output_files": {
-        "tritrig_mom_rot.slcio": "tritrig_3pt74_8pt75um50nA_rot_1.slcio"
-    },
-    "output_dir": "/sdf/group/hps/mc/tritrig/slic/3pt74/HPS_Run2021Pass0_v0",
-    "job_id": 1
+        "nevents": 10000,
+        "run_params": "4pt55",
+        "target_thickness": 0.002,
+        "beam_energy": 4550.0,
+        "num_electrons": 1500,
+        "run_number": 1194550,
+        "target_z": -7.51,
+        "detector": "HPS_IDEAL_iter0",
+        "seed": 10399312,
+        "input_files": {
+            "/sdf/group/hps/mc/tritrig/gen/4pt55/tritrig_4pt55_11.lhe.gz": "tritrig_unweighted_events.lhe.gz"
+        },
+        "output_files": {
+            "tritrig_mom_rot.slcio": "tritrig_4pt55_20um120nA_rot_1.slcio"
+        },
+        "output_dir": "/sdf/group/hps/mc/tritrig/slic/4pt55/HPS_IDEAL_iter0",
+        "job_id": 1
 }

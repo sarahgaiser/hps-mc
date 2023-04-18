@@ -1,7 +1,7 @@
 {
     "nevents": [10000],
-    "run_params": ["3pt74"],
-    "target_thickness": [0.000875],
-    "beam_energy": [3740.00],
-    "num_electrons": [625]
+    "run_params": ["4pt55"],
+    "target_thickness": [0.002],
+    "beam_energy": [4550.00],
+    "num_electrons": [1500]
 }

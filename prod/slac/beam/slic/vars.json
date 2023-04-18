@@ -1,10 +1,11 @@
 {
     "bunches": [250000],
     "nevents": [250000],
-    "run_params": ["3pt74"],
-    "detector": ["HPS_Run2021Pass0_v0"],
-    "target_z": [0.0],
-    "run_number": [14166],
+    "run_params": ["4pt55"],
+    "detector": ["HPS_IDEAL_iter0"],
+    "target_z": [-7.51],
+    "run_number": [1194550],
     "event_interval": [250],
-    "target_and_current": ["8pt75um50nA"]
+    "target_thickness": [0.002],
+    "target_and_current": ["20um120nA"]
 }

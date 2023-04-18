@@ -1,6 +1,6 @@
 #!/usr/bin/scl enable devtoolset-8 -- /bin/bash
 #SBATCH --ntasks=1
-#SBATCH --time=04:00:00
+#SBATCH --time=12:00:00
 #SBATCH --mem=1500M
 #SBATCH --array=1-1000
 #SBATCH --partition=hps
