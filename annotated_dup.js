@@ -1,6 +1,26 @@
 var annotated_dup =
 [
     [ "hpsmc", "namespacehpsmc.html", [
+      [ "_hadd", "namespacehpsmc_1_1__hadd.html", [
+        [ "hadd", "classhpsmc_1_1__hadd_1_1hadd.html", "classhpsmc_1_1__hadd_1_1hadd" ]
+      ] ],
+      [ "alignment", "namespacehpsmc_1_1alignment.html", [
+        [ "_apply", "namespacehpsmc_1_1alignment_1_1__apply.html", [
+          [ "_DetectorEditor", "classhpsmc_1_1alignment_1_1__apply_1_1__DetectorEditor.html", "classhpsmc_1_1alignment_1_1__apply_1_1__DetectorEditor" ],
+          [ "ApplyPedeRes", "classhpsmc_1_1alignment_1_1__apply_1_1ApplyPedeRes.html", "classhpsmc_1_1alignment_1_1__apply_1_1ApplyPedeRes" ],
+          [ "WriteMisalignedDet", "classhpsmc_1_1alignment_1_1__apply_1_1WriteMisalignedDet.html", "classhpsmc_1_1alignment_1_1__apply_1_1WriteMisalignedDet" ],
+          [ "ConstructDetector", "classhpsmc_1_1alignment_1_1__apply_1_1ConstructDetector.html", "classhpsmc_1_1alignment_1_1__apply_1_1ConstructDetector" ]
+        ] ],
+        [ "_parameter", "namespacehpsmc_1_1alignment_1_1__parameter.html", [
+          [ "Parameter", "classhpsmc_1_1alignment_1_1__parameter_1_1Parameter.html", "classhpsmc_1_1alignment_1_1__parameter_1_1Parameter" ]
+        ] ],
+        [ "_pattern", "namespacehpsmc_1_1alignment_1_1__pattern.html", [
+          [ "Pattern", "classhpsmc_1_1alignment_1_1__pattern_1_1Pattern.html", "classhpsmc_1_1alignment_1_1__pattern_1_1Pattern" ]
+        ] ],
+        [ "_pede", "namespacehpsmc_1_1alignment_1_1__pede.html", [
+          [ "PEDE", "classhpsmc_1_1alignment_1_1__pede_1_1PEDE.html", "classhpsmc_1_1alignment_1_1__pede_1_1PEDE" ]
+        ] ]
+      ] ],
       [ "batch", "namespacehpsmc_1_1batch.html", [
         [ "Batch", "classhpsmc_1_1batch_1_1Batch.html", "classhpsmc_1_1batch_1_1Batch" ],
         [ "LSF", "classhpsmc_1_1batch_1_1LSF.html", "classhpsmc_1_1batch_1_1LSF" ],
@@ -63,9 +83,7 @@ var annotated_dup =
         [ "LCIOTool", "classhpsmc_1_1tools_1_1LCIOTool.html", "classhpsmc_1_1tools_1_1LCIOTool" ],
         [ "LCIOConcat", "classhpsmc_1_1tools_1_1LCIOConcat.html", "classhpsmc_1_1tools_1_1LCIOConcat" ],
         [ "LCIOCount", "classhpsmc_1_1tools_1_1LCIOCount.html", "classhpsmc_1_1tools_1_1LCIOCount" ],
-        [ "LCIOMerge", "classhpsmc_1_1tools_1_1LCIOMerge.html", "classhpsmc_1_1tools_1_1LCIOMerge" ],
-        [ "SimBase", "classhpsmc_1_1tools_1_1SimBase.html", "classhpsmc_1_1tools_1_1SimBase" ],
-        [ "Sim", "classhpsmc_1_1tools_1_1Sim.html", "classhpsmc_1_1tools_1_1Sim" ]
+        [ "LCIOMerge", "classhpsmc_1_1tools_1_1LCIOMerge.html", "classhpsmc_1_1tools_1_1LCIOMerge" ]
       ] ]
     ] ],
     [ "test", "namespacetest.html", [
@@ -87,6 +105,9 @@ var annotated_dup =
         [ "TestJobStore", "classtest_1_1test__job_1_1TestJobStore.html", "classtest_1_1test__job_1_1TestJobStore" ],
         [ "TestJobScriptDatabase", "classtest_1_1test__job_1_1TestJobScriptDatabase.html", "classtest_1_1test__job_1_1TestJobScriptDatabase" ],
         [ "TestJob", "classtest_1_1test__job_1_1TestJob.html", "classtest_1_1test__job_1_1TestJob" ]
+      ] ],
+      [ "test_parameter_patterns", "namespacetest_1_1test__parameter__patterns.html", [
+        [ "TestParameterPatterns", "classtest_1_1test__parameter__patterns_1_1TestParameterPatterns.html", "classtest_1_1test__parameter__patterns_1_1TestParameterPatterns" ]
       ] ],
       [ "test_run_params", "namespacetest_1_1test__run__params.html", [
         [ "TestRunParams", "classtest_1_1test__run__params_1_1TestRunParams.html", "classtest_1_1test__run__params_1_1TestRunParams" ]
