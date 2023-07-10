@@ -2,14 +2,13 @@
 #SBATCH --ntasks=1
 #SBATCH --time=24:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=1-1000
+#SBATCH --array=37
 #SBATCH --partition=hps
-#SBATCH --output=/dev/null
 
 source $HPSMC/install/bin/hps-mc-env.sh
 export LD_LIBRARY_PATH=/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH
 
-export FIRST_ID=2
+export FIRST_ID=0
 export JOB_ID=$(($SLURM_ARRAY_TASK_ID+$FIRST_ID))
 export JOBDIR=$HPSMC/prod/slac/tritrig/gen
 export RUNDIR=$SCRATCH/tritrig/gen/$JOB_ID
@@ -20,3 +19,4 @@ cd $RUNDIR
 /bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -o $RUNDIR/../logs/job.${JOB_ID}.out -e $RUNDIR/../logs/job.${JOB_ID}.err -l $RUNDIR/../logs/job.${JOB_ID}.log -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} tritrig_gen $JOBDIR/jobs.json
 
 # HPSMC points to hps-mc directory. You might need to set this variable before running this script.
+#SBATCH --output=/dev/null

@@ -20,9 +20,9 @@
         "/sdf/group/hps/mc/tritrig_beam/{{ run_params }}/{{ detector }}/tritrig_beam_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio": "tritrig_beam.slcio"
     },
     "output_files": {
-        "tritrig_beam_readout.slcio": "readout/tritrig_beam_readout_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio",
-        "tritrig_beam_readout_recon.slcio": "tritrig_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio",
-        "tritrig_beam_readout_recon.root": "tritrig_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.root"
+        "tritrig_beam_readout.slcio": "readout/{{ run_params }}/{{ detector }}/tritrig_beam_readout_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio",
+        "tritrig_beam_readout_recon.slcio": "recon/{{ run_params }}/{{ detector }}/tritrig_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio",
+        "tritrig_beam_readout_recon.root": "recon/{{ run_params }}/{{ detector }}/root/tritrig_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.root"
     },
-    "output_dir": "/sdf/group/hps/mc/tritrig_beam/recon/{{ run_params }}/{{ detector }}"
+    "output_dir": "/sdf/group/hps/mc/tritrig_beam/"
 }

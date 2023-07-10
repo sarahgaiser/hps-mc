@@ -268,6 +268,7 @@ class Job(object):
         parser.add_argument("-o", "--out", nargs='?', help="File for component stdout (default prints to console)")
         parser.add_argument("-e", "--err", nargs='?', help="File for component stderr (default prints to console)")
         parser.add_argument("-s", "--job-steps", type=int, default=None, help="Job steps to run (single number)")
+        parser.add_argument("-l", "--log", nargs='?', help="File for logging output (default is print to terminal)")
         parser.add_argument("-i", "--job-id", type=int, help="Job ID from JSON job store", default=None)
         parser.add_argument("script", nargs='?', help="Path or name of job script")
         parser.add_argument("params", nargs='?', help="Job param file in JSON format")

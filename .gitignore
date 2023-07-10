@@ -20,3 +20,6 @@ docs/html/*
 
 # Mac artifacts
 .DS_Store
+# sh files
+prod/slac/beam/gen/sh/
+prod/slac/beam/slic/sh/
