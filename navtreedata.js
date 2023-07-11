@@ -30,12 +30,12 @@ var NAVTREE =
     [ "stdhep-tools", "stdheptools.html", null ],
     [ "misalignment", "misalign.html", [
       [ "Parameters", "misalign.html#autotoc_md2", [
-        [ "Documented files", "index.html#autotoc_md43", [
-          [ "External documentation", "index.html#autotoc_md44", null ]
+        [ "Documented files", "index.html#autotoc_md45", [
+          [ "External documentation", "index.html#autotoc_md46", null ]
         ] ],
-        [ "Installation", "index.html#autotoc_md45", null ],
-        [ "Quick Start Guide", "index.html#autotoc_md46", null ],
-        [ "Help", "index.html#autotoc_md47", null ],
+        [ "Installation", "index.html#autotoc_md47", null ],
+        [ "Quick Start Guide", "index.html#autotoc_md48", null ],
+        [ "Help", "index.html#autotoc_md49", null ],
         [ "parameters", "misalign.html#autotoc_md6", null ]
       ] ]
     ] ],
@@ -47,6 +47,7 @@ var NAVTREE =
     [ "alignment", "alignment.html", null ],
     [ "Tracking for Alignment", "trackingalign.html", null ],
     [ "Examples", "examples.html", "examples" ],
+    [ "iDM generation to reconstruction pipeline", "idm.html", null ],
     [ "hps-mc installation guide", "readme.html", null ],
     [ "Data conversion/reco – evio to lcio", "ana1921pass0.html", null ],
     [ "Production scripts", "prod.html", null ],
@@ -83,14 +84,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__apply_8py.html",
-"classhpsmc_1_1alignment_1_1__pede_1_1PEDE.html#af16e86fb81fbbc18f79fde1156e45ddc",
-"classhpsmc_1_1job__template_1_1JobTemplate.html#a1455473be5251de6b034c22cc919350d",
-"classtest_1_1test__generators_1_1TestEGS5.html",
-"dir_8dfcaee2e0365c95dcf9d149a47ad72b.html",
-"namespaceap__gen__to__slic__job.html#a2661f439a4a94ffdcd5e47ae1da0bb1d",
-"namespacereadout__recon__job.html#a43a75300e7fbb760272affc39b34c5e1",
-"pede.html#autotoc_md13",
-"stdhep__util_8hh.html#a5c2588e78252ab71f3d6f5ff4ff59a0c"
+"classhpsmc_1_1alignment_1_1__pede_1_1PEDE.html#aeb6e8a0e0691d933ea682c4a8f5ec314",
+"classhpsmc_1_1job_1_1JobScriptDatabase.html#a10763a1f0b1f242ac223e855ab0d9604",
+"classtest_1_1test__component_1_1TestComponent.html#a28fc81d36de9692beab59eab6399c18c",
+"config__writer_8py.html#a93fee1b9e017ebbd1173f53ca18f9e4d",
+"merge__files_8cc.html",
+"namespacemembers_vars_j.html",
+"namespacetritrig__prep__and__slic__job.html#ada93bbf7295ab03a07435e4999845526",
+"slictoanaMC.html#autotoc_md38"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
