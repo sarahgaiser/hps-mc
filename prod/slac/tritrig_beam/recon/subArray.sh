@@ -2,8 +2,9 @@
 #SBATCH --ntasks=1
 #SBATCH --time=04:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=41-50
-#SBATCH --partition=shared
+#SBATCH --array=11-20
+#SBATCH --partition=hps
+#SBATCH --output=/dev/null
 
 source $HPSMC/install/bin/hps-mc-env.sh
 export LD_LIBRARY_PATH=/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH

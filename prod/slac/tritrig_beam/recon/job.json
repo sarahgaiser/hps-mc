@@ -5,7 +5,7 @@
         "beam_energy": 4550.0,
         "num_electrons": 1500,
         "run_number": 1194550,
-        "detector": "HPS_IDEAL_iter0",
+        "detector": "HPS_TimDesign_iter0",
         "ecal_hit_ecut": 0.05,
         "is_data": 0,
         "steering_files": {
@@ -20,10 +20,10 @@
             "/sdf/group/hps/mc/tritrig_beam/4pt55/HPS_IDEAL_iter0/tritrig_beam_4pt55_20um120nA_1.slcio": "tritrig_beam.slcio"
         },
         "output_files": {
-            "tritrig_beam_readout.slcio": "readout/4pt55/HPS_IDEAL_iter0/tritrig_beam_readout_4pt55_20um120nA_1.slcio",
-            "tritrig_beam_readout_recon.slcio": "recon/4pt55/HPS_IDEAL_iter0/tritrig_beam_readout_recon_4pt55_20um120nA_1.slcio",
-            "tritrig_beam_readout_recon.root": "recon/4pt55/HPS_IDEAL_iter0/root/tritrig_beam_readout_recon_4pt55_20um120nA_1.root"
+            "tritrig_beam_readout.slcio": "readout/4pt55/HPS_TimDesign_iter0/tritrig_beam_readout_4pt55_20um120nA_1.slcio",
+            "tritrig_beam_readout_recon.slcio": "recon/4pt55/HPS_TimDesign_iter0/tritrig_beam_readout_recon_4pt55_20um120nA_1.slcio",
+            "tritrig_beam_readout_recon.root": "recon/4pt55/HPS_TimDesign_iter0/root/tritrig_beam_readout_recon_4pt55_20um120nA_1.root"
         },
-        "output_dir": "/sdf/group/hps/mc/tritrig_beam/",
+        "output_dir": "output/",
         "job_id": 1
 }

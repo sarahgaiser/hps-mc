@@ -1,0 +1,12 @@
+{
+    "bunches": [250000],
+    "nevents": [250000],
+    "run_params": ["4pt55"],
+    "detector": ["HPS_IDEAL_iter0"],
+    "target_z": [-7.51],
+    "run_number": [14168],
+    "event_interval": [250],
+    "target_thickness": [0.0008],
+    "target_and_current": ["8um50nA"],
+    "use_poisson": ["True"]
+}

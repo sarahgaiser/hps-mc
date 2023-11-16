@@ -1,0 +1,161 @@
+#!/bin/bash
+
+batch_size=500
+lt_check=250
+max=66000
+
+# print the usage for this tool
+help() {
+  cat <<\HELP
+
+  Submit jobs to slurm and check for failures. Resubmit failed jobs.
+
+  USAGE:
+    ./easy_run <script> <type> [args...]
+
+  COMMANDS:
+    help             : print this help and exit
+    gen TYPE JOBDIR  : event generation
+    slic TYPE JOBDIR : slic simulation
+
+  TYPE:
+    beam    : beam events
+    tritrig : tritrig events
+    simp    : simp events
+
+HELP
+}
+
+__submit() {
+    script="$1" 
+    jobdir="$2" 
+    scratchdir="$3"
+    i="$4"
+    n="$5"
+  
+    echo "hps-mc-batch slurm -q hps -W 1 -m 2000 -E $HOME/.bashrc -o -r ${i}:${n} -d $scratchdir -l $scratchdir/logs $script $jobdir/jobs.json -c $jobdir/.hpsmc"
+}
+
+__clear_failed_jobs() {
+    local scratchdir="$1"
+    local search_string="$2"
+    
+    for file in "$scratchdir"/logs/*.log.out; do
+        if grep -q "$search_string" "$file"; then
+            if [[ $file =~ job\.([0-9]+)\.log.out ]]; then
+                jobnumber=${BASH_REMATCH[1]}
+                echo "Job '$jobnumber' crashed. Deleting scratch dir"
+                rm "$scratchdir"/logs/job."$jobnumber".* &
+                if [[ ! "$scratchdir" =~ ^/scratch/"$USER" ]]; then
+                    echo "BE CAREFUL. YOU JUST TRIED TO DELETE A FILE OUTSIDE OF /SCRATCH!"
+                    continue
+                fi
+            rm -rf "$scratchdir"/"$jobnumber" &
+            fi
+        fi
+    done
+}
+
+__run() {
+    local script="$1"
+    local jobdir="$2"
+    local scratchdir="$3"
+    local outname="$4"
+    
+    local i=1
+    local n=${batch_size}
+
+    logs="${SCRATCHDIR}/logs"
+    search_string="FileNotFoundError: \[Errno 2\] No such file or directory: '$outname'"
+
+    __submit "$script" "$jobdir" "$scratchdir" "$i" "$n"
+
+    while [ $i -lt $((max-batch_size)) ]; do
+        # Count number of jobs running
+        count=$(squeue | grep "$USER" | wc -l)
+        echo " '$count' jobs running "
+
+        # Check when job count is less than number
+        if [ "$count" -lt "$lt_check" ] && [ "$((count+batch_size))" -lt 3000 ] ; then
+            echo "count is below threshold: '$count' < '$lt_check' "
+
+            echo "Clearing failed jobs"
+            __clear_failed_jobs "$scratchdir" "$search_string"
+
+            i=$((i + batch_size))
+            n=$((n + batch_size))
+            echo "New submission start and end: '$i' | '$n' "
+            sleep 5
+            __submit "$script" "$jobdir" "$scratchdir" "$i" "$n"
+        fi
+        sleep 20
+    done
+}
+
+command=$1
+type=$2
+jobdir=$3
+case $1 in
+    gen)
+        if [ $# -lt 3 ]; then
+        echo "ERROR: command '$1' requires a type and a jobdir after it"
+        exit 1
+        fi
+        case $2 in
+        beam)
+            script="beam_gen"
+            scratchdir="$SCRATCH/${type}/${command}"
+            outname=some_name.slcio
+            __run "$script" "$jobdir" "$scratchdir" "$outname"
+            ;;
+        tritrig)
+            script="tritrig_gen"
+            scratchdir="$SCRATCH/${type}/${command}"
+            outname=some_name.slcio
+            __run "$script" "$jobdir" "$scratchdir" "$outname"
+            ;;
+        simp)
+            echo "ERROR: '$2' not implemented yet"
+            ;;
+        *)
+            echo "ERROR: '$2' not a valid type"
+            exit 1
+            ;;
+        esac
+        ;;
+    slic)
+        if [ $# -lt 3 ]; then
+        echo "ERROR: command '$1' requires a type and a jobdir after it"
+        exit 1
+        fi
+        case $2 in
+        beam)
+            script="beam_prep_and_slic"
+            scratchdir="$SCRATCH/${type}/${command}"
+            outname=beam_rot_sampled.slcio
+            __run "$script" "$jobdir" "$scratchdir" "$outname"
+            ;;
+        tritrig)
+            script="tritrig_prep_and_slic"
+            scratchdir="$SCRATCH/${type}/${command}"
+            outname=some_name.slcio
+            __run "$script" "$jobdir" "$scratchdir" "$outname"
+            ;;
+        simp)
+            echo "ERROR: '$2' not implemented yet"
+            ;;
+        *)
+            echo "ERROR: '$2' not a valid type: 'beam', 'tritrig' or 'simp'"
+            exit 1
+            ;;
+        esac
+        ;;
+    help)
+        ${1} ${@:2}
+        exit $?
+        ;;
+    *)
+        echo "ERROR: Unrecognized command '$1'"
+        exit 1
+        ;;
+esac

@@ -25,6 +25,6 @@
         "output_files": {
             "tritrig_beam.slcio": "tritrig_beam_4pt55_20um120nA_1.slcio"
         },
-        "output_dir": "/sdf/group/hps/mc/tritrig_beam/4pt55/HPS_IDEAL_iter0",
+        "output_dir": "output",
         "job_id": 1
 }
