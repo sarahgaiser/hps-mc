@@ -11,9 +11,8 @@
     "run_number": 10131,
     "skip_events": 10,
     "steering_files": {
-        "recon": "/org/hps/steering/recon/PhysicsRun2019FullRecon.lcsim"
+        "recon": "/org/hps/steering/production/RandomTriggerFilter.lcsim"
     },
-    "nevents": 1000,
     "config_files": {
         "recon": "recoTuple_cfg.py"
     },
