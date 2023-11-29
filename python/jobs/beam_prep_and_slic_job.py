@@ -18,7 +18,7 @@ else:
 if 'use_poisson' in job.params:
     use_poisson = job.params['use_poisson']
 else:
-    us_poisson = False
+    use_poisson = False
 
 ## Get job input file targets
 inputs = list(job.input_files.values())

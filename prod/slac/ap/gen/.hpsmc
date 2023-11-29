@@ -1,2 +1,3 @@
 [Job]
 dry_run = False
+delete_rundir = True

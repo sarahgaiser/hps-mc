@@ -29,6 +29,7 @@ else:
 
 ## Unzip the LHE events to a local file
 unzip = Unzip(inputs=["ap_unweighted_events.lhe.gz"], outputs=["ap_unweighted_events.lhe"])
+job.add([unzip])
 
 if ap_decay_dist == "lhe_uniform":
     ## Convert LHE output to stdhep for uniform signal
@@ -49,7 +50,7 @@ else:
     logger.error("Invalid ap decay distribution: ap_decay_dist = %s" % ap_decay_dist)
 
 ## Add mother particle to tag trident particles
-mom = AddMotherFullTruth(inputs=["ap_displace.stdhep", unzip.output_files()[0]], outputs=["ap_mom.stdhep"])
+mom = AddMotherFullTruth(inputs=["ap_unweighted_events.stdhep", unzip.output_files()[0]], outputs=["ap_mom.stdhep"])
 
 ## Rotate events into beam coords
 rot = BeamCoords(inputs=mom.output_files(), outputs=["ap_rot.stdhep"])
@@ -58,4 +59,4 @@ rot = BeamCoords(inputs=mom.output_files(), outputs=["ap_rot.stdhep"])
 slic = SLIC(nevents=nevents + 1, inputs=rot.output_files(), outputs=["ap.slcio"])
 
 ## run the job
-job.add([unzip, mom, rot, slic])
+job.add([mom, rot, slic])

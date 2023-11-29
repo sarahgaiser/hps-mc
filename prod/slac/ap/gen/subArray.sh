@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --time=04:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=1-10
+#SBATCH --array=10
 #SBATCH --partition=hps
 #SBATCH --output=/dev/null
 
