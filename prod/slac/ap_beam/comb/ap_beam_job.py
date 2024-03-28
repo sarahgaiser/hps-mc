@@ -47,5 +47,6 @@ merge = LCIOMerge(inputs=[filter_bunches.output_files()[0],
 
 # count_merge = LCIOCount()
 
-comps = [filter_bunches, slic_beam_cat, merge]
+comps = [filter_bunches]
+#comps = [filter_bunches, slic_beam_cat, merge]
 job.add(comps)

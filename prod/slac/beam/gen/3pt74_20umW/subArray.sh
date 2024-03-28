@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --time=04:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=11-100
+#SBATCH --array=901-1000
 #SBATCH --partition=hps
 #SBATCH --output=/dev/null
 
@@ -17,6 +17,6 @@ export RUNDIR=$SCRATCH/beam/gen/20umW/$JOB_ID
 mkdir -p $RUNDIR
 cd $RUNDIR
 
-/bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} beam_gen $JOBDIR/jobs.json > $RUNDIR/../logs/job.${JOB_ID}.log
+/bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} beam_gen $JOBDIR/jobs.json -e $RUNDIR/../logs/job.${JOB_ID}.err > $RUNDIR/../logs/job.${JOB_ID}.log
 
 # HPSMC points to hps-mc directory. You might need to set this variable before running this script.

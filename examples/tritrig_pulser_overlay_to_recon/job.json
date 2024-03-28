@@ -1,25 +1,21 @@
-    {
-        "run_params": "4pt55",
-        "run_number": 10666,
-        "nevents": 30000,
-        "detector": "HPS_PhysicsRun2019-v2-FEE-Pass0",
+{
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4",
         "steering_files": {
-            "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
+            "evio_to_lcio": "/org/hps/steering/production/RandomTriggerFilter.lcsim",
             "overlay": "/org/hps/steering/readout/Overlay.lcsim",
             "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
             "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
         },
         "input_files": {
-            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_1.slcio": "signal_1.slcio",
-            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_2.slcio": "signal_2.slcio",
-            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_3.slcio": "signal_3.slcio",
-            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_4.slcio": "signal_4.slcio",
-            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_5.slcio": "signal_5.slcio",
-            "/mss/hallb/hps/physrun2019/data/hps_010646/hps_010646.evio.00000": "pulser.evio"
+            "/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_1.slcio": "signal_1.slcio",
+            "/sdf/group/hps/data/physrun2021/hps_014229/hps_014229.evio.00040": "pulser.evio"
         },
         "output_files": {
-            "signal_pulser_readout.slcio": "readout/tritrig_pulser_1.slcio",
-            "signal_pulser_recon.slcio": "recon/tritrig_pulser_1.slcio"
+            "signal_pulser_readout.slcio": "readout/ap_pulser_1.slcio",
+            "signal_pulser_recon.slcio": "recon/ap_pulser_1.slcio"
         },
-        "output_dir": "output"
-    }
+        "output_dir": "/sdf/group/hps/mc/ap_beam/pulser_data/3pt74/HPS_Run2021Pass1_v4",
+        "job_id": 1
+}

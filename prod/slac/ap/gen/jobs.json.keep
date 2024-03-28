@@ -1,0 +1,1402 @@
+[
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749239,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_1.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 1
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749240,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_2.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 2
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749241,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_3.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 3
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749242,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_4.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 4
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749243,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_5.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 5
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749244,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_6.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 6
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749245,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_7.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 7
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749246,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_8.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 8
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749247,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_9.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 9
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749248,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_10.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 10
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749249,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_11.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 11
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749250,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_12.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 12
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749251,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_13.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 13
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749252,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_14.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 14
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749253,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_15.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 15
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749254,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_16.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 16
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749255,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_17.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 17
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749256,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_18.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 18
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749257,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_19.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 19
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749258,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_20.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 20
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749259,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_21.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 21
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749260,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_22.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 22
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749261,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_23.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 23
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749262,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_24.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 24
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749263,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_25.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 25
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749264,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_26.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 26
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749265,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_27.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 27
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749266,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_28.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 28
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749267,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_29.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 29
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749268,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_30.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 30
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749269,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_31.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 31
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749270,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_32.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 32
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749271,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_33.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 33
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749272,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_34.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 34
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749273,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_35.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 35
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749274,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_36.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 36
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749275,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_37.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 37
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749276,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_38.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 38
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749277,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_39.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 39
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749278,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_40.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 40
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749279,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_41.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 41
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749280,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_42.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 42
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749281,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_43.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 43
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749282,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_44.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 44
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749283,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_45.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 45
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749284,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_46.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 46
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749285,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_47.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 47
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749286,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_48.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 48
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749287,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_49.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 49
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749288,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_50.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 50
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749289,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_51.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 51
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749290,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_52.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 52
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749291,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_53.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 53
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749292,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_54.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 54
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749293,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_55.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 55
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749294,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_56.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 56
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749295,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_57.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 57
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749296,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_58.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 58
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749297,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_59.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 59
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749298,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_60.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 60
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749299,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_61.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 61
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749300,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_62.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 62
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749301,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_63.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 63
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749302,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_64.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 64
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749303,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_65.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 65
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749304,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_66.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 66
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749305,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_67.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 67
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749306,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_68.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 68
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749307,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_69.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 69
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749308,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_70.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 70
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749309,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_71.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 71
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749310,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_72.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 72
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749311,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_73.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 73
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749312,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_74.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 74
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749313,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_75.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 75
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749314,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_76.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 76
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749315,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_77.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 77
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749316,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_78.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 78
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749317,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_79.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 79
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749318,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_80.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 80
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749319,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_81.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 81
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749320,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_82.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 82
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749321,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_83.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 83
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749322,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_84.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 84
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749323,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_85.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 85
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749324,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_86.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 86
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749325,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_87.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 87
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749326,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_88.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 88
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749327,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_89.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 89
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749328,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_90.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 90
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749329,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_91.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 91
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749330,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_92.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 92
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749331,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_93.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 93
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749332,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_94.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 94
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749333,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_95.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 95
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749334,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_96.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 96
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749335,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_97.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 97
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749336,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_98.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 98
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749337,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_99.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 99
+    },
+    {
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "apmass": 100.0,
+        "seed": 749338,
+        "output_files": {
+            "ap_unweighted_events.lhe.gz": "ap_3pt74_ap100MeV_100.lhe.gz"
+        },
+        "output_dir": "/sdf/group/hps/mc/ap/gen/3pt74/ap100MeV",
+        "job_id": 100
+    }
+]

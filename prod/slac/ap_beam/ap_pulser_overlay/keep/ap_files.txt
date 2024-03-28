@@ -1,0 +1,10 @@
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_1.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_2.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_3.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_4.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_5.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_6.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_7.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_8.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_9.slcio
+/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_10.slcio

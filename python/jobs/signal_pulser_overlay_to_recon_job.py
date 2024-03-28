@@ -1,7 +1,7 @@
 """!
 @file signal_pulser_overlay_to_recon_job.py
 
-No idea what this is supposed to do.
+Overlay random beam and MC signal.
 """
 
 from hpsmc.tools import ExtractEventsWithHitAtHodoEcal, EvioToLcio, JobManager, FilterBunches, LCIOCount
@@ -85,4 +85,5 @@ count_recon = LCIOCount(inputs=recon.output_files())
 
 ## Add the components
 job.add([filter_events, count_filter, evio_to_lcio, count_pulser, overlay, space_overlay,
-         count_space_overlay, readout, count_readout, recon, count_recon])
+         count_space_overlay])
+## , readout, count_readout, recon, count_recon])

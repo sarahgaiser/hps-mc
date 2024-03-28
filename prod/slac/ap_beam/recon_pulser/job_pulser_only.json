@@ -1,0 +1,29 @@
+{
+        "run_params": "3pt74",
+        "target_z": 0.0,
+        "beam_energy": 3740.0,
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2021,
+        "nevents": 8792750,
+        "input_files": {
+            "/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/ap_pulser_overlay/pulser_spaced_20.slcio": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "pulser_readout_20.slcio",
+            "ap_pulser_readout_recon.slcio": "pulser_readout_recon_20.slcio",
+            "ap_pulser_readout_recon.root": "pulser_readout_recon_20.root"
+        },
+        "output_dir": "test_signal_out",
+        "job_id": 1
+}

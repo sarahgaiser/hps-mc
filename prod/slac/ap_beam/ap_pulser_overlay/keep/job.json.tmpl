@@ -1,0 +1,17 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "steering_files": {
+        "evio_to_lcio": "{{ evio_to_lcio }}",
+        "overlay": "{{ overlay }}"
+    },
+    "input_files": {
+        "{{ input_files['ap'][0] }}": "signal.slcio",
+        "{{ input_files['beam'][0] }}": "pulser.evio"
+    },
+    "output_files": {
+        "signal_pulser_spaced.slcio": "ap_pulser_spaced_{{ job_id }}.slcio"        
+    },
+    "output_dir": "/sdf/group/hps/mc/ap_beam/pulser_data/{{run_params}}/{{detector}}"
+}

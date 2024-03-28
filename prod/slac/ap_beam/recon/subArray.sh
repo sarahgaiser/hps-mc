@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --time=04:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=2
+#SBATCH --array=1-100
 #SBATCH --partition=hps
 
 source $HPSMC/install/bin/hps-mc-env.sh

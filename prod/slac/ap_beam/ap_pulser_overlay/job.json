@@ -1,0 +1,21 @@
+{
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim"
+        },
+        "input_files": {
+            "/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_96.slcio": "signal_1.slcio",
+            "/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_97.slcio": "signal_2.slcio",
+            "/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_98.slcio": "signal_3.slcio",
+            "/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_99.slcio": "signal_4.slcio",
+            "/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_100.slcio": "signal_5.slcio",
+            "/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_20.slcio": "signal_pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "pulser_spaced_20.slcio"
+        },
+        "output_dir": "output",
+        "job_id": 19
+}

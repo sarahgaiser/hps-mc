@@ -16,14 +16,15 @@
             "recon": "recoTuple_cfg.py",
             "ana": "anaVtxTuple_cfg.py"
         },
+        "year": 2021,
         "input_files": {
-            "/sdf/group/hps/mc/ap_beam/full_mc/3pt74/HPS_Run2021Pass1_v4/ap_beam_3pt74_20pt0umW_1.slcio": "ap_beam.slcio"
+            "/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/comb/scratch/beam_cat.slcio": "ap_beam.slcio"
         },
         "output_files": {
-            "ap_beam_readout.slcio": "ap_beam_readout_1.slcio",
-            "ap_beam_readout_recon.slcio": "ap_beam_readout_recon_1.slcio",
-            "ap_beam_readout_recon.root": "ap_beam_readout_recon_1.root"
+            "ap_beam_readout.slcio": "beam_readout_3pt74_20pt0umW_1.slcio",
+            "ap_beam_readout_recon.slcio": "beam_readout_recon_3pt74_20pt0umW_1.slcio",
+            "ap_beam_readout_recon.root": "beam_readout_recon_3pt74_20pt0umW_1.root"
         },
-        "output_dir": "output/",
+        "output_dir": "test_beam_events", 
         "job_id": 1
 }

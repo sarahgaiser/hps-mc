@@ -1,0 +1,25 @@
+    {
+        "run_params": "4pt55",
+        "run_number": 10666,
+        "nevents": 30000,
+        "detector": "HPS_PhysicsRun2019-v2-FEE-Pass0",
+        "steering_files": {
+            "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_1.slcio": "signal_1.slcio",
+            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_2.slcio": "signal_2.slcio",
+            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_3.slcio": "signal_3.slcio",
+            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_4.slcio": "signal_4.slcio",
+            "/mss/hallb/hps/production/mcData/2019/pass0/slic/HPS_PhysicsRun2019-v2-FEE-Pass0/tritrig/4pt55/tritrig_5.slcio": "signal_5.slcio",
+            "/mss/hallb/hps/physrun2019/data/hps_010646/hps_010646.evio.00000": "pulser.evio"
+        },
+        "output_files": {
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_1.slcio",
+            "signal_pulser_recon.slcio": "recon/tritrig_pulser_1.slcio"
+        },
+        "output_dir": "output"
+    }

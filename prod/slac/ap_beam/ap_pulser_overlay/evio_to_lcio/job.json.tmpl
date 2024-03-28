@@ -1,0 +1,16 @@
+{
+    "detector": "{{ detector }}",
+    "run_number": {{ run_number }},
+    "steering_files": {
+        "recon": "{{ evio_to_lcio }}"
+    },
+    "is_data": 1,
+    "year": {{ year }},
+    "input_files": {
+        "{{ input_files['beam'][0] }}": "data_events.evio"
+    },
+    "output_files": {
+        "data_events.slcio": "hps_rndm_014229_{{ job_id }}.slcio"
+    },
+    "output_dir": "/sdf/group/hps/mc/beam/cnv/{{ year }}/{{ run_number }}"
+}

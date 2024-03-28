@@ -1,1 +1,1 @@
-hps-mc-job run -d $PWD/scratch readout_recon job.json
+hps-mc-job run -d $PWD/scratch $PWD/readout_recon_job.py job.json
