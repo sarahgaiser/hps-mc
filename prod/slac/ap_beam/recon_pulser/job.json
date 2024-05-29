@@ -1,6 +1,4 @@
 {
-        "run_params": "3pt74",
-        "target_z": 0.0,
         "beam_energy": 3740.0,
         "run_number": 14229,
         "detector": "HPS_Run2021Pass1_v4",
@@ -16,13 +14,14 @@
         },
         "year": 2021,
         "input_files": {
-            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/3pt74/HPS_Run2021Pass1_v4/ap_pulser_spaced_1.slcio": "ap_pulser.slcio"
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/3pt74/HPS_Run2021Pass1_v4/low_lumi/ap_pulser_spaced_1.slcio": "ap_pulser.slcio"
         },
         "output_files": {
             "ap_pulser_readout.slcio": "readout/3pt74/HPS_Run2021Pass1_v4/ap_pulser_readout_1.slcio",
             "ap_pulser_readout_recon.slcio": "recon/3pt74/HPS_Run2021Pass1_v4/ap_pulser_readout_recon_1.slcio",
-            "ap_pulser_readout_recon.root": "recon/3pt74/HPS_Run2021Pass1_v4/root/ap_pulser_readout_recon_1.root"
+            "ap_pulser_readout_recon.root": "recon/3pt74/HPS_Run2021Pass1_v4/root/ap_pulser_readout_recon_1.root",
+            "ap_pulser_readout_recon_ana.root": "ana/3pt74/HPS_Run2021Pass1_v4/ap_pulser_ana_1.root"
         },
-        "output_dir": "/sdf/home/s/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/output/singles2",
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/singles2and3/low_lumi",
         "job_id": 1
 }

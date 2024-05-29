@@ -1,18 +1,18 @@
-#!/usr/bin/scl enable devtoolset-8 -- /bin/bash
+#!/bin/bash
+#SBATCH --output=/dev/null
 #SBATCH --ntasks=1
 #SBATCH --time=12:00:00
 #SBATCH --mem=1500M
-#SBATCH --array=201-500
-#SBATCH --partition=hps
-#SBATCH --output=/dev/null
+#SBATCH --array=1-50
+#SBATCH --account=HPS:hps-prod
 
 source $HPSMC/install/bin/hps-mc-env.sh
-export LD_LIBRARY_PATH=/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/fs/ddn/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH
 
-export FIRST_ID=0
+export FIRST_ID=650
 export JOB_ID=$(($SLURM_ARRAY_TASK_ID+$FIRST_ID))
 export JOBDIR=$HPSMC/prod/slac/beam/gen
-export RUNDIR=$SCRATCH/beam/gen/$JOB_ID
+export RUNDIR=/fs/ddn/sdf/scratch/s/sgaiser/beam/gen/$JOB_ID
 
 mkdir -p $RUNDIR
 cd $RUNDIR

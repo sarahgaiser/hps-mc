@@ -1,0 +1,6 @@
+{
+    "run_params": ["2pt3"],
+    "detector": ["HPS-PhysicsRun2016-Pass2"],
+    "run_number": [7984],
+    "overlay": ["/org/hps/steering/readout/Overlay2016.lcsim"]
+}

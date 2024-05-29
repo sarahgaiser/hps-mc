@@ -18,12 +18,10 @@
     },
     "year": {{ year }},
     "input_files": {
-        "/sdf/group/hps/mc/ap_beam/full_mc/{{ run_params }}/{{ detector }}/ap_beam_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio": "ap_beam.slcio"
+        "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon/output/recon/{{ run_params }}/{{ detector }}/ap_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio": "ap_beam_readout_recon.slcio"
     },
     "output_files": {
-        "ap_beam_readout.slcio": "readout/{{ run_params }}/{{ detector }}/ap_beam_readout_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio",
-        "ap_beam_readout_recon.slcio": "recon/{{ run_params }}/{{ detector }}/ap_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.slcio",
         "ap_beam_readout_recon.root": "recon/{{ run_params }}/{{ detector }}/root/ap_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.root"
     },
-    "output_dir": "/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon/output"
+    "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon/output"
 }

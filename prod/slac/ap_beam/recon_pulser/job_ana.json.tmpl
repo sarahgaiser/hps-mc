@@ -1,0 +1,26 @@
+{
+    "run_params": "{{ run_params }}",
+    "target_z": {{ target_z }},
+    "beam_energy": {{ beam_energy }},
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "ecal_hit_ecut": {{ ecal_hit_ecut }},
+    "is_data": 0,
+    "steering_files": {
+        "readout": "{{ steering_readout }}",
+        "recon": "{{ steering_recon }}"
+    },
+    "config_files": {
+        "recon": "recoTuple_cfg.py",
+        "ana": "anaVtxTuple_cfg.py"
+    },
+    "year": {{ year }},
+    "input_files": {
+	"/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/3pt74/HPS_Run2021Pass1_v4/signal_spaced/recon/ap_spaced_recon_{{ job_id }}.slcio": "ap_readout_recon.slcio"
+    },
+    "output_files": {
+	"ap_readout_recon.root": "recon/ap_spaced_readout_recon_{{ job_id }}.root",
+        "ap_readout_recon_ana.root": "ana/ap_spaced_ana_{{job_id}}.root"
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/3pt74/HPS_Run2021Pass1_v4/signal_spaced"
+}

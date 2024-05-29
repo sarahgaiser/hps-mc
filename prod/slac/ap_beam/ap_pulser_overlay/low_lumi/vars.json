@@ -1,0 +1,6 @@
+{
+    "run_params": ["3pt74"],
+    "detector": ["HPS_Run2021Pass1_v4"],
+    "run_number": [14229],
+    "overlay": ["/org/hps/steering/readout/Overlay.lcsim"]
+}

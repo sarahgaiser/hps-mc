@@ -1,0 +1,18 @@
+{
+        "run_params": "2pt3",
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim"
+        },
+	"nevents": 5000,
+        "input_files": {
+	    "/sdf/home/s/sgaiser/src/hps-mc/prod/slac/ap_beam/ap_pulser_overlay/test_2016/hps_rndm_7800_test_sum.slcio": "pulser.slcio",
+            "/sdf/group/hps/mc/2pt3_2016/simp/2body/mrhod_60_60_33.3_100/slic/simp_2pt3_994.slcio": "signal_1.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "ap_pulser_spaced_1.slcio"
+        },
+        "output_dir": "output",
+        "job_id": 1
+}

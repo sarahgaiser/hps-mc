@@ -1,0 +1,27 @@
+{
+    "run_params": "{{ run_params }}",
+    "target_z": {{ target_z }},
+    "target_thickness": {{ target_thickness }},
+    "beam_energy": {{ beam_energy }},
+    "num_electrons": {{ num_electrons }},
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "ecal_hit_ecut": {{ ecal_hit_ecut }},
+    "is_data": 0,
+    "steering_files": {
+        "readout": "{{ steering_readout }}",
+        "recon": "{{ steering_recon }}"
+    },
+    "config_files": {
+        "recon": "recoTuple_cfg.py",
+        "ana": "anaVtxTuple_cfg.py"
+    },
+    "year": {{ year }},
+    "input_files": {
+	"/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon/output/recon/{{ run_params }}/{{ detector }}/root/ap_beam_readout_recon_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.root": "ap_beam_readout_recon.root" 
+    },
+    "output_files": {
+        "ap_beam_readout_recon_ana.root": "ana/{{ run_params }}/{{ detector }}/ap_beam_ana_{{ run_params }}_{{ target_and_current }}_{{ job_id }}.root"
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon/output/time_ana"
+}

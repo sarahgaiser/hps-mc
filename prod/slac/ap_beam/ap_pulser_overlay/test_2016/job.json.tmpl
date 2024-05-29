@@ -1,0 +1,16 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "steering_files": {
+        "overlay": "{{ overlay }}"
+    },
+    "input_files": {
+        "/sdf/group/hps/mc/2pt3_2016/simp/2body/mrhod_60_60_33.3_100/slic/simp_2pt3_{{ job_id }}.slcio": "signal_1.slcio",
+        "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14166/hps_rndm_14166_{{ job_id }}.slcio": "pulser.slcio"
+    },
+    "output_files": {
+        "signal_pulser_spaced.slcio": "ap_pulser_spaced_{{ job_id }}.slcio"        
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/{{run_params}}/{{detector}}"
+}

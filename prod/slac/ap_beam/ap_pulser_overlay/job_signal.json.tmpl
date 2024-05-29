@@ -1,0 +1,24 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "ecal_hit_ecut": {{ ecal_hit_ecut }},
+    "is_data": 0,
+    "steering_files": {
+        "readout": "{{ steering_readout }}",
+        "recon": "{{ steering_recon }}"
+    },
+    "year": {{ year }},
+    "input_files": {
+        "/fs/ddn/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_{{ job_id*5-4 }}.slcio": "signal_1.slcio",
+        "/fs/ddn/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_{{ job_id*5-3 }}.slcio": "signal_2.slcio",
+        "/fs/ddn/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_{{ job_id*5-2 }}.slcio": "signal_3.slcio",
+        "/fs/ddn/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_{{ job_id*5-1 }}.slcio": "signal_4.slcio",
+        "/fs/ddn/sdf/group/hps/mc/ap/slic/3pt74/HPS_Run2021Pass1_v4/ap100MeV/lhe_uniform/ap_3pt74_ap100MeV_{{ job_id*5 }}.slcio": "signal_5.slcio"
+    },
+    "output_files": {
+	"signal_readout.slcio": "readout/ap_spaced_readout_{{ job_id }}.slcio",
+	"signal_recon.slcio": "recon/ap_spaced_recon_{{ job_id }}.slcio"        
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/{{ run_params }}/{{ detector }}/signal_spaced"
+}

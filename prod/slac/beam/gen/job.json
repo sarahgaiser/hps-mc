@@ -2,14 +2,14 @@
         "bunches": 250000,
         "nevents": 250000,
         "run_params": "4pt55",
-        "target_thickness": 0.002,
+        "target_thickness": 0.0008,
         "beam_energy": 4550.0,
-        "num_electrons": 1500,
-        "run_number": 1194550,
-        "seed": 2783692,
+        "num_electrons": 625,
+        "run_number": 14168,
+        "seed": 633436,
         "output_files": {
-            "beam.stdhep": "beam_4pt55_1.5stdhep"
+            "beam.stdhep": "beam_4pt55_501.stdhep"
         },
-        "output_dir": "/sdf/group/hps/mc/beam/gen/4pt55",
-        "job_id": 1
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/beam/gen/4pt55",
+        "job_id": 501
 }

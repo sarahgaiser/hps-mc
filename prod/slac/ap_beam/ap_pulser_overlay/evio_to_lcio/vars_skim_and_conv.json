@@ -1,0 +1,7 @@
+{
+    "run_params": ["3pt74"],
+    "detector": ["HPS_Run2021Pass1_v4"],
+    "run_number": [14166],
+    "evio_to_lcio": ["/org/hps/steering/production/RandomTriggerFilter.lcsim"],
+    "year": [2021]
+}

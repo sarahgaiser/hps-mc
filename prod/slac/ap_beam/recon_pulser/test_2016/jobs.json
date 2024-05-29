@@ -1,0 +1,2802 @@
+[
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_1.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_1.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_1.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 1
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_2.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_2.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_2.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 2
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_3.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_3.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_3.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 3
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_4.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_4.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_4.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 4
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_5.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_5.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_5.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 5
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_6.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_6.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_6.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 6
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_7.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_7.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_7.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 7
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_8.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_8.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_8.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 8
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_9.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_9.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_9.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 9
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_10.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_10.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_10.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 10
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_11.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_11.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_11.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 11
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_12.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_12.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_12.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 12
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_13.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_13.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_13.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 13
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_14.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_14.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_14.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 14
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_15.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_15.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_15.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 15
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_16.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_16.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_16.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 16
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_17.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_17.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_17.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 17
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_18.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_18.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_18.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 18
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_19.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_19.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_19.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 19
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_20.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_20.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_20.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 20
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_21.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_21.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_21.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 21
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_22.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_22.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_22.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 22
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_23.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_23.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_23.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 23
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_24.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_24.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_24.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 24
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_25.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_25.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_25.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 25
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_26.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_26.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_26.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 26
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_27.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_27.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_27.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 27
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_28.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_28.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_28.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 28
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_29.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_29.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_29.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 29
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_30.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_30.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_30.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 30
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_31.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_31.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_31.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 31
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_32.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_32.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_32.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 32
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_33.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_33.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_33.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 33
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_34.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_34.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_34.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 34
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_35.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_35.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_35.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 35
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_36.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_36.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_36.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 36
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_37.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_37.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_37.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 37
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_38.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_38.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_38.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 38
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_39.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_39.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_39.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 39
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_40.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_40.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_40.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 40
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_41.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_41.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_41.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 41
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_42.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_42.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_42.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 42
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_43.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_43.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_43.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 43
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_44.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_44.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_44.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 44
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_45.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_45.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_45.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 45
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_46.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_46.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_46.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 46
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_47.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_47.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_47.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 47
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_48.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_48.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_48.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 48
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_49.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_49.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_49.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 49
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_50.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_50.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_50.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 50
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_51.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_51.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_51.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 51
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_52.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_52.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_52.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 52
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_53.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_53.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_53.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 53
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_54.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_54.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_54.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 54
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_55.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_55.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_55.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 55
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_56.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_56.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_56.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 56
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_57.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_57.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_57.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 57
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_58.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_58.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_58.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 58
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_59.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_59.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_59.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 59
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_60.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_60.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_60.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 60
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_61.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_61.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_61.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 61
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_62.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_62.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_62.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 62
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_63.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_63.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_63.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 63
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_64.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_64.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_64.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 64
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_65.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_65.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_65.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 65
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_66.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_66.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_66.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 66
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_67.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_67.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_67.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 67
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_68.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_68.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_68.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 68
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_69.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_69.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_69.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 69
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_70.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_70.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_70.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 70
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_71.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_71.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_71.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 71
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_72.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_72.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_72.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 72
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_73.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_73.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_73.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 73
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_74.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_74.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_74.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 74
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_75.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_75.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_75.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 75
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_76.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_76.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_76.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 76
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_77.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_77.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_77.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 77
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_78.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_78.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_78.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 78
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_79.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_79.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_79.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 79
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_80.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_80.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_80.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 80
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_81.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_81.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_81.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 81
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_82.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_82.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_82.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 82
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_83.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_83.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_83.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 83
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_84.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_84.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_84.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 84
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_85.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_85.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_85.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 85
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_86.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_86.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_86.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 86
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_87.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_87.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_87.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 87
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_88.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_88.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_88.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 88
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_89.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_89.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_89.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 89
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_90.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_90.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_90.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 90
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_91.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_91.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_91.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 91
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_92.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_92.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_92.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 92
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_93.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_93.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_93.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 93
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_94.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_94.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_94.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 94
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_95.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_95.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_95.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 95
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_96.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_96.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_96.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 96
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_97.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_97.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_97.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 97
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_98.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_98.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_98.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 98
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_99.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_99.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_99.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 99
+    },
+    {
+        "run_params": "2pt3",
+        "target_z": 0.0,
+        "beam_energy": 2300.0,
+        "run_number": 7984,
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "ecal_hit_ecut": 0.05,
+        "is_data": 0,
+        "steering_files": {
+            "readout": "/org/hps/steering/readout/PhysicsRun2016TrigPairWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2016FullReconMC_KF_TrackClusterMatcher.lcsim"
+        },
+        "config_files": {
+            "recon": "recoTuple_cfg.py",
+            "ana": "anaVtxTuple_cfg.py"
+        },
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/ap_beam/pulser_data/2pt3/HPS-PhysicsRun2016-Pass2": "ap_pulser.slcio"
+        },
+        "output_files": {
+            "ap_pulser_readout.slcio": "readout/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_100.slcio",
+            "ap_pulser_readout_recon.slcio": "recon/2pt3/HPS-PhysicsRun2016-Pass2/ap_pulser_readout_recon_100.slcio",
+            "ap_pulser_readout_recon.root": "recon/2pt3/HPS-PhysicsRun2016-Pass2/root/ap_pulser_readout_recon_100.root"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/users/sgaiser/src/hps-mc/prod/slac/ap_beam/recon_pulser/pairTrig",
+        "job_id": 100
+    }
+]

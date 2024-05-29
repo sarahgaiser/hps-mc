@@ -30,7 +30,7 @@ job.ptag('hpstr_ana', '%s_filt_readout_recon_ana.root' % output_base)
 
 ## Count initial events
 count_initial = LCIOCount()
-job.add([count_initial])
+#job.add([count_initial])
 
 ## Insert empty bunches expected by pile-up simulation
 if filter_bunches:
@@ -53,5 +53,6 @@ cnv = HPSTR(cfg='recon')
 ## Run an analysis on the ROOT file
 ana = HPSTR(cfg='ana')
 
-job.add([readout, count_readout, reco, count_reco, cnv])
+#job.add([readout, count_readout, reco, count_reco, cnv, ana])
+job.add([ana])
 # , cnv, ana])

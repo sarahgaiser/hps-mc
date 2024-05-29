@@ -1,0 +1,26 @@
+{
+        "detector": "HPS-PhysicsRun2016-Pass2",
+        "run_number": 7800,
+        "steering_files": {
+            "recon": "/org/hps/steering/production/RandomTriggerFilter.lcsim"
+        },
+        "is_data": 1,
+        "year": 2016,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.0": "data_events1.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.1": "data_events2.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.10": "data_events3.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.100": "data_events4.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.102": "data_events5.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.103": "data_events6.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.104": "data_events7.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.105": "data_events8.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.106": "data_events9.evio",
+            "/fs/ddn/sdf/group/hps/data/physrun2016/hps_007800/hps_007800.evio.107": "data_events10.evio"
+        },
+        "output_files": {
+            "data_events.slcio": "hps_rndm_7800_1.slcio"
+        },
+        "output_dir": "test",
+        "job_id": 1
+}

@@ -1,1 +1,1 @@
-hps-mc-job run -d $PWD/scratch ./signal_pulser_overlay_to_recon_job.py job.json
+hps-mc-job run -d $PWD/scratch $PWD/space_signal_job.py job.json

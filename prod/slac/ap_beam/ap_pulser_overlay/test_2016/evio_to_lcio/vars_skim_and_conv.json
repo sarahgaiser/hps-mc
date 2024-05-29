@@ -1,0 +1,7 @@
+{
+    "run_params": ["2pt3"],
+    "detector": ["HPS-PhysicsRun2016-Pass2"],
+    "run_number": [7800],
+    "evio_to_lcio": ["/org/hps/steering/production/RandomTriggerFilter.lcsim"],
+    "year": [2016]
+}
