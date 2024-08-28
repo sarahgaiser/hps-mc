@@ -1,7 +1,9 @@
 {
     "run_params": ["3pt74"],
-    "detector": ["HPS_Run2021Pass1_v4"],
+    "detector": ["HPS_Run2021Pass1_v4newBot"],
     "run_number": [14229],
     "evio_to_lcio": ["/org/hps/steering/production/Evio2LcioCnv.lcsim"],
-    "overlay": ["/org/hps/steering/readout/Overlay.lcsim"]
+    "overlay": ["/org/hps/steering/readout/Overlay.lcsim"],
+    "recon": ["/org/hps/steering/recon/PhysicsRun2019MCRecon_KF.lcsim"],
+    "readout": ["/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim"]
 }

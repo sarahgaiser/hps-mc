@@ -1,0 +1,17 @@
+{
+        "detector": "HPS_Run2021Pass1_v4",
+        "run_number": 14166,
+        "steering_files": {
+            "recon": "/org/hps/steering/production/RandomTriggerFilter.lcsim"
+        },
+        "is_data": 1,
+        "year": 2021,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/data/physrun2021/hps_014166/hps_014166.evio.00000": "data_events.evio"
+        },
+        "output_files": {
+            "data_events.slcio": "hps_rndm_014166_1.slcio"
+        },
+        "output_dir": "test",
+        "job_id": 1
+}

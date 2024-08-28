@@ -7,12 +7,12 @@
     "run_number": {{ run_number }},
     "target_z": {{ target_z }},
     "detector": "{{ detector }}",
-    "seed": {{ 10399311 + job_id }},
+    "seed": {{ 59311 + job_id }},
     "input_files": {
-        "/sdf/group/hps/mc/tritrig/gen/{{ run_params }}/tritrig_{{ run_params }}_{{ job_id }}.lhe.gz": "tritrig_unweighted_events.lhe.gz"
+        "/fs/ddn/sdf/group/hps/mc/tritrig/gen/{{ run_params }}/tritrig_{{ run_params }}_{{ job_id }}.lhe.gz": "tritrig_unweighted_events.lhe.gz"
     },
     "output_files": {
         "tritrig_mom_rot.slcio": "tritrig_{{ run_params }}_{{ target_and_current }}_rot_{{ job_id }}.slcio"
     },
-    "output_dir": "/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ detector }}"
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ target_and_current }}/{{ detector }}"
 }

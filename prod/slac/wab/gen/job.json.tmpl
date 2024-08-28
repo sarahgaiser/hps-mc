@@ -1,0 +1,13 @@
+{
+    "nevents": {{ nevents }},
+    "run_params": "{{ run_params }}",
+    "target_thickness": {{ target_thickness }},
+    "beam_energy": {{ beam_energy }},
+    "num_electrons": {{ num_electrons }},
+    "param_card": "{{ param_card }}",
+    "seed": {{ 4475 + job_id }},
+    "output_files": {
+        "wab_unweighted_events.lhe.gz": "wab_{{ run_params }}_{{ job_id }}.lhe.gz"
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/wab/gen/{{ run_params }}/"
+}

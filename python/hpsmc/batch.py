@@ -380,7 +380,8 @@ class Slurm(BatchSystem):
         log_file = self._logfile(job_id)
         sbatch_cmd = ['sbatch',
                       '--time=%s' % (str(self.job_length) + ':00:00'),
-                      '--partition=%s' % self._default_queue(),
+                      #'--partition=%s' % self._default_queue(),
+                      '--account=%s' % self._default_queue(),
                       '--mem=%sM' % self.memory,
                       '--job-name=%i_%s' % (job_id, self.script_name),
                       '--output=%s.out' % log_file,

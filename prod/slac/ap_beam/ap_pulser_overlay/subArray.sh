@@ -4,6 +4,7 @@
 #SBATCH --mem=1500M
 #SBATCH --array=1-20
 #SBATCH --account=HPS:hps-prod
+#SBATCH --output=/dev/null
 
 source $HPSMC/install/bin/hps-mc-env.sh
 export LD_LIBRARY_PATH=/fs/ddn/sdf/group/hps/users/bravo/src/gsl-2.6/install/lib:$LD_LIBRARY_PATH
@@ -16,8 +17,8 @@ export RUNDIR=/fs/ddn/sdf/scratch/s/sgaiser/ap_beam/pulser_overlay/$JOB_ID
 mkdir -p $RUNDIR
 cd $RUNDIR
 
-#/bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} ${JOBDIR}/signal_pulser_overlay_to_recon_job.py $JOBDIR/jobs.json > $RUNDIR/../logs/job.${JOB_ID}.log
-/bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} ${JOBDIR}/space_signal_job.py $JOBDIR/jobs.json > $RUNDIR/../logs/job.${JOB_ID}.log
+/bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} ${JOBDIR}/signal_pulser_overlay_to_recon_job.py $JOBDIR/jobs.json > $RUNDIR/../logs/job.${JOB_ID}.log
+#/bin/python3 $HPSMC_DIR/lib/python/hpsmc/job.py run -d $RUNDIR -c $JOBDIR/.hpsmc -i ${JOB_ID} ${JOBDIR}/space_signal_job.py $JOBDIR/jobs.json > $RUNDIR/../logs/job.${JOB_ID}.log
 
 # HPSMC points to hps-mc directory. You might need to set this variable before running this script.
 #SBATCH --output=/dev/null

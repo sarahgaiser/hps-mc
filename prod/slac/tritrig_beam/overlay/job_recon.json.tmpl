@@ -1,0 +1,23 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "steering_files": {
+        "overlay": "{{ overlay }}",
+	"readout": "{{ readout }}",
+	"recon": "{{ recon }}"
+    },
+    "config_files": {
+        "cnv": "{{ cnv }}",
+        "ana": "{{ ana }}"
+    },
+    "year": "{{ year }}",
+    "input_files": {
+    	"/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/double_bkg/20um120nA/HPS_Run2021Pass1_v4newBot/recon/tritrig_pulser_recon_{{ run_params }}_double_bkg_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio": "signal_pulser_recon.slcio"
+    },
+    "output_files": {
+        "signal_pulser_recon.root": "recon/root/tritrig_pulser_recon_{{ run_params }}_double_bkg_{{ target_and_current }}_{{ detector }}_{{ job_id }}.root",
+	"signal_pulser_recon_ana.root": "ana/tritrig_pulser_ana_{{ run_params }}_double_bkg_{{ target_and_current }}_{{ detector }}_{{ job_id }}.root"
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/{{ run_params }}/double_bkg/{{ target_and_current }}/{{ detector }}"
+}

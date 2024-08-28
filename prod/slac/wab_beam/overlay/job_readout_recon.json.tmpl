@@ -1,0 +1,24 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "steering_files": {
+	"readout": "{{ readout }}",
+	"recon": "{{ recon }}"
+    },
+    "config_files": {
+        "cnv": "{{ cnv }}",
+        "ana": "{{ ana }}"
+    },
+    "year": "{{ year }}",
+    "input_files": {
+    	"/fs/ddn/sdf/group/hps/mc/wab_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/wab_pulser_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio": "signal_pulser.slcio"
+    },
+    "output_files": {
+	"signal_pulser_readout.slcio": "readout/wab_pulser_readout_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio",
+        "signal_pulser_recon.slcio": "recon/wab_pulser_recon_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio",
+	"signal_pulser_recon.root": "recon/root/wab_pulser_recon_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.root",
+	"signal_pulser_recon_ana.root": "ana/wab_pulser_ana_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.root"
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/wab_beam/{{ run_params }}/{{ target_and_current }}/{{ detector }}"
+}

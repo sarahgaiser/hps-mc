@@ -1,0 +1,14 @@
+{
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "param_card": "MG_mini_WAB/AP_6W_XSec2_HallB/Cards/param_card.dat",
+        "seed": 74876,
+        "output_files": {
+            "wab_unweighted_events.lhe.gz": "wab_3pt74_1.lhe.gz"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/wab/gen/3pt74/",
+        "job_id": 1
+}

@@ -1,0 +1,582 @@
+[
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_1.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_2.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_3.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_4.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_5.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_6.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_7.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_8.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_9.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_10.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_1.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_1.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_1.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 1
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_11.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_12.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_13.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_14.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_15.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_16.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_17.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_18.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_19.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_20.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_2.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_2.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_2.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 2
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_21.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_22.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_23.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_24.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_25.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_26.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_27.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_28.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_29.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_30.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_3.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_3.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_3.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 3
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_31.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_32.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_33.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_34.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_35.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_36.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_37.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_38.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_39.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_40.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_4.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_4.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_4.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 4
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_41.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_42.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_43.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_44.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_45.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_46.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_47.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_48.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_49.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_50.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_5.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_5.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_5.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 5
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_51.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_52.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_53.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_54.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_55.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_56.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_57.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_58.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_59.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_60.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_6.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_6.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_6.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 6
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_61.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_62.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_63.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_64.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_65.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_66.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_67.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_68.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_69.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_70.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_7.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_7.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_7.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 7
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_71.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_72.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_73.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_74.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_75.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_76.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_77.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_78.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_79.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_80.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_8.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_8.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_8.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 8
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_81.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_82.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_83.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_84.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_85.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_86.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_87.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_88.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_89.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_90.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_9.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_9.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_9.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 9
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_91.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_92.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_93.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_94.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_95.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_96.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_97.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_98.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_99.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_100.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_10.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_10.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_10.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 10
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_101.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_102.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_103.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_104.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_105.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_106.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_107.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_108.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_109.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_110.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_11.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_11.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_11.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 11
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_111.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_112.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_113.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_114.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_115.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_116.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_117.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_118.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_119.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_120.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_12.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_12.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_12.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 12
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_121.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_122.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_123.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_124.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_125.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_126.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_127.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_128.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_129.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_130.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_13.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_13.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_13.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 13
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_131.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_132.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_133.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_134.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_135.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_136.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_137.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_138.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_139.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_140.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_14.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_14.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_14.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 14
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_141.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_142.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_143.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_144.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_145.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_146.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_147.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_148.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_149.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_150.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_15.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_15.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_15.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 15
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_151.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_152.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_153.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_154.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_155.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_156.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_157.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_158.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_159.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_160.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_16.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_16.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_16.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 16
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_161.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_162.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_163.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_164.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_165.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_166.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_167.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_168.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_169.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_170.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_17.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_17.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_17.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 17
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_171.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_172.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_173.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_174.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_175.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_176.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_177.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_178.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_179.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_180.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_18.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_18.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_18.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 18
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_181.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_182.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_183.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_184.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_185.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_186.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_187.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_188.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_189.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_190.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_19.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_19.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_19.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 19
+    },
+    {
+        "run_params": "3pt74",
+        "run_number": 14229,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "steering_files": {
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon.lcsim"
+        },
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_191.slcio": "signal_1.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_192.slcio": "signal_2.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_193.slcio": "signal_3.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_194.slcio": "signal_4.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_195.slcio": "signal_5.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_196.slcio": "signal_6.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_197.slcio": "signal_7.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_198.slcio": "signal_8.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_199.slcio": "signal_9.slcio",
+            "/fs/ddn/sdf/group/hps/mc/tritrig/slic/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot/tritrig_3pt74_20um120nA_rot_200.slcio": "signal_10.slcio",
+            "/fs/ddn/sdf/group/hps/mc/beam/cnv/2021/14229/hps_rndm_014229_20.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_spaced.slcio": "tritrig_pulser_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_20.slcio",
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_3pt74_20um120nA_HPS_Run2021Pass1_v4newBot_20.slcio"
+        },
+        "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/3pt74/20um120nA/HPS_Run2021Pass1_v4newBot",
+        "job_id": 20
+    }
+]

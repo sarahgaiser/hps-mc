@@ -1,0 +1,9 @@
+{
+    "nevents": [10000],
+    "run_params": ["3pt74"],
+    "target_thickness": [0.002],
+    "beam_energy": [3740.00],
+    "num_electrons": [1500],
+    "param_card": ["MG_mini_WAB/AP_6W_XSec2_HallB/Cards/param_card.dat"],
+    "year": [2021]
+}

@@ -1,0 +1,25 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "steering_files": {
+        "overlay": "{{ overlay }}",
+	"readout": "{{ readout }}",
+	"recon": "{{ recon }}"
+    },
+    "year": {{ year }},
+    "input_files": {
+	"/fs/ddn/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ target_and_current }}/{{ detector }}/tritrig_{{ run_params }}_{{ target_and_current }}_rot_{{ job_id*5-4 }}.slcio": "signal_1.slcio",
+        "/fs/ddn/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ target_and_current }}/{{ detector }}/tritrig_{{ run_params }}_{{ target_and_current }}_rot_{{ job_id*5-3 }}.slcio": "signal_2.slcio",
+        "/fs/ddn/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ target_and_current }}/{{ detector }}/tritrig_{{ run_params }}_{{ target_and_current }}_rot_{{ job_id*5-2 }}.slcio": "signal_3.slcio",
+        "/fs/ddn/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ target_and_current }}/{{ detector }}/tritrig_{{ run_params }}_{{ target_and_current }}_rot_{{ job_id*5-1 }}.slcio": "signal_4.slcio",
+        "/fs/ddn/sdf/group/hps/mc/tritrig/slic/{{ run_params }}/{{ target_and_current }}/{{ detector }}/tritrig_{{ run_params }}_{{ target_and_current }}_rot_{{ job_id*5 }}.slcio": "signal_5.slcio",
+        "/fs/ddn/sdf/group/hps/mc/beam/cnv/2019/10676/added/hps_rndm_10676_sum_{{ job_id % 6 + 1}}.slcio": "pulser.slcio"
+    },
+    "output_files": {
+        "signal_pulser_spaced.slcio": "tritrig_pulser_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio",
+	"signal_pulser_readout.slcio": "readout/tritrig_pulser_readout_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio",
+	"signal_pulser_recon.slcio": "recon/tritrig_pulser_recon_{{ run_params }}_{{ target_and_current }}_{{ detector }}_{{ job_id }}.slcio"
+    },
+    "output_dir": "/fs/ddn/sdf/group/hps/mc/tritrig_beam/{{ run_params }}/{{ target_and_current }}/{{ detector }}"
+}

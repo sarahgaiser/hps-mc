@@ -1,0 +1,7 @@
+{
+    "run_params": ["4pt55"],
+    "detector": ["HPS_2019Pass3_iter6"],
+    "run_number": [10676],
+    "evio_to_lcio": ["/org/hps/steering/production/RandomTriggerFilter.lcsim"],
+    "year": [2019]
+}

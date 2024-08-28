@@ -1,0 +1,21 @@
+{
+        "nevents": 10000,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "seed": 5327,
+        "detector": "HPS_Run2021Pass1_v4newBot",
+        "target_z": 0.0,
+        "run_number": 1194550,
+        "year": 2021,
+	"nevents": 10000,
+        "input_files": {
+            "/fs/ddn/sdf/group/hps/mc/wab/gen/3pt74/wab_3pt74_2.lhe.gz": "wab_events.lhe.gz"
+        },
+        "output_files": {
+            "wab_mom_rot.slcio": "wab_3pt74_20um120nA_rot_2.slcio"
+        },
+        "output_dir": "output",
+        "job_id": 1
+}

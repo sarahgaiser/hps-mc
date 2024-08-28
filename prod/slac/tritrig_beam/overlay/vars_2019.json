@@ -1,0 +1,11 @@
+{
+    "run_params": ["4pt55"],
+    "detector": ["HPS_2019Pass3_iter6"],
+    "run_number": [10676],
+    "year": [2019],
+    "target_and_current": ["20um120nA"],
+    "evio_to_lcio": ["/org/hps/steering/production/Evio2LcioCnv.lcsim"],
+    "overlay": ["/org/hps/steering/readout/Overlay.lcsim"],
+    "recon": ["/org/hps/steering/recon/PhysicsRun2019MCRecon_KF.lcsim"],
+    "readout": ["/org/hps/steering/readout/PhysicsRun2019TrigSinglesWithPulserDataMerging.lcsim"]
+}

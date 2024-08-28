@@ -83,7 +83,7 @@ recon = JobManager(steering='recon',
 count_recon = LCIOCount(inputs=recon.output_files())
 
 ## Add the components
-#job.add([filter_events, count_filter, count_pulser, overlay, space_overlay,
-#         count_space_overlay])
-job.add([space_overlay, count_space_overlay])
+job.add([filter_events, count_filter, count_pulser, overlay, space_overlay,
+         count_space_overlay, readout, recon])
+#job.add([space_overlay, count_space_overlay])
 
