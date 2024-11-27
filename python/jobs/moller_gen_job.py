@@ -17,7 +17,7 @@ else:
     nevents = 250000
 
 ## Generate beam
-egs5 = EGS5(name="moller_v3")
+egs5 = EGS5(name="moller_v4")
 
 ## Rotate events into beam coordinates
 rot = BeamCoords()

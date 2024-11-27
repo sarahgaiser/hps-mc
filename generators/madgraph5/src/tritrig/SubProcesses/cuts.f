@@ -366,7 +366,7 @@ c      goto 777
 c logical variables for lepton cuts    
       tripass=.false.
       pairpass=.false.
-      pairpass2=.false.
+      pairpass2=.true.
       passlp=.false.
       passonelm=.false.
 c ....initialize some variables
