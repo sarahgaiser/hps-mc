@@ -142,7 +142,7 @@
  0.0 = thetayminanyl     ! min angle (y direction) for at least one l
  100.0 = thetaymaxanyl   ! max angle (y direction) for at least one l
 
- 0.5 = eltot          ! min total E for l+l- pair
+ 0.7 = eltot          ! min total E for l+l- pair
  0.01 = mmeemin        ! min invariant mass for l+l- pair
  100.0 = mmeemax       ! max invariant mass for l+l- pair
  0.01 = thetaratiomin   ! min ratio of abs(theta_e+/theta_e-)
