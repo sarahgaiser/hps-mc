@@ -7,8 +7,8 @@ from hpsmc.tools import EvioToLcio, HPSTR
 
 job.description = 'EVIO converter'
 
-cnv = EvioToLcio(steering='recon')
+cnv = EvioToLcio(steering='evio_to_lcio')
 
-tuple = HPSTR(run_mode=1, cfg='recon')
+tuple = HPSTR(run_mode=1, cfg='cnv')
 
 job.add([cnv, tuple])
