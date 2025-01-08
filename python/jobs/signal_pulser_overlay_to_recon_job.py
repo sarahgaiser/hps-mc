@@ -74,7 +74,7 @@ count_space_overlay = LCIOCount(inputs=space_overlay.output_files())
 ## Run simulated events in readout to generate triggers
 readout = JobManager(steering='readout',
                      #inputs=['signal_pulser_spaced.slcio'],
-                     inputs=space_overlay.output_files(),
+                     inputs=overlay.output_files(),
                      outputs=['%s_readout.slcio' % signal_pulser_name])
 
 ## Print number of readout events
@@ -93,6 +93,8 @@ cnv = HPSTR(inputs=recon.output_files(), cfg='cnv')
 
 ## Add the components
 #job.add([filter_events, count_filter, evio_to_lcio, count_pulser, overlay, space_overlay,
-job.add([filter_events, count_filter, count_pulser, overlay, space_overlay,    
-         count_space_overlay, readout, count_readout, recon, count_recon, cnv])
+#job.add([filter_events, count_filter, count_pulser, overlay, space_overlay,    
+#         count_space_overlay, readout, count_readout, recon, count_recon, cnv])
+job.add([filter_events, count_filter, count_pulser, overlay, 
+         readout, count_readout, recon, count_recon, cnv])
 #job.add([readout, count_readout, recon, count_recon, cnv])
