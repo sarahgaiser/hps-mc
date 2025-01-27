@@ -1,3 +1,6 @@
+[SLIC]
+detector_dir = /fs/ddn/sdf/group/hps/users/mgignac/software/hps-java/detector-data/detectors
+
 [Job]
 dry_run = False 
 enable_file_chaining = True 
