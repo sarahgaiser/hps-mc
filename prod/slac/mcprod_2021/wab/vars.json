@@ -1,5 +1,5 @@
 {
-    "run_number": [14185],
+    "run_number": [14700],
     "bunches": [10000],
     "nevents": [10000],
     "run_params": ["3pt74"],
@@ -14,5 +14,5 @@
     "beam_rot_x": [0.0],
     "beam_rot_y": [0.0305],
     "beam_rot_z": [0.0],
-    "detector": ["HPS_Run2021Pass1_v4newBot"]
+    "detector": ["HPS_Run2021Pass1_template_v6"]
 }
