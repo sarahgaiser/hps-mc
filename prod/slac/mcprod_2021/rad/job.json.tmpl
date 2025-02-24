@@ -2,7 +2,7 @@
     "run_number": {{ run_number }},
     "bunches": {{ bunches }},
     "nevents": {{ nevents }},
-    "seed": {{ 42 + job_id + 10000 }},
+    "seed": {{ 42 + job_id }},
     "run_params": "{{ run_params }}",
     "target_thickness": {{ target_thickness }},
     "beam_energy": {{ beam_energy }},
@@ -17,8 +17,8 @@
     "beam_rot_z": {{ beam_rot_z }},
     "detector": "{{ detector }}",
     "output_files": {
-        "tritrig_mom.stdhep": "tritrig_{{ run_params }}_mom_{{ job_id + 10000 }}.stdhep",
-	"tritrig_mom_rot.slcio": "slic/tritrig_{{ run_params }}_mom_rot_{{ job_id + 10000 }}.slcio"
+        "rad_mom.stdhep": "rad_{{ run_params }}_mom_{{ job_id }}.stdhep",
+	"rad_mom_rot.slcio": "slic/rad_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
     },
-    "output_dir": "/sdf/data/hps/physics2021/mc/gen/tritrig/pass01/"
+    "output_dir": "/sdf/data/hps/physics2021/mc/gen/rad/pass01/"
 }
