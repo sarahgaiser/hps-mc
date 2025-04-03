@@ -56,7 +56,6 @@ count_pulser = LCIOCount(inputs=evio_to_lcio.output_files())
 overlay = JobManager(steering='overlay',
                      inputs=filter_events.output_files(),
                      overlay_file=pulser_file_name[0],
-                     overlay_file='pulser.slcio',
                      outputs=['%s.slcio' % signal_pulser_name])
 
 ## Space overlaid events
