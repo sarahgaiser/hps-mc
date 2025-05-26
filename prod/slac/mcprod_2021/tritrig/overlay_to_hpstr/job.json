@@ -1,0 +1,27 @@
+{
+        "run_params": "3pt74",
+        "run_number": 14700,
+        "detector": "HPS_Run2021Pass1_template_v7",
+        "steering_files": {
+            "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
+            "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+            "readout": "/org/hps/steering/readout/PhysicsRun2021TrigSinglesWithPulserDataMerging.lcsim",
+            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon_KF_WithSpacing_pass2.lcsim"
+        },
+        "config_files": {
+            "cnv": "recoTuple_cfg.py"
+        },
+        "is_data": 0,
+        "year": 2021,
+        "input_files": {
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v7/slic/tritrig_3pt74_mom_rot_1.slcio": "signal_1.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/pulser/pulser_1.slcio": "pulser.slcio"
+        },
+        "output_files": {
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser_1.slcio",
+            "signal_pulser_recon.slcio": "recon/tritrig_pulser_1.slcio",
+            "signal_pulser_recon.root": "recon/tritrig_pulser_1.root"
+        },
+        "output_dir": "output",
+        "job_id": 1
+}
