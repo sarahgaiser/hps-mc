@@ -17,7 +17,8 @@ else:
 mg = MG5(name='tritrig')
 
 ## Unzip the LHE events to a local file
-unzip = Unzip(inputs=mg.output_files())
+#unzip = Unzip(inputs=mg.output_files())
+unzip = Unzip(inputs=["tritrig_unweighted_events.lhe.gz"])
 
 ## Convert LHE output to stdhep
 cnv = StdHepConverter(inputs=mg.output_files(),
@@ -40,4 +41,5 @@ slic = SLIC(inputs=['tritrig_mom_rot.stdhep'],
             nevents=nevents + 1)
 
 ## Run the job
-job.add([mg, unzip, cnv, mom, rot, slic])
+#job.add([mg, unzip, cnv, mom, rot, slic])
+job.add([unzip, cnv, mom, rot, slic])

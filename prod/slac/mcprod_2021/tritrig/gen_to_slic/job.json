@@ -1,7 +1,7 @@
 {
         "run_number": 14700,
-        "bunches": 1000,
-        "nevents": 1000,
+        "bunches": 10000,
+        "nevents": 10000,
         "seed": 43,
         "run_params": "3pt74",
         "target_thickness": 0.002,
@@ -9,17 +9,19 @@
         "num_electrons": 1500,
         "target_x": 0.0,
         "target_y": 0.0,
-        "target_z": 0.9,
+        "target_z": 0.5,
         "beam_sigma_x": 0.3,
         "beam_sigma_y": 0.02,
         "beam_rot_x": 0.0,
         "beam_rot_y": 0.0305,
         "beam_rot_z": 0.0,
-        "detector": "HPS_Run2021Pass1_template_v7",
+        "detector": "HPS_Run2021Pass1_v8beta_template",
+        "input_files": {
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/lhe/tritrig_3pt74_unweighted_events_1.lhe.gz": "tritrig_unweighted_events.lhe.gz"
+        },
         "output_files": {
-            "tritrig_unweighted_events.lhe.gz": "lhe/tritrig_3pt74_unweighted_events.lhe.gz",
-            "tritrig_mom.stdhep": "tritrig_3pt74_mom_10001.stdhep",
-            "tritrig_mom_rot.slcio": "slic/tritrig_3pt74_mom_rot_10001.slcio"
+            "tritrig_mom.stdhep": "pass_v8beta/tritrig_3pt74_mom_1.stdhep",
+            "tritrig_mom_rot.slcio": "pass_v8beta/slic/tritrig_3pt74_mom_rot_1.slcio"
         },
         "output_dir": "output",
         "job_id": 1
