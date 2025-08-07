@@ -1,0 +1,30 @@
+{% set num = (job_id - 1)/2000 %}
+{% set dir_num = num | int %}
+{
+    "run_number": {{ run_number }},
+    "bunches": {{ bunches }},
+    "nevents": {{ nevents }},
+    "seed": {{ 42 + job_id }},
+    "run_params": "{{ run_params }}",
+    "target_thickness": {{ target_thickness }},
+    "beam_energy": {{ beam_energy }},
+    "num_electrons": {{ num_electrons }},
+    "target_x": {{ target_x }},
+    "target_y": {{ target_y }},
+    "target_z": {{ target_z }},
+    "beam_sigma_x": {{ beam_sigma_x }},
+    "beam_sigma_y": {{ beam_sigma_y }},
+    "beam_rot_x": {{ beam_rot_x }},
+    "beam_rot_y": {{ beam_rot_y }},
+    "beam_rot_z": {{ beam_rot_z }},
+    "detector": "{{ detector }}",
+    "ap_decay_dist": "{{ ap_decay_dist }}",
+    "apmass": {{ apmass }}, 
+    "input_files": {
+	"/sdf/data/hps/physics2021/mc/gen/ap/pass_v7/{{ run_params }}/ap{{ apmass }}MeV/lhe/ap_{{ apmass }}_{{ run_params }}_unweighted_events_{{ job_id }}.lhe.gz": "ap_unweighted_events.lhe.gz"
+    },
+    "output_files": {
+	"ap.slcio": "slic/{{ detector }}/{{ dir_num + 1 }}/ap_{{ apmass }}_{{ run_params }}_{{ ap_decay_dist }}_mom_rot_{{ job_id }}.slcio"
+    },
+    "output_dir": "/sdf/data/hps/physics2021/mc/gen/ap/pass_v8beta/{{ run_params }}/ap{{ apmass }}MeV"
+}

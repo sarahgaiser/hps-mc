@@ -13,4 +13,4 @@ cnv = HPSTR(cfg='cnv')
 ## Run an analysis on the ROOT file
 ana = HPSTR(cfg='ana')
 
-job.add([ana])
+job.add([cnv, ana])
