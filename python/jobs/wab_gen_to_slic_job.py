@@ -30,4 +30,4 @@ rot = BeamCoords()
 slic = SLIC(nevents=nevents + 1)
 
 ## run the job
-job.add([mg, cnv, mom, rot, slic])
+job.add([cnv, mom, rot, slic])

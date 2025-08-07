@@ -14,5 +14,5 @@
     "beam_rot_x": [0.0],
     "beam_rot_y": [0.0305],
     "beam_rot_z": [0.0],
-    "detector": ["HPS_Run2021Pass1_v8beta_template"]
+    "detector": ["HPS_Run2021Pass1_v8beta_14272"]
 }

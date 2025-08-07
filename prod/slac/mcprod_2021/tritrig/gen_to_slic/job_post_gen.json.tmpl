@@ -1,3 +1,5 @@
+{% set num = (job_id - 1)/2000 %}
+{% set dir_num = num | int %}
 {
     "run_number": {{ run_number }},
     "bunches": {{ bunches }},
@@ -20,8 +22,7 @@
 	"/sdf/data/hps/physics2021/mc/gen/tritrig/lhe/tritrig_{{ run_params }}_unweighted_events_{{ job_id }}.lhe.gz": "tritrig_unweighted_events.lhe.gz"
     },
     "output_files": {
-        "tritrig_mom.stdhep": "pass_v8beta/{{ detector }}/tritrig_{{ run_params }}_mom_{{ job_id }}.stdhep",
-	"tritrig_mom_rot.slcio": "pass_v8beta/{{ detector }}/slic/tritrig_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
+	"tritrig_mom_rot.slcio": "pass_v8beta/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/gen/tritrig/"
 }
