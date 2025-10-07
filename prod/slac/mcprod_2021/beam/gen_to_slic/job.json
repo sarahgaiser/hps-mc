@@ -1,0 +1,24 @@
+{
+        "bunches": 2500,
+        "nevents": 2500,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "target_x": 0.0,
+        "target_y": 0.0,
+        "target_z": -0.5,
+        "beam_sigma_x": 0.3,
+        "beam_sigma_y": 0.02,
+        "beam_rot_x": 0.0,
+        "beam_rot_y": 0.0305,
+        "beam_rot_z": 0.0,
+        "detector": "HPS_Run2021Pass1_v8beta_14272",
+        "run_number": 14272,
+        "seed": 43,
+        "output_files": {
+            "beam_rot_sampled.slcio": "pass_v8beta/HPS_Run2021Pass1_v8beta_14272/slic/1/beam_rot_3pt74_1.slcio"
+        },
+        "output_dir": "output",
+        "job_id": 1
+}

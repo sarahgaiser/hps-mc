@@ -6,7 +6,7 @@
         "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
         "overlay": "/org/hps/steering/readout/Overlay.lcsim",
         "readout": "/org/hps/steering/readout/PhysicsRun2021TrigSinglesWithPulserDataMerging.lcsim",
-        "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon_KF_WithSpacing_pass2.lcsim"
+        "recon": "/org/hps/steering/recon/PhysicsRun2021MCRecon_KF_WithSpacing_pass3.lcsim"
     },
     "config_files": {
         "cnv": "recoTuple_cfg.py",
@@ -19,10 +19,6 @@
         "{{ input_files['ap'][1] }}": "signal_2.slcio",
         "{{ input_files['ap'][2] }}": "signal_3.slcio",
         "{{ input_files['ap'][3] }}": "signal_4.slcio",
-        "{{ input_files['ap'][4] }}": "signal_5.slcio",
-        "{{ input_files['ap'][5] }}": "signal_6.slcio",
-        "{{ input_files['ap'][6] }}": "signal_7.slcio",
-        "{{ input_files['ap'][7] }}": "signal_8.slcio",
         "/sdf/data/hps/physics2021/mc/gen/pulser/14275/{{ detector }}/pulser_{{ (job_id-1) % 200 + 1 }}.slcio": "pulser.slcio"
     },
     "output_files": {

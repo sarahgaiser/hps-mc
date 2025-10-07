@@ -49,6 +49,6 @@ cnv = HPSTR(cfg='cnv')
 ## Run an analysis on the ROOT file
 ana = HPSTR(cfg='ana')
 
-job.add([reco, count_reco, cnv])
-#job.add([readout, count_readout, reco, count_reco, cnv])
-# , ana])
+job.add([reco, count_reco, cnv, ana])
+#job.add([readout, count_readout, reco, count_reco])
+# cnv , ana])

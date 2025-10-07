@@ -21,10 +21,11 @@
     "ap_decay_dist": "{{ ap_decay_dist }}",
     "apmass": {{ apmass }}, 
     "input_files": {
-	"/sdf/data/hps/physics2021/mc/gen/ap/pass_v7/{{ run_params }}/ap{{ apmass }}MeV/lhe/ap_{{ apmass }}_{{ run_params }}_unweighted_events_{{ job_id }}.lhe.gz": "ap_unweighted_events.lhe.gz"
+	"/sdf/data/hps/physics2021/mc/gen/ap/pass_v8beta/{{ run_params }}/ap{{ apmass }}MeV/lhe/{{ dir_num+1 }}/ap_{{ apmass }}_{{ run_params }}_unweighted_events_{{ job_id }}.lhe.gz": "ap_unweighted_events.lhe.gz"
     },
     "output_files": {
-	"ap.slcio": "slic/{{ detector }}/{{ dir_num + 1 }}/ap_{{ apmass }}_{{ run_params }}_{{ ap_decay_dist }}_mom_rot_{{ job_id }}.slcio"
+        "ap_mom_rot.stdhep": "stdhep/{{ dir_num+1 }}/ap_{{ apmass }}_{{ run_params }}_{{ ap_decay_dist }}_mom_rot_{{ job_id }}.stdhep", 
+    	"ap.slcio": "{{ run_number }}/slic/{{ detector }}/{{ dir_num + 1 }}/ap_{{ apmass }}_{{ run_params }}_{{ ap_decay_dist }}_mom_rot_{{ job_id }}.slcio"
     },
-    "output_dir": "/sdf/data/hps/physics2021/mc/gen/ap/pass_v8beta/{{ run_params }}/ap{{ apmass }}MeV"
+    "output_dir": "/sdf/data/hps/physics2021/mc/gen/ap/pass_v8/{{ run_params }}/ap{{ apmass }}MeV"
 }
