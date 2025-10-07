@@ -1,0 +1,25 @@
+{% set num = (job_id - 1)/2000 %}
+{% set dir_num = num | int %}
+{
+    "nevents": {{ nevents }},
+    "run_params": "{{ run_params }}",
+    "detector": "{{ detector }}",
+    "run_number": {{ run_number }},
+    "steering_files": {
+        "readout": "/org/hps/steering/readout/PhysicsRun2019TrigFEE.lcsim",
+        "recon": "/org/hps/steering/recon/PhysicsRun2021MCRecon_KF_WithSpacing_pass3.lcsim"
+    },
+    "config_files": {
+        "cnv": "recoTuple_cfg.py"
+    },
+    "is_data": 0,
+    "year": 2021,
+    "input_files": {
+	"{{ input_files['beam'][0] }}": "beam.slcio"
+    },
+    "output_files": {
+        "beam_readout.slcio": "readout/beam/pass_v8beta/{{ detector }}/test_sample/beam_{{ run_params }}_readout_{{ job_id }}.slcio",
+        "beam_readout_recon.slcio": "recon/beam/pass_v8beta/{{ detector }}/test_sample/beam_{{ run_params }}_recon_{{ job_id }}.slcio"
+    },
+    "output_dir": "/sdf/data/hps/physics2021/mc"
+}

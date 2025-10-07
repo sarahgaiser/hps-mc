@@ -744,7 +744,7 @@ class Local(Batch):
 
 
 # Queue used to keep track of processes created by batch pool.
-mp_queue = multiprocessing.Queue()
+#mp_queue = multiprocessing.Queue()
 
 
 def run_job_pool(cmd):

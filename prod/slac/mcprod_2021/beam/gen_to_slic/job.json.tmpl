@@ -1,0 +1,26 @@
+{% set num = (job_id - 1)/2000 %}
+{% set dir_num = num | int %}
+{
+    "bunches": {{ bunches }},
+    "nevents": {{ nevents }},
+    "run_params": "{{ run_params }}",
+    "target_thickness": {{ target_thickness }},
+    "beam_energy": {{ beam_energy }},
+    "num_electrons": {{ num_electrons }},
+    "target_x": {{ target_x }},
+    "target_y": {{ target_y }},
+    "target_z": {{ target_z }},
+    "beam_sigma_x": {{ beam_sigma_x }},
+    "beam_sigma_y": {{ beam_sigma_y }},
+    "beam_rot_x": {{ beam_rot_x }},
+    "beam_rot_y": {{ beam_rot_y }},
+    "beam_rot_z": {{ beam_rot_z }},
+    "detector": "{{ detector }}",
+    "run_number": {{ run_number }},
+    "seed": {{ 42 + job_id }},
+    "output_files": {
+        "beam.stdhep": "stdhep/{{ dir_num + 1 }}/beam_{{ run_params }}_{{ job_id }}.stdhep",
+        "beam_rot_sampled.slcio": "pass_v8beta/{{ detector }}/slic/{{ dir_num + 1 }}/beam_rot_{{ run_params }}_{{ job_id }}.slcio"
+    },
+    "output_dir": "/sdf/data/hps/physics2021/mc/gen/beam/"
+}

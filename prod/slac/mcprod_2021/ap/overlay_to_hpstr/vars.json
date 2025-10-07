@@ -2,5 +2,5 @@
     "run_params": ["3pt74"],
     "detector": ["HPS_Run2021Pass1_v8beta_14272"],
     "run_number": [14272],
-    "apmass": [120]
+    "apmass": [80]
 }

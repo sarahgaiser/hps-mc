@@ -1,0 +1,32 @@
+{
+    "run_params": "{{ run_params }}",
+    "run_number": {{ run_number }},
+    "detector": "{{ detector }}",
+    "steering_files": {
+        "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
+        "overlay": "/org/hps/steering/readout/Overlay.lcsim",
+        "readout": "/org/hps/steering/readout/PhysicsRun2021TrigSinglesWithPulserDataMerging.lcsim",
+        "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon_KF_WithSpacing_pass2.lcsim"
+    },
+    "config_files": {
+        "cnv": "recoTuple_cfg.py",
+        "ana": "flatVtxTuple_cfg.py"
+    },
+    "is_data": 0,
+    "year": 2021,
+    "input_files": {
+        "{{ input_files['rad'][0] }}": "signal_1.slcio",
+        "{{ input_files['rad'][1] }}": "signal_2.slcio",
+        "{{ input_files['rad'][2] }}": "signal_3.slcio",
+        "{{ input_files['rad'][3] }}": "signal_4.slcio",
+        "{{ input_files['rad'][4] }}": "signal_5.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/pulser/14275/{{ detector }}/pulser_{{ (job_id-1) % 200 + 1 }}.slcio": "pulser.slcio"
+    },
+    "output_files": {
+        "signal_pulser_readout.slcio": "readout/rad_pulser/pass_v8beta/{{detector}}/rad_pulser_{{job_id}}.slcio",
+        "signal_pulser_recon.slcio": "recon/rad_pulser/pass_v8beta/{{detector}}/rad_pulser_{{job_id}}.slcio",
+        "signal_pulser_recon.root": "hpstr/rad_pulser/pass_v8beta/{{detector}}/rad_pulser_{{job_id}}.root",
+        "signal_pulser_recon_ana.root": "ana/rad_pulser/pass_v8beta/{{ detector }}/preselected/rad_pulser_ana_{{ run_params }}_{{ detector }}_{{ job_id }}.root"
+    },
+    "output_dir": "/sdf/data/hps/physics2021/mc/"
+}
