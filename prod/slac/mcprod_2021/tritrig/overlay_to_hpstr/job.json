@@ -1,28 +1,35 @@
 {
         "run_params": "3pt74",
         "run_number": 14272,
-        "detector": "HPS_Run2021Pass1_v8beta_14272",
+        "detector": "HPS_Run2021Pass1_v8_14272",
         "steering_files": {
             "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
             "overlay": "/org/hps/steering/readout/Overlay.lcsim",
             "readout": "/org/hps/steering/readout/PhysicsRun2021TrigSinglesWithPulserDataMerging.lcsim",
-            "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon_KF_WithSpacing_pass2.lcsim"
+            "recon": "/org/hps/steering/recon/PhysicsRun2021MCRecon_KF_WithSpacing_pass4.lcsim"
         },
         "config_files": {
-            "cnv": "recoTuple_cfg.py"
+            "cnv": "recoTuple_cfg.py",
+            "ana": "flatVtxTuple_cfg.py"
         },
         "is_data": 0,
         "year": 2021,
         "input_files": {
-            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8beta/HPS_Run2021Pass1_v8beta_14272/slic/tritrig_3pt74_mom_rot_1000.slcio": "signal_1.slcio",
-            "/sdf/data/hps/physics2021/mc/gen/pulser/14275/HPS_Run2021Pass1_v8beta_14272/pulser_1.slcio": "pulser.slcio"
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_1.slcio": "signal_1.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_2.slcio": "signal_2.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_3.slcio": "signal_3.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_4.slcio": "signal_4.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_5.slcio": "signal_5.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_6.slcio": "signal_6.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_7.slcio": "signal_7.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/HPS_Run2021Pass1_v8_14272/slic/1/tritrig_3pt74_mom_rot_8.slcio": "signal_8.slcio",
+            "/sdf/data/hps/physics2021/mc/gen/pulser/pass_v8/14275/HPS_Run2021Pass1_v8_14272/pulser_1.slcio": "pulser.slcio"
         },
         "output_files": {
-	    "signal_pulser_overlay.slcio": "tritrig_pulser_HPS_Run2021Pass1_v8beta_14272_overlay_1.slcio",
-            "signal_pulser_readout.slcio": "tritrig_pulser_HPS_Run2021Pass1_v8beta_14272_readout_1.slcio",
-            "signal_pulser_recon.slcio": "tritrig_pulser_HPS_Run2021Pass1_v8beta_14272_recon_1.slcio",
-            "signal_pulser_recon.root": "tritrig_pulser_HPS_Run2021Pass1_v8beta_14272_1.root"
+            "signal_pulser_readout.slcio": "readout/tritrig_pulser/pass_v8/HPS_Run2021Pass1_v8_14272/filter_ecal/tritrig_pulser_1.slcio",
+            "signal_pulser_recon.slcio": "recon/tritrig_pulser/pass_v8/HPS_Run2021Pass1_v8_14272/filter_ecal/tritrig_pulser_1.slcio",
+            "signal_pulser_recon.root": "hpstr/tritrig_pulser/pass_v8/HPS_Run2021Pass1_v8_14272/filter_ecal/tritrig_pulser_1.root"
         },
-        "output_dir": "output",
+        "output_dir": "/sdf/data/hps/physics2021/mc/",
         "job_id": 1
 }

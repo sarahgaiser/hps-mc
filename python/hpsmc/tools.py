@@ -1419,13 +1419,16 @@ class ExtractEventsWithHitAtHodoEcal(JavaTool):
         else:
             self.event_interval = 250
 
-        JavaTool.__init__(
-            self,
-            name="filter_events",
-            java_class="org.hps.util.ExtractEventsWithHitAtHodoEcal",
-            append_tok="filt",
-            **kwargs,
-        )
+        if "num_ecal_hits" in kwargs:
+            self.num_ecal_hits = kwargs['num_ecal_hits']
+        else:
+            self.num_ecal_hits = 0
+
+        JavaTool.__init__(self,
+                          name='filter_events',
+                          java_class='org.hps.util.ExtractEventsWithHitAtHodoEcal',
+                          append_tok='filt',
+                          **kwargs)
 
     def cmd_args(self):
         """!
@@ -1444,6 +1447,9 @@ class ExtractEventsWithHitAtHodoEcal(JavaTool):
         if self.nevents:
             args.append("-w")
             args.append(str(self.nevents))
+        if self.num_ecal_hits > 0:
+            args.append("-N")
+            args.append(str(self.num_ecal_hits))
         return args
 
     def optional_parameters(self):
@@ -1453,7 +1459,7 @@ class ExtractEventsWithHitAtHodoEcal(JavaTool):
         Optional parameters are: **num_hodo_hits**, **event_interval**
         @return list of optional parameters
         """
-        return ["num_hodo_hits", "event_interval"]
+        return ['num_hodo_hits', 'event_interval', 'num_ecal_hits']
 
 
 class Unzip(Component):

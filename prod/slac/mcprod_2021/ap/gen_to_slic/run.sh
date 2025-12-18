@@ -1,1 +1,1 @@
-hps-mc-job run -d $PWD/scratch rad_gen_to_slic job.json
+hps-mc-job run -d $PWD/scratch ap_gen_to_slic job.json

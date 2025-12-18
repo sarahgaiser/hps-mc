@@ -1,3 +1,5 @@
+{% set num = (job_id - 1)/250 %}
+{% set dir_num = num | int %}
 {
     "run_params": "{{ run_params }}",
     "run_number": {{ run_number }},
@@ -6,26 +8,30 @@
         "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
         "overlay": "/org/hps/steering/readout/Overlay.lcsim",
         "readout": "/org/hps/steering/readout/PhysicsRun2021TrigSinglesWithPulserDataMerging.lcsim",
-        "recon": "/org/hps/steering/recon/PhysicsRun2019MCRecon_KF_WithSpacing_pass2.lcsim"
+        "recon": "/org/hps/steering/recon/PhysicsRun2021MCRecon_KF_WithSpacing_pass4.lcsim"
     },
     "config_files": {
-        "cnv": "recoTuple_cfg.py"
+        "cnv": "recoTuple_cfg.py",
+        "ana": "flatVtxTuple_cfg.py"
     },
     "is_data": 0,
     "year": 2021,
     "input_files": {
-        "{{ input_files['tritrig'][0] }}": "signal_1.slcio",
-        "{{ input_files['tritrig'][1] }}": "signal_2.slcio",
-        "{{ input_files['tritrig'][2] }}": "signal_3.slcio",
-        "{{ input_files['tritrig'][3] }}": "signal_4.slcio",
-        "{{ input_files['tritrig'][4] }}": "signal_5.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 7 }}.slcio": "signal_1.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 6 }}.slcio": "signal_2.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 5 }}.slcio": "signal_3.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 4 }}.slcio": "signal_4.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 3 }}.slcio": "signal_5.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 2 }}.slcio": "signal_6.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) - 1 }}.slcio": "signal_7.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/tritrig/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ (job_id * 8) }}.slcio": "signal_8.slcio",
         "{{ input_files['pulser'][0] }}": "pulser.evio"
     },
     "output_files": {
-        "pulser.slcio": "gen/pulser/14275/{{detector}}/pulser_{{job_id}}.slcio",
-        "signal_pulser_readout.slcio": "readout/tritrig_pulser/pass_v8beta/{{detector}}/tritrig_pulser_{{job_id}}.slcio",
-        "signal_pulser_recon.slcio": "recon/tritrig_pulser/pass_v8beta/{{detector}}/tritrig_pulser_{{job_id}}.slcio",
-        "signal_pulser_recon.root": "hpstr/tritrig_pulser/pass_v8beta/{{detector}}/tritrig_pulser_{{job_id}}.root"
+        "pulser.slcio": "gen/pulser/pass_v8/14275/{{ detector }}/pulser_{{ job_id }}.slcio",
+        "signal_pulser_readout.slcio": "readout/tritrig_pulser/pass_v8/{{ detector }}/tritrig_pulser_{{job_id}}.slcio",
+        "signal_pulser_recon.slcio": "recon/tritrig_pulser/pass_v8/{{detector}}/tritrig_pulser_{{job_id}}.slcio",
+        "signal_pulser_recon.root": "hpstr/tritrig_pulser/pass_v8/{{detector}}/tritrig_pulser_{{job_id}}.root"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/"
 }

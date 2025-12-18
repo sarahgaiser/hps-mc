@@ -1,0 +1,30 @@
+{
+        "run_number": 14272,
+        "bunches": 10000,
+        "nevents": 10000,
+        "seed": 43,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "target_x": 0.0,
+        "target_y": 0.0,
+        "target_z": -0.5,
+        "beam_sigma_x": 0.3,
+        "beam_sigma_y": 0.02,
+        "beam_rot_x": 0.0,
+        "beam_rot_y": 0.0305,
+        "beam_rot_z": 0.0,
+        "detector": "HPS_Run2021Pass1_v8_14272",
+        "ap_decay_dist": "lhe_uniform",
+        "apmass": 60,
+        "input_files": {
+            "/sdf/data/hps/physics2021/mc/gen/ap/pass_v8beta/3pt74/ap60MeV/lhe/1/ap_60_3pt74_unweighted_events_1.lhe.gz": "ap_unweighted_events.lhe.gz"
+        },
+        "output_files": {
+            "ap_mom_rot.stdhep": "stdhep/1/ap_60_3pt74_lhe_uniform_mom_rot_1.stdhep",
+            "ap.slcio": "14272/slic/HPS_Run2021Pass1_v8_14272/1/ap_60_3pt74_lhe_uniform_mom_rot_1.slcio"
+        },
+        "output_dir": "/sdf/data/hps/physics2021/mc/gen/ap/pass_v8/3pt74/ap60MeV",
+        "job_id": 1
+}

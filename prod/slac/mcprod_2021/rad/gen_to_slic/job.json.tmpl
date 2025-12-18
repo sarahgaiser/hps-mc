@@ -1,3 +1,5 @@
+{% set num = (job_id - 1)/2000 %}
+{% set dir_num = num | int %}
 {
     "run_number": {{ run_number }},
     "bunches": {{ bunches }},
@@ -17,9 +19,8 @@
     "beam_rot_z": {{ beam_rot_z }},
     "detector": "{{ detector }}",
     "output_files": {
-        "RAD_unweighted_events.lhe.gz": "lhe/rad_{{ run_params }}_{{ job_id }}.lhe.gz",
-	"rad_mom.stdhep": "pass_v7/rad_{{ run_params }}_mom_{{ job_id }}.stdhep",
-	"rad_mom_rot.slcio": "pass_v7/slic/rad_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
+        "RAD_unweighted_events.lhe.gz": "lhe/{{ dir_num + 1 }}/rad_{{ run_params }}_{{ job_id }}.lhe.gz",
+        "rad_mom_rot.slcio": "pass_v8/slic/{{ dir_num + 1 }}/rad_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/gen/rad/"
 }
