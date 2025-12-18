@@ -1,3 +1,5 @@
+{% set num = (job_id - 1)/100 %}
+{% set dir_num = num | int %}
 {
     "run_params": "{{ run_params }}",
     "run_number": {{ run_number }},
@@ -6,7 +8,7 @@
         "evio_to_lcio": "/org/hps/steering/production/Evio2LcioCnv.lcsim",
         "overlay": "/org/hps/steering/readout/Overlay.lcsim",
         "readout": "/org/hps/steering/readout/PhysicsRun2021TrigSinglesWithPulserDataMerging.lcsim",
-        "recon": "/org/hps/steering/recon/PhysicsRun2021MCRecon_KF_WithSpacing_pass3_HitSmear.lcsim"
+        "recon": "/org/hps/steering/recon/PhysicsRun2021MCRecon_KF_WithSpacing_pass5.lcsim"
     },
     "config_files": {
         "cnv": "recoTuple_cfg.py",
@@ -15,32 +17,32 @@
     "is_data": 0,
     "year": 2021,
     "input_files": {
-        "{{ input_files['wab'][0] }}": "signal_1.slcio",
-        "{{ input_files['wab'][1] }}": "signal_2.slcio",
-        "{{ input_files['wab'][2] }}": "signal_3.slcio",
-        "{{ input_files['wab'][3] }}": "signal_4.slcio",
-        "{{ input_files['wab'][4] }}": "signal_5.slcio",
-        "{{ input_files['wab'][5] }}": "signal_6.slcio",
-        "{{ input_files['wab'][6] }}": "signal_7.slcio",
-        "{{ input_files['wab'][7] }}": "signal_8.slcio",
-        "{{ input_files['wab'][8] }}": "signal_9.slcio",
-        "{{ input_files['wab'][9] }}": "signal_10.slcio",
-        "{{ input_files['wab'][10] }}": "signal_11.slcio",
-        "{{ input_files['wab'][11] }}": "signal_12.slcio",
-        "{{ input_files['wab'][12] }}": "signal_13.slcio",
-        "{{ input_files['wab'][13] }}": "signal_14.slcio",
-        "{{ input_files['wab'][14] }}": "signal_15.slcio",
-        "{{ input_files['wab'][15] }}": "signal_16.slcio",
-        "{{ input_files['wab'][16] }}": "signal_17.slcio",
-        "{{ input_files['wab'][17] }}": "signal_18.slcio",
-        "{{ input_files['wab'][18] }}": "signal_19.slcio",
-        "{{ input_files['wab'][19] }}": "signal_20.slcio",
-        "/sdf/data/hps/physics2021/mc/gen/pulser/14275/{{ detector }}/pulser_{{ (job_id-1) % 200 + 1 }}.slcio": "pulser.slcio"
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 19 }}.slcio": "signal_1.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 18 }}.slcio": "signal_2.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 17 }}.slcio": "signal_3.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 16 }}.slcio": "signal_4.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 15 }}.slcio": "signal_5.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 14 }}.slcio": "signal_6.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 13 }}.slcio": "signal_7.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 12 }}.slcio": "signal_8.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 11 }}.slcio": "signal_9.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 10 }}.slcio": "signal_10.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 9 }}.slcio": "signal_11.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 8 }}.slcio": "signal_12.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 7 }}.slcio": "signal_13.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 6 }}.slcio": "signal_14.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 5 }}.slcio": "signal_15.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 4 }}.slcio": "signal_16.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 3 }}.slcio": "signal_17.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 2 }}.slcio": "signal_18.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) - 1 }}.slcio": "signal_19.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/wab/pass_v8/{{ detector }}/slic/{{ dir_num + 1 }}/wab_{{ run_params }}_mom_rot_{{ (job_id * 20) }}.slcio": "signal_20.slcio",
+        "/sdf/data/hps/physics2021/mc/gen/pulser/pass_v8/14275/{{ detector }}/pulser_{{ (job_id-1) % 544 + 1 }}.slcio": "pulser.slcio"
     },
     "output_files": {
-        "signal_pulser_readout.slcio": "readout/wab_pulser/pass_v8beta/{{detector}}/time_window_fix/wab_pulser_{{job_id}}.slcio",
-        "signal_pulser_recon.slcio": "recon/wab_pulser/pass_v8beta/{{detector}}/time_window_fix/wab_pulser_{{job_id}}.slcio",
-        "signal_pulser_recon.root": "hpstr/wab_pulser/pass_v8beta/{{detector}}/time_window_fix/wab_pulser_{{job_id}}.root"
+        "signal_pulser_readout.slcio": "readout/wab_pulser/pass_v8/{{ detector }}/wab_pulser_{{ job_id }}.slcio",
+        "signal_pulser_recon.slcio": "recon/wab_pulser/pass5_v8/{{ detector }}/wab_pulser_{{ job_id }}.slcio",
+        "signal_pulser_recon.root": "hpstr/wab_pulser/pass5_v8/{{ detector }}/wab_pulser_{{ job_id }}.root"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/"
 }

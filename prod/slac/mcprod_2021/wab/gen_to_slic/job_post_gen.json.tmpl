@@ -19,10 +19,10 @@
     "beam_rot_z": {{ beam_rot_z }},
     "detector": "{{ detector }}",
     "input_files": {
-	"/sdf/data/hps/physics2021/mc/gen/wab/lhe/wab_unweighted_events_{{ job_id + 10000 }}.lhe.gz": "wab_unweighted_events.lhe.gz"
+        "/sdf/data/hps/physics2021/mc/gen/wab/lhe/{{ dir_num + 1 + 5 }}/wab_unweighted_events_{{ job_id + 10000 }}.lhe.gz": "wab_unweighted_events.lhe.gz"
     },
     "output_files": {
-	"wab_unweighted_events_mom_rot.slcio": "pass_v8beta/{{ detector }}/slic/{{ dir_num + 1 + 5 }}/wab_{{ run_params }}_mom_rot_{{ job_id + 10000 }}.slcio"
+        "wab_unweighted_events_mom_rot.slcio": "pass_v8/{{ detector }}/slic/{{ dir_num + 1 + 5 }}/wab_{{ run_params }}_mom_rot_{{ job_id + 10000 }}.slcio"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/gen/wab/"
 }
