@@ -12,12 +12,14 @@ Example JSON parameters:
         "input3.root": "/path/to/input3.root"
     },
     "output_files": {
-        "merged.root": "merged_output.root"
+        "merged.root": "merged_output.root",
+        "merged_stats.json": "merged_stats.json"
     },
     "output_dir": "output",
     "force": true,
     "compression": 6,
-    "validate": true
+    "validate": true,
+    "write_stats": true
 }
 """
 
@@ -33,14 +35,21 @@ job.description = "Merge ROOT files using hadd"
 # The keys of input_files dict are the local file names
 input_list = list(job.input_files.keys())
 
-# Get the output file name
-# The key of output_files dict is the source (local name)
-output_file = list(job.output_files.keys())[0]
+# Get the output file name (first .root file in output_files)
+output_file = None
+for key in job.output_files.keys():
+    if key.endswith('.root'):
+        output_file = key
+        break
+if output_file is None:
+    output_file = list(job.output_files.keys())[0]
 
 # Set up optional parameters with defaults
 force_overwrite = job.params.get('force', True)
 compression_level = job.params.get('compression', None)
 validate_merge = job.params.get('validate', True)
+write_stats = job.params.get('write_stats', True)
+job_id = job.params.get('job_id', None)
 
 # Create the MergeROOT component
 merge = MergeROOT(
@@ -49,7 +58,9 @@ merge = MergeROOT(
     outputs=[output_file],
     force=force_overwrite,
     compression=compression_level,
-    validate=validate_merge
+    validate=validate_merge,
+    write_stats=write_stats,
+    job_id=job_id
 )
 
 # Add component to the job

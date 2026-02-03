@@ -3,7 +3,7 @@
     {% set file_dir = first_file | dirname %}
     {% set run_name = file_dir.split('/')[-1] %}
     {% set mass = file_dir.split('/')[-2] %}
-    "job_id": {{ job_id  + 1}},
+    "job_id": {{ job_id }},
     "description": "Merge ROOT files for {{ mass }}/{{ run_name }} (job {{ job_id }})",
     "input_files": {
         {% for file in input_files['root_files'] -%}
@@ -15,13 +15,12 @@
         "merged_{{ run_name }}_job{{ job_id }}.root": "merged_{{ run_name }}_job{{ job_id }}.root",
         "merged_{{ run_name }}_job{{ job_id }}_stats.json": "merged_{{ run_name }}_job{{ job_id }}_stats.json"
     },
-    "output_dir": "/sdf/data/hps/physics2021/mc/hpstr/ap_pulser/pass5_v9/HPS_Run2021Pass1_v9_14272_hitSmearKill-reprocessed-merged/",
+    "output_dir": "/sdf/data/hps/physics2021/mc/hpstr/simp_pulser_new/pass5_v9/{{ mass }}/{{ run_name }}-merged",
     "mass": "{{ mass }}",
     "run_name": "{{ run_name }}",
     "year": 2021,
     "num_input_files": {{ input_files['root_files'] | length }},
     "force": true,
     "compression": 6,
-    "validate": true,
-    "write_stats": true
+    "validate": true
 }

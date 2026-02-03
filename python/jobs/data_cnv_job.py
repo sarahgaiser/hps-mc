@@ -9,6 +9,6 @@ job.description = 'EVIO converter'
 
 cnv = EvioToLcio(steering='recon')
 
-tuple = HPSTR(run_mode=1, cfg='recon')
+#tuple = HPSTR(run_mode=1, cfg='recon')
 
-job.add([cnv, tuple])
+job.add([cnv])
