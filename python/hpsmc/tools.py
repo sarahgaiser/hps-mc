@@ -1782,7 +1782,7 @@ class MergeROOT(Component):
         sys.stderr.flush()
         return args
 
-    def scan_root_file(self, filename):
+    def scan_root_file(self, filename, log_out=None):
         """
         Scan a ROOT file and extract TTree event counts.
 
@@ -1790,6 +1790,8 @@ class MergeROOT(Component):
         ----------
         filename : str
             Path to ROOT file
+        log_out : file, optional
+            Log file for output (used to report multiple key cycles)
 
         Returns
         -------
@@ -1804,6 +1806,7 @@ class MergeROOT(Component):
             )
 
         tree_counts = {}
+        tree_cycles = {}  # Track cycle numbers: {tree_name: [(cycle, entries), ...]}
 
         # Open ROOT file
         root_file = ROOT.TFile.Open(filename, "READ")
@@ -1817,10 +1820,29 @@ class MergeROOT(Component):
             # Check if it's a TTree
             if obj.InheritsFrom("TTree"):
                 tree_name = obj.GetName()
+                cycle = key.GetCycle()
                 num_entries = obj.GetEntries()
-                tree_counts[tree_name] = num_entries
+
+                if tree_name not in tree_cycles:
+                    tree_cycles[tree_name] = []
+                tree_cycles[tree_name].append((cycle, num_entries))
 
         root_file.Close()
+
+        # Process collected cycles - use highest cycle number for each tree
+        for tree_name, cycles in tree_cycles.items():
+            if len(cycles) > 1:
+                # Sort by cycle number (highest first)
+                cycles.sort(key=lambda x: x[0], reverse=True)
+                highest_cycle, highest_entries = cycles[0]
+                if log_out:
+                    log_out.write("  WARNING: Multiple key cycles found for tree '%s':\n" % tree_name)
+                    for cyc, ent in cycles:
+                        marker = " <-- using" if cyc == highest_cycle else ""
+                        log_out.write("    Cycle %d: %d entries%s\n" % (cyc, ent, marker))
+                tree_counts[tree_name] = highest_entries
+            else:
+                tree_counts[tree_name] = cycles[0][1]
 
         return tree_counts
 
@@ -1842,7 +1864,7 @@ class MergeROOT(Component):
                 raise RuntimeError("MergeROOT: Input file not found: %s" % input_file)
 
             log_out.write("\nScanning: %s\n" % input_file)
-            tree_counts = self.scan_root_file(input_file)
+            tree_counts = self.scan_root_file(input_file, log_out)
 
             if not tree_counts:
                 log_out.write("  WARNING: No TTrees found in this file\n")
@@ -1871,7 +1893,7 @@ class MergeROOT(Component):
         log_out.write("=" * 70 + "\n")
         log_out.write("\nScanning: %s\n" % output_file)
 
-        self.output_tree_counts = self.scan_root_file(output_file)
+        self.output_tree_counts = self.scan_root_file(output_file, log_out)
 
         if not self.output_tree_counts:
             log_out.write("  WARNING: No TTrees found in output file\n")
