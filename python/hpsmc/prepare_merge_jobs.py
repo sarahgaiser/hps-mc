@@ -18,7 +18,7 @@ class MergeJobPreparation:
     """! Prepare merge jobs by scanning directories for ROOT files."""
 
     def __init__(self, parent_dir, output_prefix="merge_jobs", max_files_per_job=20,
-                 file_pattern="*.root", run_pattern="hps_*"):
+                 file_pattern="*.root", run_pattern="hps_*", max_depth=3, path_filter=None):
         """! Initialize the merge job preparation.
 
         @param parent_dir  Parent directory containing run subdirectories
@@ -26,18 +26,48 @@ class MergeJobPreparation:
         @param max_files_per_job  Maximum number of ROOT files per merge job
         @param file_pattern  Glob pattern for files to merge (default: *.root)
         @param run_pattern  Glob pattern for run directories (default: hps_*)
+        @param max_depth  Maximum depth to search for ROOT files if not found at top level (default: 3)
+        @param path_filter  String that must appear somewhere in the full file path (default: None)
         """
         self.parent_dir = Path(parent_dir).resolve()
         self.output_prefix = output_prefix
         self.max_files_per_job = max_files_per_job
         self.file_pattern = file_pattern
         self.run_pattern = run_pattern
+        self.max_depth = max_depth
+        self.path_filter = path_filter
 
         if not self.parent_dir.is_dir():
             raise ValueError(f"Parent directory does not exist: {self.parent_dir}")
 
+    def _find_files_recursive(self, directory, current_depth=0):
+        """! Recursively search for files matching pattern up to max_depth.
+
+        @param directory  Directory to search in
+        @param current_depth  Current recursion depth
+        @return List of file paths found
+        """
+        # First, check for files at current level
+        root_files = sorted(directory.glob(self.file_pattern))
+        if root_files:
+            return root_files
+
+        # If no files found and we haven't exceeded max depth, search subdirectories
+        if current_depth < self.max_depth:
+            all_files = []
+            for subdir in sorted(directory.iterdir()):
+                if subdir.is_dir():
+                    files = self._find_files_recursive(subdir, current_depth + 1)
+                    all_files.extend(files)
+            return all_files
+
+        return []
+
     def scan_directories(self):
         """! Scan parent directory for run directories and ROOT files.
+
+        If no ROOT files are found directly in a run directory, searches
+        recursively up to max_depth levels deep.
 
         @return Dictionary mapping run names to lists of ROOT file paths
         """
@@ -47,10 +77,26 @@ class MergeJobPreparation:
         run_dirs = sorted(self.parent_dir.glob(self.run_pattern))
 
         if not run_dirs:
-            print(f"Warning: No directories matching '{self.run_pattern}' found in {self.parent_dir}")
-            return run_files
+            # If no directories match the pattern, try scanning deeper
+            print(f"No directories matching '{self.run_pattern}' found in {self.parent_dir}")
+            print(f"Searching recursively up to {self.max_depth} levels deep...")
 
-        print(f"Found {len(run_dirs)} run directories")
+            # Search the parent directory itself
+            root_files = self._find_files_recursive(self.parent_dir, current_depth=0)
+            if root_files:
+                # Group files by their parent directory name
+                files_by_parent = {}
+                for f in root_files:
+                    parent_name = f.parent.name
+                    if parent_name not in files_by_parent:
+                        files_by_parent[parent_name] = []
+                    files_by_parent[parent_name].append(str(f))
+
+                for parent_name, files in sorted(files_by_parent.items()):
+                    run_files[parent_name] = sorted(files)
+                    print(f"  {parent_name}: {len(files)} files")
+        else:
+            print(f"Found {len(run_dirs)} run directories")
 
         # Scan each run directory for ROOT files
         for run_dir in run_dirs:
@@ -58,11 +104,32 @@ class MergeJobPreparation:
                 continue
 
             run_name = run_dir.name
+
+            # First try direct glob, then recursive search if needed
             root_files = sorted(run_dir.glob(self.file_pattern))
+
+            if not root_files:
+                # Search deeper
+                root_files = self._find_files_recursive(run_dir, current_depth=0)
+                if root_files:
+                    print(f"  {run_name}: {len(root_files)} files (found in subdirectories)")
+            else:
+                print(f"  {run_name}: {len(root_files)} files")
 
             if root_files:
                 run_files[run_name] = [str(f) for f in root_files]
-                print(f"  {run_name}: {len(root_files)} files")
+
+        # Apply path filter if specified
+        if self.path_filter:
+            filtered_run_files = {}
+            total_before = sum(len(files) for files in run_files.values())
+            for run_name, files in run_files.items():
+                filtered = [f for f in files if self.path_filter in f]
+                if filtered:
+                    filtered_run_files[run_name] = filtered
+            total_after = sum(len(files) for files in filtered_run_files.values())
+            print(f"\nPath filter '{self.path_filter}': {total_before} -> {total_after} files")
+            run_files = filtered_run_files
 
         return run_files
 
@@ -195,6 +262,9 @@ class MergeJobPreparation:
         print(f"Run pattern: {self.run_pattern}")
         print(f"File pattern: {self.file_pattern}")
         print(f"Max files per job: {self.max_files_per_job}")
+        print(f"Max search depth: {self.max_depth}")
+        if self.path_filter:
+            print(f"Path filter: {self.path_filter}")
         print()
 
         # Scan directories
@@ -255,6 +325,15 @@ Examples:
   # Custom file and directory patterns
   %(prog)s /path/to/runs -f "*_recon.root" -r "run_*"
 
+  # Search deeper for nested ROOT files (up to 5 levels)
+  %(prog)s /path/to/runs -d 5
+
+  # Search with wildcard pattern when files are in subdirectories
+  %(prog)s /path/to/runs -r "ap*" -d 3
+
+  # Filter files by path substring (e.g., only include files with "pass5" in path)
+  %(prog)s /path/to/runs -F "pass5"
+
   # Skip generating vars file (only create input file list)
   %(prog)s /path/to/runs --no-vars
         """
@@ -291,6 +370,19 @@ Examples:
     )
 
     parser.add_argument(
+        '-d', '--max-depth',
+        type=int,
+        default=3,
+        help='Maximum depth to search for ROOT files if not found at top level (default: 3)'
+    )
+
+    parser.add_argument(
+        '-F', '--path-filter',
+        default=None,
+        help='Only include files whose full path contains this string'
+    )
+
+    parser.add_argument(
         '--no-vars',
         action='store_true',
         help='Do not generate iteration variables JSON file'
@@ -316,7 +408,9 @@ Examples:
             output_prefix=args.output_prefix,
             max_files_per_job=args.max_files,
             file_pattern=args.file_pattern,
-            run_pattern=args.run_pattern
+            run_pattern=args.run_pattern,
+            max_depth=args.max_depth,
+            path_filter=args.path_filter
         )
 
         result = prep.run(

@@ -1,5 +1,6 @@
 """! Tools that can be used in HPSMC jobs."""
 
+import json
 import os
 import gzip
 import shutil
@@ -1697,6 +1698,10 @@ class MergeROOT(Component):
             Compression level for output file (0-9, default: None uses hadd default)
         validate : bool, optional
             Validate event counts after merge (default: True)
+        write_stats : bool, optional
+            Write JSON stats file after merge (default: True when validate=True)
+        job_id : int, optional
+            Job ID to include in stats output
         """
         Component.__init__(self, **kwargs)
 
@@ -1716,9 +1721,20 @@ class MergeROOT(Component):
         if not hasattr(self, "validate"):
             self.validate = True
 
+        # Write stats JSON (default: True when validate=True)
+        if not hasattr(self, "write_stats"):
+            self.write_stats = self.validate
+
+        # Optional job ID for stats output
+        if not hasattr(self, "job_id"):
+            self.job_id = None
+
         # Store event counts
         self.input_tree_counts = {}
         self.output_tree_counts = {}
+
+        # Track validation result
+        self._validation_passed = None
 
     def cmd_args(self):
         """
@@ -1729,6 +1745,13 @@ class MergeROOT(Component):
         list
             List of command arguments
         """
+        import sys
+        sys.stderr.write("MergeROOT DEBUG: cmd_args() called\n")
+        sys.stderr.write("  self.force=%s, self.compression=%s\n" % (self.force, self.compression))
+        sys.stderr.write("  self.inputs=%s\n" % self.inputs)
+        sys.stderr.write("  self.outputs=%s\n" % self.outputs)
+        sys.stderr.flush()
+
         args = []
 
         # Add force flag if enabled
@@ -1743,17 +1766,23 @@ class MergeROOT(Component):
         if self.outputs and len(self.outputs) > 0:
             args.append(self.outputs[0])
         else:
+            sys.stderr.write("MergeROOT DEBUG: ERROR - No output file specified!\n")
+            sys.stderr.flush()
             raise RuntimeError("MergeROOT: No output file specified")
 
         # Add input files
         if self.inputs and len(self.inputs) > 0:
             args.extend(self.inputs)
         else:
+            sys.stderr.write("MergeROOT DEBUG: ERROR - No input files specified!\n")
+            sys.stderr.flush()
             raise RuntimeError("MergeROOT: No input files specified")
 
+        sys.stderr.write("MergeROOT DEBUG: cmd_args() returning: %s\n" % args)
+        sys.stderr.flush()
         return args
 
-    def scan_root_file(self, filename):
+    def scan_root_file(self, filename, log_out=None):
         """
         Scan a ROOT file and extract TTree event counts.
 
@@ -1761,6 +1790,8 @@ class MergeROOT(Component):
         ----------
         filename : str
             Path to ROOT file
+        log_out : file, optional
+            Log file for output (used to report multiple key cycles)
 
         Returns
         -------
@@ -1775,6 +1806,7 @@ class MergeROOT(Component):
             )
 
         tree_counts = {}
+        tree_cycles = {}  # Track cycle numbers: {tree_name: [(cycle, entries), ...]}
 
         # Open ROOT file
         root_file = ROOT.TFile.Open(filename, "READ")
@@ -1788,10 +1820,29 @@ class MergeROOT(Component):
             # Check if it's a TTree
             if obj.InheritsFrom("TTree"):
                 tree_name = obj.GetName()
+                cycle = key.GetCycle()
                 num_entries = obj.GetEntries()
-                tree_counts[tree_name] = num_entries
+
+                if tree_name not in tree_cycles:
+                    tree_cycles[tree_name] = []
+                tree_cycles[tree_name].append((cycle, num_entries))
 
         root_file.Close()
+
+        # Process collected cycles - use highest cycle number for each tree
+        for tree_name, cycles in tree_cycles.items():
+            if len(cycles) > 1:
+                # Sort by cycle number (highest first)
+                cycles.sort(key=lambda x: x[0], reverse=True)
+                highest_cycle, highest_entries = cycles[0]
+                if log_out:
+                    log_out.write("  WARNING: Multiple key cycles found for tree '%s':\n" % tree_name)
+                    for cyc, ent in cycles:
+                        marker = " <-- using" if cyc == highest_cycle else ""
+                        log_out.write("    Cycle %d: %d entries%s\n" % (cyc, ent, marker))
+                tree_counts[tree_name] = highest_entries
+            else:
+                tree_counts[tree_name] = cycles[0][1]
 
         return tree_counts
 
@@ -1813,7 +1864,7 @@ class MergeROOT(Component):
                 raise RuntimeError("MergeROOT: Input file not found: %s" % input_file)
 
             log_out.write("\nScanning: %s\n" % input_file)
-            tree_counts = self.scan_root_file(input_file)
+            tree_counts = self.scan_root_file(input_file, log_out)
 
             if not tree_counts:
                 log_out.write("  WARNING: No TTrees found in this file\n")
@@ -1842,7 +1893,7 @@ class MergeROOT(Component):
         log_out.write("=" * 70 + "\n")
         log_out.write("\nScanning: %s\n" % output_file)
 
-        self.output_tree_counts = self.scan_root_file(output_file)
+        self.output_tree_counts = self.scan_root_file(output_file, log_out)
 
         if not self.output_tree_counts:
             log_out.write("  WARNING: No TTrees found in output file\n")
@@ -1965,6 +2016,77 @@ class MergeROOT(Component):
         log_out.write("=" * 70 + "\n")
         log_out.flush()
 
+    def get_stats_filename(self):
+        """
+        Get the stats JSON filename based on the output ROOT filename.
+
+        Returns
+        -------
+        str
+            Path to stats JSON file (e.g., 'merged_X_job1.root' -> 'merged_X_job1_stats.json')
+        """
+        if not self.outputs or len(self.outputs) == 0:
+            return None
+        output_file = self.outputs[0]
+        base, _ = os.path.splitext(output_file)
+        return base + "_stats.json"
+
+    def write_stats_json(self, log_out, validation_passed):
+        """
+        Write merge statistics to a JSON file.
+
+        Parameters
+        ----------
+        log_out : file
+            Log file for output
+        validation_passed : bool
+            Whether the validation passed
+        """
+        stats_file = self.get_stats_filename()
+        if stats_file is None:
+            log_out.write("WARNING: Cannot determine stats filename, skipping stats output\n")
+            return
+
+        log_out.write("\n" + "=" * 70 + "\n")
+        log_out.write("MergeROOT: Writing stats to %s\n" % stats_file)
+        log_out.write("=" * 70 + "\n")
+
+        # Calculate total input events per tree
+        total_input_events = {}
+        for input_file, tree_counts in self.input_tree_counts.items():
+            for tree_name, count in tree_counts.items():
+                if tree_name not in total_input_events:
+                    total_input_events[tree_name] = 0
+                total_input_events[tree_name] += count
+
+        # Build input files list with event counts
+        input_files_list = []
+        for input_file in self.inputs:
+            tree_counts = self.input_tree_counts.get(input_file, {})
+            input_files_list.append({
+                "path": input_file,
+                "events": tree_counts
+            })
+
+        # Build stats dictionary
+        stats = {
+            "job_id": self.job_id,
+            "output_file": self.outputs[0] if self.outputs else None,
+            "output_events": self.output_tree_counts,
+            "input_files": input_files_list,
+            "total_input_events": total_input_events,
+            "validation_passed": validation_passed,
+            "num_input_files": len(self.inputs)
+        }
+
+        # Write JSON file
+        with open(stats_file, 'w') as f:
+            json.dump(stats, f, indent=2)
+
+        log_out.write("Stats written successfully\n")
+        log_out.write("=" * 70 + "\n")
+        log_out.flush()
+
     def execute(self, log_out, log_err):
         """
         Execute MergeROOT component using hadd.
@@ -1981,26 +2103,58 @@ class MergeROOT(Component):
         int
             Return code from hadd command
         """
+        # Debug: Entry point
+        log_out.write("\n" + "=" * 70 + "\n")
+        log_out.write("MergeROOT: DEBUG - Entering execute()\n")
+        log_out.write("=" * 70 + "\n")
+        log_out.write("DEBUG: self.command = %s\n" % self.command)
+        log_out.write("DEBUG: self.inputs = %s\n" % self.inputs)
+        log_out.write("DEBUG: self.outputs = %s\n" % self.outputs)
+        log_out.write("DEBUG: self.force = %s\n" % self.force)
+        log_out.write("DEBUG: self.compression = %s\n" % self.compression)
+        log_out.write("DEBUG: self.validate = %s\n" % self.validate)
+        log_out.flush()
+
         # Check that hadd command exists
+        log_out.write("\nDEBUG: Checking if hadd command exists...\n")
+        log_out.flush()
         if not self.cmd_exists():
             raise RuntimeError("MergeROOT: hadd command not found in PATH")
+        log_out.write("DEBUG: hadd command found\n")
+        log_out.flush()
 
         # Check that input files exist
+        log_out.write("\nDEBUG: Checking input files exist...\n")
+        log_out.flush()
         for input_file in self.inputs:
+            log_out.write("DEBUG: Checking: %s\n" % input_file)
+            log_out.flush()
             if not os.path.exists(input_file):
                 raise RuntimeError("MergeROOT: Input file not found: %s" % input_file)
+            log_out.write("DEBUG:   -> exists (size: %d bytes)\n" % os.path.getsize(input_file))
+            log_out.flush()
 
         # Scan input files before merge if validation is enabled
+        log_out.write("\nDEBUG: Validation enabled = %s\n" % self.validate)
+        log_out.flush()
         if self.validate:
             try:
+                log_out.write("DEBUG: Starting input file scan...\n")
+                log_out.flush()
                 self.scan_input_files(log_out)
+                log_out.write("DEBUG: Input file scan complete\n")
+                log_out.flush()
             except Exception as e:
                 log_out.write("\nWARNING: Could not scan input files: %s\n" % str(e))
                 log_out.write("Proceeding with merge without validation.\n")
                 self.validate = False
 
         # Build full command
+        log_out.write("\nDEBUG: Building command arguments...\n")
+        log_out.flush()
         cmd = [self.command] + self.cmd_args()
+        log_out.write("DEBUG: cmd_args() returned: %s\n" % self.cmd_args())
+        log_out.flush()
 
         # Log the command
         log_out.write("\n" + "=" * 70 + "\n")
@@ -2011,39 +2165,81 @@ class MergeROOT(Component):
         log_out.flush()
 
         # Execute hadd
+        log_out.write("DEBUG: About to call subprocess.Popen...\n")
+        log_out.flush()
         proc = subprocess.Popen(cmd, stdout=log_out, stderr=log_err)
+        log_out.write("DEBUG: Popen returned, PID = %s\n" % proc.pid)
+        log_out.flush()
+        log_out.write("DEBUG: Waiting for process to complete...\n")
+        log_out.flush()
         proc.wait()
+        log_out.write("DEBUG: Process completed, returncode = %d\n" % proc.returncode)
+        log_out.flush()
 
         # Check return code
         if proc.returncode != 0:
+            log_out.write("DEBUG: hadd FAILED with return code %d\n" % proc.returncode)
+            log_out.flush()
             raise RuntimeError(
                 "MergeROOT: hadd failed with return code %d" % proc.returncode
             )
 
         # Verify output file was created
+        log_out.write("DEBUG: Checking if output file exists: %s\n" % self.outputs[0])
+        log_out.flush()
         if not os.path.exists(self.outputs[0]):
             raise RuntimeError(
                 "MergeROOT: Output file was not created: %s" % self.outputs[0]
             )
+        log_out.write("DEBUG: Output file exists, size = %d bytes\n" % os.path.getsize(self.outputs[0]))
+        log_out.flush()
 
         log_out.write("\n✓ hadd completed successfully\n")
+        log_out.flush()
 
         # Scan output file and validate if enabled
+        log_out.write("\nDEBUG: Post-merge validation check, self.validate = %s\n" % self.validate)
+        log_out.flush()
+        validation_passed = True
         if self.validate:
             try:
+                log_out.write("DEBUG: Starting output file scan...\n")
+                log_out.flush()
                 self.scan_output_file(log_out)
+                log_out.write("DEBUG: Output file scan complete\n")
+                log_out.flush()
+                log_out.write("DEBUG: Starting merge validation...\n")
+                log_out.flush()
                 validation_passed = self.validate_merge(log_out)
+                self._validation_passed = validation_passed
+                log_out.write("DEBUG: Merge validation complete, passed = %s\n" % validation_passed)
+                log_out.flush()
 
                 if not validation_passed:
                     raise RuntimeError("MergeROOT: Event count validation failed!")
 
             except Exception as e:
                 log_out.write("\nERROR during validation: %s\n" % str(e))
+                log_out.flush()
                 raise
 
+        # Write stats JSON if enabled
+        log_out.write("\nDEBUG: write_stats = %s\n" % self.write_stats)
+        log_out.flush()
+        if self.write_stats:
+            try:
+                self.write_stats_json(log_out, validation_passed)
+            except Exception as e:
+                log_out.write("\nWARNING: Could not write stats JSON: %s\n" % str(e))
+                log_out.flush()
+
         # Print summary
+        log_out.write("\nDEBUG: Printing summary...\n")
+        log_out.flush()
         self.print_summary(log_out)
 
+        log_out.write("\nDEBUG: MergeROOT.execute() returning %d\n" % proc.returncode)
+        log_out.flush()
         return proc.returncode
 
     def output_files(self):
@@ -2053,9 +2249,14 @@ class MergeROOT(Component):
         Returns
         -------
         list
-            List containing the merged output ROOT file
+            List containing the merged output ROOT file and optionally the stats JSON
         """
-        return self.outputs
+        files = list(self.outputs) if self.outputs else []
+        if self.write_stats:
+            stats_file = self.get_stats_filename()
+            if stats_file and stats_file not in files:
+                files.append(stats_file)
+        return files
 
     def required_config(self):
         """
