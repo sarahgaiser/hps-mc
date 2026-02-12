@@ -1,8 +1,10 @@
+{% set num = (job_id - 1)/2000 %}
+{% set dir_num = num | int %}
 {
     "run_number": {{ run_number }},
     "bunches": {{ bunches }},
     "nevents": {{ nevents }},
-    "seed": {{ 42 + job_id + 10000 }},
+    "seed": {{ 42 + job_id + 1000000 }},
     "run_params": "{{ run_params }}",
     "target_thickness": {{ target_thickness }},
     "beam_energy": {{ beam_energy }},
@@ -17,9 +19,8 @@
     "beam_rot_z": {{ beam_rot_z }},
     "detector": "{{ detector }}",
     "output_files": {
-        "tritrig_unweighted_events.lhe.gz": "lhe/tritrig_{{ run_params }}_unweighted_events_{{ job_id + 10000}}.lhe.gz",
-        "tritrig_mom.stdhep": "pass_v7/tritrig_{{ run_params }}_mom_{{ job_id + 10000 }}.stdhep",
-	"tritrig_mom_rot.slcio": "pass_v7/slic/tritrig_{{ run_params }}_mom_rot_{{ job_id + 10000 }}.slcio"
+        "tritrig_unweighted_events.lhe.gz": "lhe/{{ run_number }}/{{ dir_num + 1 }}/tritrig_{{ run_params }}_unweighted_events_{{ job_id }}.lhe.gz",
+	    "tritrig_mom_rot.slcio": "pass5_v9/{{ detector }}/slic/{{ dir_num + 1 }}/tritrig_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/gen/tritrig/"
 }
