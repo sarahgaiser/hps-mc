@@ -90,5 +90,5 @@ cnv = HPSTR(inputs=recon.output_files(), cfg='cnv')
 ana = HPSTR(inputs=cnv.output_files(), outputs=['signal_pulser_ana.root'], cfg='ana')
 
 ## Add the components
-job.add([filter_events, count_filter, overlay, space_overlay,
+job.add([evio_to_lcio, filter_events, count_filter, overlay, space_overlay,
          count_space_overlay, readout, count_readout, recon, count_recon, cnv])

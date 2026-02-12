@@ -1,6 +1,6 @@
 #!/bin/bash
 
-output_file="cross_sections_wab_new_config.txt"
+output_file="cross_sections_wab_pass5.txt"
 echo "xsec,nevents" > "$output_file"
 
 outlier_file="xsec_outliers.txt"
@@ -13,12 +13,12 @@ for i in $(seq 1 $END); do
   xsec=""
   nevents=""
 
-  lhe_file=/sdf/data/hps/physics2021/mc/gen/wab/pass_v7b/lhe/batch1/wab_unweighted_events_$i.lhe.gz
+  lhe_file=/sdf/data/hps/physics2021/mc/gen/wab/lhe/1/wab_unweighted_events_${i}.lhe.gz
   nevents=$(zgrep "Number of Events" "$lhe_file" | awk -F ': ' '{print $2}' | awk '{printf "%.5E", $1}')
   xsec=$(zgrep "Integrated weight (pb)" "$lhe_file" | awk -F ': ' '{print $2}' | awk '{printf "%.5E", $1}')
 
 
-  if [[ $xsec == *"E+10"* ]]; then
+  if [[ $xsec == *"E+9"* ]]; then
   	echo "Found outlier"
 	echo "$i,$xsec" >> "$outlier_file"
   fi

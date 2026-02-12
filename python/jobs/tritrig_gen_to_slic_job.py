@@ -41,5 +41,5 @@ slic = SLIC(inputs=['tritrig_mom_rot.stdhep'],
             nevents=nevents + 1)
 
 ## Run the job
-#job.add([mg, unzip, cnv, mom, rot, slic])
-job.add([unzip, cnv, mom, rot, slic])
+job.add([mg, unzip, cnv, mom, rot, slic])
+#job.add([unzip, cnv, mom, rot, slic])
