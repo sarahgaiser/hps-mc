@@ -6,6 +6,7 @@ var dir_1644388dee67c2f7a00ed970d8334383 =
     [ "_hadd.py", "__hadd_8py.html", "__hadd_8py" ],
     [ "_logging.py", "__logging_8py.html", "__logging_8py" ],
     [ "batch.py", "batch_8py.html", "batch_8py" ],
+    [ "collect_merge_stats.py", "collect__merge__stats_8py.html", "collect__merge__stats_8py" ],
     [ "component.py", "component_8py.html", "component_8py" ],
     [ "config_writer.py", "config__writer_8py.html", "config__writer_8py" ],
     [ "func.py", "func_8py.html", "func_8py" ],
@@ -13,6 +14,7 @@ var dir_1644388dee67c2f7a00ed970d8334383 =
     [ "help.py", "help_8py.html", "help_8py" ],
     [ "job.py", "job_8py.html", "job_8py" ],
     [ "job_template.py", "job__template_8py.html", "job__template_8py" ],
+    [ "prepare_merge_jobs.py", "prepare__merge__jobs_8py.html", "prepare__merge__jobs_8py" ],
     [ "run_params.py", "run__params_8py.html", "run__params_8py" ],
     [ "tools.py", "tools_8py.html", "tools_8py" ]
 ];

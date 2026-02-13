@@ -58,7 +58,7 @@ var NAVTREE =
       [ "Tritrig and beam files -- merge to reconstruction pipline", "tritrigbeam.html", null ],
       [ "Tritrig event generation", "tritriggen.html", null ],
       [ "Tritrig pipeline -- generation to analysis", "tritrigslicfullchain.html", null ],
-      [ "WAB generation and sampling", "wabgensample.html", null ],
+      [ "BH generation and sampling", "wabgensample.html", null ],
       [ "Job Template", "jobtemplate.html", null ]
     ] ],
     [ "iDM generation to reconstruction pipeline", "idm.html", null ],
@@ -99,20 +99,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"__apply_8py.html",
-"classhpsmc_1_1alignment_1_1__apply_1_1__DetectorEditor.html#ac43c1ed593f06957d9f4c51efcf9374e",
-"classhpsmc_1_1batch_1_1BatchSystem.html#a882351c36cde640dd0d61116d5e55765",
-"classhpsmc_1_1generators_1_1MG.html#adbc06e706c5e3c2188defb7f8076da67",
-"classhpsmc_1_1job__template_1_1JobTemplate.html#a34ecc9f1b392f609d6846cfc528d8ed5",
-"classhpsmc_1_1tools_1_1JobManager.html#a80913a6ffd23b3f618bd32bee8b293c9",
-"classhpsmc_1_1tools_1_1Unzip.html#a1e79c70d33a3f620b2cd9955b8bc903f",
-"classtest_1_1test__tools__javatools_1_1TestExtractEventsWithHitAtHodoEcal.html#a5191296a98cc6adb8e681cfd0a575712",
-"config__writer_8py.html#ada09b37ca2f2a9de2bb9514e12ffdbec",
-"lhe__tridents__displaceuni_8cc.html",
-"namespacemembers_b.html",
-"namespacetritrig__beam__job.html#afde3b66b6b41bd008469f366fa756e54",
-"simp__job_8py.html#ac2353b13f43ff77203d94b47953aa942",
-"tritrig__prep__and__slic__job_8py.html#afde3b66b6b41bd008469f366fa756e54"
+"BH__gen__job_8py.html",
+"classhpsmc_1_1alignment_1_1__apply_1_1__DetectorEditor.html#ab5add20dcd998e611a6f20380f9fae86",
+"classhpsmc_1_1batch_1_1BatchSystem.html#a69505da8975e3c2a73b5699776ffa4a6",
+"classhpsmc_1_1generators_1_1MG.html#a56cc530de1c0ed23f4358138d1d9f5af",
+"classhpsmc_1_1job__template_1_1JobData.html#a27256609f574b662639e0a8cd48b8d3a",
+"classhpsmc_1_1tools_1_1HPSTR.html#a9e0992eae3950adccaf4847fbff4231d",
+"classhpsmc_1_1tools_1_1MoveFiles.html#a67cf99f104398f6c8f00d039a2787c92",
+"classtest_1_1test__job_1_1TestJobConfig.html#a38846e12a90f3870fb1244833108a339",
+"classtest_1_1test__tools__slic_1_1TestSLIC.html#a465764231162ebb6d0c7c49c3d9fc9ad",
+"functions_vars_b.html",
+"namespacefee__gen__to__recon__job.html#a5209ed8d981dc170e77bea159c5bbe48",
+"namespacesignal__beam__merge__to__recon__job.html#a8e91f24e8243a86ee91c1ed6600f7606",
+"pede__job_8py.html#a59cbe73d1860c56034c3cb9db962d4c0",
+"stdhep__util_8cpp.html#ac16edf3f9969dcb74e1fc5b23e015a9f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
