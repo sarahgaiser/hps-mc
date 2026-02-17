@@ -776,6 +776,26 @@ class RandomSample(StdHepTool):
 
         return returncode
 
+class Phi_LHE_to_STDHEP(StdHepTool):
+    """!
+    Convert LHE files to StdHep.
+    """
+
+    def __init__(self, **kwargs):
+        ## time shift
+        self.ctau = None
+        StdHepTool.__init__(self,
+                            name='lhe_phi',
+                            output_ext='.stdhep',
+                            **kwargs)
+
+    def cmd_args(self):
+        """!
+        Setup command arguments.
+        @return  list of arguments
+        """
+        args = StdHepTool.cmd_args(self)
+        return args
 
 class DisplaceTime(StdHepTool):
     """!
