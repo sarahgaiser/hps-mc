@@ -23,6 +23,6 @@
         "input_files": {
             "/home/groups/laurenat/majd/lhe_files/patch/phiKK_3740_MeV_patch_19995_files/phiKK_3740_MeV_0.lhe": "phi.lhe"
         },
-        "output_dir": "/scratch/groups/laurenat/2021/v9_pass5/phiKK_patch",
+        "output_dir": "/scratch/users/mghrear/test",
         "job_id": 1
     }
