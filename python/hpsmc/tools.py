@@ -776,6 +776,7 @@ class RandomSample(StdHepTool):
 
         return returncode
 
+
 class Phi_LHE_to_STDHEP(StdHepTool):
     """!
     Convert LHE files to StdHep.
@@ -796,6 +797,7 @@ class Phi_LHE_to_STDHEP(StdHepTool):
         """
         args = StdHepTool.cmd_args(self)
         return args
+
 
 class DisplaceTime(StdHepTool):
     """!
