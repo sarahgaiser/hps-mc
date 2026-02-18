@@ -1,0 +1,14 @@
+{
+        "bunches": 100,
+        "nevents": 100,
+        "seed": 43,
+        "run_params": "3pt74",
+        "target_thickness": 0.002,
+        "beam_energy": 3740.0,
+        "num_electrons": 1500,
+        "output_files": {
+            "muon_trident_bkg/Events/muon/unweighted_events.lhe.gz": "muon_3pt74_unweighted_events_1.lhe.gz"
+        },
+        "output_dir": "output",
+        "job_id": 1
+}

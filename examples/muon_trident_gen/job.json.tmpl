@@ -1,0 +1,13 @@
+{
+    "bunches": {{ bunches }},
+    "nevents": {{ nevents }},
+    "seed": {{ 42 + job_id }},
+    "run_params": "{{ run_params }}",
+    "target_thickness": {{ target_thickness }},
+    "beam_energy": {{ beam_energy }},
+    "num_electrons": {{ num_electrons }},
+    "output_files": {
+        "muon_trident_bkg/Events/muon/unweighted_events.lhe.gz": "muon_trident_{{ run_params }}_unweighted_events_{{ job_id }}.lhe.gz"
+    },
+    "output_dir": "/sdf/home/s/sgaiser/src/hps-mc/examples/muon_trident_gen/output"
+}

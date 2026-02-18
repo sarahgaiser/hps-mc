@@ -408,6 +408,7 @@ class MG5(MG):
     dir_map = {"BH": "BH",
                "RAD": "RAD",
                "tritrig": "tritrig",
+               "muon": "muon_trident_bkg",
                "simp": "simp",
                "simp-3body": "simp-3body",
                "idm": "idm",
@@ -471,8 +472,10 @@ class MG5(MG):
         """
         os.chdir(os.path.dirname(self.command))
         # need python3.7 for MG5, but s3df only has python3.6 for now; python2 works though
-        if "WAB" or "ap" in self.name:
+        if "WAB" in self.name or "ap" in self.name:
             self.command = "python2 " + self.command
+        # elif "muon" in self.name:
+        #     self.command = "python3.8 " + self.command 
         self.logger.debug("Executing '%s' from '%s'" % (self.name, os.getcwd()))
         returncode = Component.execute(self, log_out, log_err)
 
