@@ -34,7 +34,7 @@ ifeq "$(UNAME)" "IRIX64"
 endif
 ifeq "$(UNAME)" "Linux"
     CC=gcc
-    F77=gfortran
+    F77=gfortran -std=legacy
     CFLAGS= $(DFLG) -I/usr/X11R6/include 
     FFLAGS= $(DFLG) -fno-second-underscore
     MXTLIBS = -L/usr/X11R6/lib -lXm -lX11 -lXt -lXp -lXext -lm

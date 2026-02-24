@@ -58,10 +58,10 @@ endif
 ifeq "$(UNAME)" "Linux"
     CC=gcc
     CPP=gcc -E
-    F77=gfortran
+    F77=gfortran -std=legacy  -fd-lines-as-comments
     CFLAGS= $(DFLG)
     CXFLAGS = -I/usr/X11R6/include
-    FFLAGS= $(DFLG) -fno-second-underscore -fd-lines-as-comments
+    FFLAGS= $(DFLG) -fno-second-underscore
     KPPFLAGS= -C -P -DLinux -DUNIX
     LOCAL = -lnsl -lm
     #BUILD_SHARED = true
