@@ -322,7 +322,7 @@ class Job(object):
         if cl.params:
             self.param_file = os.path.abspath(cl.params)
             params = {}
-            if cl.job_id:
+            if cl.job_id is not None:
                 # Load data from a job store containing multiple jobs.
                 self.job_id = cl.job_id
                 logger.debug("Loading job with ID %d from job store '%s'" % (self.job_id, self.param_file))
