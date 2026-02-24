@@ -19,7 +19,7 @@ import pathlib
 from collections.abc import Sequence
 from os.path import expanduser
 
-from _config import convert_config_value
+from hpsmc._config import convert_config_value
 from hpsmc import global_config
 
 ## Initialize logger
@@ -77,9 +77,11 @@ class JobStore:
 
     def __init__(self, path=None):
         self.path = path
+        self.data = {}
         if self.path:
-            # logger.info("Initializing job store from: {}".format(self.path))
             self.load(self.path)
+        else:
+            logger.warning('Path was not provided to job store - no jobs loaded!')
 
     def load(self, json_store):
         """! Load raw JSON data into this job store.
@@ -89,16 +91,22 @@ class JobStore:
             raise Exception('JSON job store does not exist: {}'.format(json_store))
         with open(json_store, 'r') as f:
             json_data = json.loads(f.read())
-        ## dict of jobs, sorted by job id
-        self.data = {}
-        for j in json_data:
-            self.data[j['job_id']] = j
-        # logger.info("Loaded %d jobs from job store: %s" % (len(self.data), json_store))
+        for job_data in json_data:
+            if 'job_id' not in job_data:
+                raise Exception(f"Job data is missing a job id")
+            job_id = int(job_data['job_id'])
+            if job_id in self.data:
+                raise Exception(f"Duplicate job id: {job_id}")
+            self.data[job_id] = job_data
+            logger.debug("Loaded job {} data:\n {}".format(job_id, job_data))
+        logger.info(f"Successfully loaded {len(self.data)} jobs from: {json_store}")
 
     def get_job(self, job_id):
         """! Get a job by its job ID.
         @param job_id  job ID
         @return job"""
+        if not self.has_job_id(job_id):
+            raise Exception(f"Job ID does not exist: {job_id}")
         return self.data[int(job_id)]
 
     def get_job_data(self):
@@ -111,7 +119,7 @@ class JobStore:
 
     def has_job_id(self, job_id):
         """! Return true if the job ID exists in the store."""
-        return job_id in list(self.data.keys())
+        return int(job_id) in list(self.data.keys())
 
 
 class JobScriptDatabase:
@@ -163,6 +171,7 @@ class Job(object):
     """
     _config_names = ['enable_copy_output_files',
                      'enable_copy_input_files',
+                     'enable_cleanup',
                      'delete_existing',
                      'delete_rundir',
                      'dry_run',
@@ -219,6 +228,7 @@ class Job(object):
         ## These attributes can all be set in the config file.
         self.enable_copy_output_files = True
         self.enable_copy_input_files = True
+        self.enable_cleanup = True
         self.delete_existing = False
         self.delete_rundir = False
         self.dry_run = False
@@ -296,7 +306,7 @@ class Job(object):
             self.err = open(err_file, 'w')
 
         if cl.run_dir:
-            self.rundir = cl.run_dir
+            self.rundir = os.path.abspath(cl.run_dir)
 
         self.job_steps = cl.job_steps
         if self.job_steps is not None and self.job_steps < 1:
@@ -312,7 +322,7 @@ class Job(object):
         if cl.params:
             self.param_file = os.path.abspath(cl.params)
             params = {}
-            if cl.job_id:
+            if cl.job_id is not None:
                 # Load data from a job store containing multiple jobs.
                 self.job_id = cl.job_id
                 logger.debug("Loading job with ID %d from job store '%s'" % (self.job_id, self.param_file))
@@ -523,7 +533,8 @@ class Job(object):
                 logger.warning('Copy output files is disabled!')
 
             # Perform job cleanup.
-            self._cleanup()
+            if self.enable_cleanup:
+                self._cleanup()
 
         logger.info('Successfully finished running job: %s' % self.description)
 

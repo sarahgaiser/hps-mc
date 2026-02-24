@@ -133,7 +133,7 @@ class EGS5(EventGenerator):
 
 
 class StdHepConverter(EGS5):
-    """! Convert LHE files to StdHep using EGS5."""
+    """! Target processing and conversion of LHE files to StdHep using EGS5."""
 
     def __init__(self, name="lhe_v1", **kwargs):
         EGS5.__init__(self, name, **kwargs)
@@ -196,14 +196,20 @@ class MG(EventGenerator):
         # map = mass of the A-prime
         # mpid = mass of the dark pion
         # mrhod = mass of the dark rho
-        ## A-prime mass? \todo apmass or map is A-prime mass?
+        ## A-prime mass \note map and Map are also A' masses
         self.apmass = None
-        ## A-prime mass? \todo apmass or map is A-prime mass?
+        ## A-prime mass \note apmass and Map are also A' masses
         self.map = None
+        ## A-prime mass \note apmass and map are also A' masses
+        self.Map = None
         ## dark pion mass
         self.mpid = None
         ## dark rho mass
         self.mrhod = None
+        ## average dark fermion mass when running idm
+        self.mchi = None
+        ## difference between dark fermion masses when running idm
+        self.dmchi = None
 
         if 'event_types' in kwargs:
             ## event types: weighted or unweighted
@@ -240,9 +246,9 @@ class MG(EventGenerator):
         """!
         Return optional parameters.
 
-        Optional parameters are: **seed**, **param_card**, **apmass**, **map**, **mpid**, **mrhod**
+        Optional parameters are: **seed**, **param_card**, **apmass**, **map**, **mpid**, **mrhod**, **Map**, **mchi**, **dmchi**
         """
-        return ['seed', 'param_card', 'apmass', 'map', 'mpid', 'mrhod']
+        return ['seed', 'param_card', 'apmass', 'map', 'mpid', 'mrhod', 'Map', 'mchi', 'dmchi']
 
     # def required_config(self):
     #    return ['madgraph_dir']
@@ -278,12 +284,20 @@ class MG(EventGenerator):
             if "APMASS" in data[i] and self.apmass is not None:
                 data[i] = "       622     %.7fe-03   # APMASS" % (self.apmass) + '\n'
                 self.logger.debug("APMASS in param card set to %d" % self.apmass)
+            if "MAp" in data[i] and "622" in data[i] and self.apmass is not None:
+                data[i] = "  622 %.7fe-03 # MAp" % (self.apmass) + '\n'
             if "map" in data[i] and self.map is not None:
                 data[i] = "      622 %.7fe-03 # map" % (self.map) + '\n'
             if "mpid" in data[i] and self.mpid is not None:
                 data[i] = "      624 %.7fe-03 # mpid" % (self.mpid) + '\n'
             if "mrhod" in data[i] and self.mrhod is not None:
                 data[i] = "      625 %.7fe-03 # mrhod" % (self.mrhod) + '\n'
+            if "Map" in data[i] and "ap :" not in data[i] and self.Map is not None:
+                data[i] = "    1 %.7e # Map\n" % (self.Map/1000)
+            if "Mchi" in data[i] and "dMchi" not in data[i] and self.mchi is not None:
+                data[i] = "    1 %.7e # Mchi\n" % (self.mchi/1000)
+            if "dMchi" in data[i] and "Mchi/2" not in data[i] and self.dmchi is not None:
+                data[i] = "    2 %.7e # dMchi" % (self.dmchi/1000)
 
         with open(param_card, 'w') as paramout:
             paramout.writelines(data)
@@ -299,6 +313,9 @@ class MG(EventGenerator):
         @return  error code
         """
         os.chdir(os.path.dirname(self.command))
+        # need python3.7 for MG5, but s3df only has python3.6 for now; python2 works though
+        # if "WAB" in self.name:
+        #     self.command = "python2 " + self.command
         self.logger.debug("Executing '%s' from '%s'" % (self.name, os.getcwd()))
         return Component.execute(self, log_out, log_err)
 
@@ -391,7 +408,12 @@ class MG5(MG):
     dir_map = {"BH": "BH",
                "RAD": "RAD",
                "tritrig": "tritrig",
-               "simp": "simp"}
+               "simp": "simp",
+               "simp-3body": "simp-3body",
+               "idm": "idm",
+               "WAB": "WAB",
+               "ap": "ap"
+               }
 
     def __init__(self, name='tritrig', **kwargs):
 
@@ -447,7 +469,14 @@ class MG5(MG):
         @param log_err  name of log file for error
         @return  error code
         """
-        returncode = MG.execute(self, log_out, log_err)
+        os.chdir(os.path.dirname(self.command))
+        # need python3.7 for MG5, but s3df only has python3.6 for now; python2 works though
+        if "WAB" or "ap" in self.name:
+            self.command = "python2 " + self.command
+        self.logger.debug("Executing '%s' from '%s'" % (self.name, os.getcwd()))
+        returncode = Component.execute(self, log_out, log_err)
+
+        # returncode = MG.execute(self, log_out, log_err)
         lhe_files = glob.glob(os.path.join(self.event_dir, "*.lhe.gz"))
         for f in lhe_files:
             dest = os.path.join(self.rundir, '%s_%s' % (self.name, os.path.basename(f)))

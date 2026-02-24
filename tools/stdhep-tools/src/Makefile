@@ -7,7 +7,7 @@ LOADLIBS=-L$(STDHEP_DIR)/lib -L$(dir $(GSL_LIBRARY))
 #LOADLIBS=-L/usr/local/lib/stdhep -L/afs/slac.stanford.edu/package/cernlib/@sys/cern/2002/lib
 LDLIBS=-lstdhepC -lFmcfio -lgsl -lgslcblas -ltirpc
 #-l$(GSL_CBLAS_LIBRARY) -l$(GSL_LIBRARY) 
-INCFILES=-I$(STDHEP_DIR)/src/inc -I$(SRC_DIR) -I$(GSL_INCLUDE_DIRS)
+INCFILES=-I$(STDHEP_DIR)/src/inc -I$(SRC_DIR) -I$(GSL_INCLUDE_DIRS) -I/usr/include/tirpc
 CPP=g++
 CPPFLAGS=$(LOADLIBS) $(LDLIBS) -g -std=c++11
 TARGETS := $(patsubst $(SRC_DIR)/%.cc,$(BIN)/%,$(wildcard $(SRC_DIR)/*.cc))
