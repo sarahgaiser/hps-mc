@@ -442,6 +442,92 @@ class JobManager(Component):
         return ["detector", "run_number", "defs", "nevents"]
 
 
+class ProcessMiniDst(Component):
+    """!
+    Run the make_mini_dst command on the input file.
+
+    Required parameters are: **input_file**
+    Required configs are: **minidst_install_dir**
+    """
+
+    def __init__(self, **kwargs):
+        """!
+        Initialize ProcessMiniDst with default input file and the command to run.
+        """
+        self.input_file = None
+        self.minidst_args = None
+        # Ensure to call the parent constructor properly
+        Component.__init__(self, name='makeminidst',
+                           command='make_mini_dst',
+                           description='Create the MiniDST ROOT file',
+                           output_ext='.root',
+                           **kwargs)
+
+    def setup(self):
+        """! Setup the MiniDST component."""
+        # Check if input files exist
+        if not len(self.input_files()):
+            raise Exception("No input files provided to make_mini_dst.")
+
+        if not os.path.exists(self.minidst_install_dir):
+            raise Exception("minidst_install_dir does not exist: %s" % self.minidst_install_dir)
+
+
+    def required_parameters(self):
+        """!
+        Return list of required parameters.
+
+        Required parameters are only the standard "input_files".
+        @return  list of required parameters
+        """
+        return []
+
+    def optional_parameters(self):
+        """!
+        Return list of optional parameters.
+
+        There are currently no optional parameters.
+        @return  list of optional parameters
+        """
+        return []
+
+    def required_config(self):
+        """!
+        Return list of required configs.
+
+        Required configs are: **minidst_install_dir**
+        @return  list of required configs
+        """
+        return ["minidst_install_dir"]
+
+    def output_files(self):
+        """! Adjust names of output files."""
+        if self.outputs is None:
+            f, ext = os.path.splitext(self.input_files()[0])
+            self.outputs = f"{f}.root"
+
+        return self.outputs
+
+    def cmd_args(self):
+        """!
+        Setup command arguments for make_mini_dst.
+        @return list of arguments
+        """
+        args = []
+
+        print("===== Make MiniDST with input files: ", end="")
+        for i in range(len(self.input_files())):
+            print(f"{self.input_files()[i]}", end=", ")
+        print(f" -> {self.output_files()}")
+
+        args.extend(self.minidst_args)
+
+        args.extend(['-o', self.output_files()[0]])
+        args.extend(self.input_files())
+
+        return args
+
+
 class HPSTR(Component):
     """!
     Run the hpstr analysis tool.
