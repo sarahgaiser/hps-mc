@@ -473,7 +473,6 @@ class ProcessMiniDst(Component):
         if not os.path.exists(self.minidst_install_dir):
             raise Exception("minidst_install_dir does not exist: %s" % self.minidst_install_dir)
 
-
     def required_parameters(self):
         """!
         Return list of required parameters.
