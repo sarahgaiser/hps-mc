@@ -20,17 +20,24 @@ ifdef CRNLIB
 endif
 #------------------------------------------
 
-all: binlib mcfio stdhep $(BUILD_DISPLAY)
+all: info binlib mcfio stdhep $(BUILD_DISPLAY)
+
+info:
+	$(info ----------------------- INFO ----------------------)
+	$(info STDHEP_DIR = $(STDHEP_DIR))
+	$(info RPC_INCLUDE_DIR = $(RPC_INCLUDE_DIR))
+	$(info RPC_LIBRARY = $(RPC_LIBRARY))
+        $(info DMAKE = $(DMAKE))
 
 binlib:
 	-test -d $(STDHEP_DIR)/bin || mkdir -p $(STDHEP_DIR)/bin
 	-test -d $(STDHEP_DIR)/lib || mkdir -p $(STDHEP_DIR)/lib
 
 mcfio:
-	(cd mcfio/src; $(MAKE) $(DMAKE) all) > log.mcfio.$$$$ 2>&1
+	(cd mcfio/src; $(MAKE) $(DMAKE) RPC_INCLUDE_DIR=$(RPC_INCLUDE_DIR) all) > log.mcfio.$$$$ 2>&1
 
 stdhep:
-	(cd src/stdhep; $(MAKE) $(DMAKE) all) > log.stdhep.$$$$ 2>&1
+	(cd src/stdhep; $(MAKE) $(DMAKE) RPC_INCLUDE_DIR=$(RPC_INCLUDE_DIR) RPC_LIBRARY=$(RPC_LIBRARY) all) > log.stdhep.$$$$ 2>&1
 
 spin:
 	(cd src/display/spin; $(MAKE) $(DMAKE) all) > log.spin.$$$$ 2>&1

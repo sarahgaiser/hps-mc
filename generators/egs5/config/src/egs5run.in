@@ -185,7 +185,7 @@ elif test "$MY_MACHINE" = "Linux"
     #COMPILER="g77"
     #DEBUG="-g -ffortran-bounds-check"
     #CFLAGS="-fno-automatic -finit-local-zero"
-    COMPILER="gfortran"
+    COMPILER="gfortran -std=legacy "
     DEBUG="-g -ffortran-bounds-check"
     CFLAGS="-fno-automatic -finit-local-zero"
     if test "$OPT_LEVEL" = ""
@@ -235,8 +235,8 @@ echo ""
 echo "Your Compiler is $COMPILER"
 
 
-CFLAGS="$CFLAGS -fno-second-underscore -L$STDHEP/lib -I$STDHEP/src/inc -ltirpc"
-LIBS="-lstdhep -lFmcfio"
+CFLAGS="$CFLAGS -fno-second-underscore -L$STDHEP/lib -I$STDHEP/src/inc"
+LIBS="-lstdhep -lFmcfio -ltirpc"
 #-------------------------
 # Build the egs5job.f file 
 #-------------------------
