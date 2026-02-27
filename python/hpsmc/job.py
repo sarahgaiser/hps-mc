@@ -295,7 +295,7 @@ class Job(object):
             if not os.path.isabs(out_file):
                 out_file = os.path.abspath(out_file)
                 logger.info('Job output will be written to: %s' % out_file)
-            self.out = open(out_file, 'w')
+            self.component_out = open(out_file, 'w')
 
         # Set file for stderr from components
         if cl.err:
@@ -303,7 +303,7 @@ class Job(object):
             if not os.path.isabs(err_file):
                 err_file = os.path.abspath(err_file)
                 logger.info('Job error will be written to: %s' % err_file)
-            self.err = open(err_file, 'w')
+            self.component_err = open(err_file, 'w')
 
         if cl.run_dir:
             self.rundir = os.path.abspath(cl.run_dir)
@@ -335,6 +335,8 @@ class Job(object):
                 # Load data from a JSON file with a single job definition.
                 logger.info('Loading job parameters from file: %s' % self.param_file)
                 params = json.loads(open(self.param_file, 'r').read())
+                if isinstance(params, list):
+                    params = params[0]
                 if not isinstance(params, dict):
                     raise Exception('Job ID must be provided when running from a job store.')
 

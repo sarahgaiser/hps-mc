@@ -458,7 +458,7 @@ class ProcessMiniDst(Component):
         self.input_file = None
         self.minidst_args = None
         # Ensure to call the parent constructor properly
-        Component.__init__(self, name='makeminidst',
+        Component.__init__(self, name='make_mini_dst',
                            command='make_mini_dst',
                            description='Create the MiniDST ROOT file',
                            output_ext='.root',
@@ -504,7 +504,8 @@ class ProcessMiniDst(Component):
         """! Adjust names of output files."""
         if self.outputs is None:
             f, ext = os.path.splitext(self.input_files()[0])
-            self.outputs = f"{f}.root"
+            self.outputs = f"{f}_minidst.root"
+            print(f"Set outputs to: {self.outputs}")
 
         return self.outputs
 
@@ -515,16 +516,16 @@ class ProcessMiniDst(Component):
         """
         args = []
 
-        print("===== Make MiniDST with input files: ", end="")
+        print("===== Make MiniDST with input files: ", end=" ")
         for i in range(len(self.input_files())):
             print(f"{self.input_files()[i]}", end=", ")
-        print(f" -> {self.output_files()}")
+        print(f" ==> {self.output_files()}")
 
-        args.extend(self.minidst_args)
+        if self.minidst_args is not None:
+            args.extend(self.minidst_args)
 
-        args.extend(['-o', self.output_files()[0]])
+        args.extend(['-o', self.output_files()])
         args.extend(self.input_files())
-
         return args
 
 
