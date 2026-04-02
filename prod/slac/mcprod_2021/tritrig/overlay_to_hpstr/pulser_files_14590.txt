@@ -374,7 +374,6 @@
 /sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00373
 /sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00374
 /sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00375
-/sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00376
 /sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00377
 /sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00378
 /sdf/data/hps/physics2021/data/evio/14590/hps_014590.evio.00379
