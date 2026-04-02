@@ -170,6 +170,11 @@ var namespaces_dup =
       [ "nevents", "namespacemoller__gen__job.html#a5209ed8d981dc170e77bea159c5bbe48", null ],
       [ "rot", "namespacemoller__gen__job.html#a1db2ab3d82c6029ee441423308802a74", null ]
     ] ],
+    [ "muon_trident_gen_job", "namespacemuon__trident__gen__job.html", [
+      [ "description", "namespacemuon__trident__gen__job.html#a2661f439a4a94ffdcd5e47ae1da0bb1d", null ],
+      [ "mg", "namespacemuon__trident__gen__job.html#adaa4bf1b4d0978fa034ada89161a23c4", null ],
+      [ "nevents", "namespacemuon__trident__gen__job.html#a5209ed8d981dc170e77bea159c5bbe48", null ]
+    ] ],
     [ "pede_job", "namespacepede__job.html", [
       [ "apply_res", "namespacepede__job.html#a684f131acbcc52a3ad9734898de6128b", null ],
       [ "construct_det", "namespacepede__job.html#a288ec87a8eb5206cc8c34091f394c61b", null ],
@@ -181,6 +186,21 @@ var namespaces_dup =
       [ "listing", "namespacepede__job.html#afeb3ee5fe76291f19b5aae1bdf9b122d", null ],
       [ "merged_gbl_plots", "namespacepede__job.html#a2d75f4fd80f8cd09583c7f0d3a331514", null ],
       [ "pede", "namespacepede__job.html#ad98c49576006d9a279cc46e8e967965a", null ]
+    ] ],
+    [ "phi_lhe_to_recon_job", "namespacephi__lhe__to__recon__job.html", [
+      [ "cnv", "namespacephi__lhe__to__recon__job.html#ac2353b13f43ff77203d94b47953aa942", null ],
+      [ "description", "namespacephi__lhe__to__recon__job.html#a2661f439a4a94ffdcd5e47ae1da0bb1d", null ],
+      [ "filter_bunches", "namespacephi__lhe__to__recon__job.html#a3074e3594d8071411ddd34bbbf47acd9", null ],
+      [ "readout", "namespacephi__lhe__to__recon__job.html#a1820b9438d6a7ae4a4995bb66c9aa1ab", null ],
+      [ "recon", "namespacephi__lhe__to__recon__job.html#a6b8c91e3ce53f8874c33b1d8f3a406e1", null ],
+      [ "rot", "namespacephi__lhe__to__recon__job.html#a1db2ab3d82c6029ee441423308802a74", null ],
+      [ "slic", "namespacephi__lhe__to__recon__job.html#abaa485babeb1ee67ebdaadec53822fe6", null ]
+    ] ],
+    [ "phi_lhe_to_slic_job", "namespacephi__lhe__to__slic__job.html", [
+      [ "cnv", "namespacephi__lhe__to__slic__job.html#ac2353b13f43ff77203d94b47953aa942", null ],
+      [ "description", "namespacephi__lhe__to__slic__job.html#a2661f439a4a94ffdcd5e47ae1da0bb1d", null ],
+      [ "rot", "namespacephi__lhe__to__slic__job.html#a1db2ab3d82c6029ee441423308802a74", null ],
+      [ "slic", "namespacephi__lhe__to__slic__job.html#abaa485babeb1ee67ebdaadec53822fe6", null ]
     ] ],
     [ "prepare_merge_jobs", "namespaceprepare__merge__jobs.html", null ],
     [ "rad_gen_job", "namespacerad__gen__job.html", [

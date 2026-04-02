@@ -44,6 +44,7 @@ var hierarchy =
         [ "LHECount", "classhpsmc_1_1tools_1_1LHECount.html", null ],
         [ "MergeROOT", "classhpsmc_1_1tools_1_1MergeROOT.html", null ],
         [ "MoveFiles", "classhpsmc_1_1tools_1_1MoveFiles.html", null ],
+        [ "ProcessMiniDst", "classhpsmc_1_1tools_1_1ProcessMiniDst.html", null ],
         [ "SLIC", "classhpsmc_1_1tools_1_1SLIC.html", null ],
         [ "SQLiteProc", "classhpsmc_1_1tools_1_1SQLiteProc.html", null ],
         [ "StdHepCount", "classhpsmc_1_1tools_1_1StdHepCount.html", null ],
@@ -55,6 +56,7 @@ var hierarchy =
           [ "DisplaceUni", "classhpsmc_1_1tools_1_1DisplaceUni.html", null ],
           [ "MergeFiles", "classhpsmc_1_1tools_1_1MergeFiles.html", null ],
           [ "MergePoisson", "classhpsmc_1_1tools_1_1MergePoisson.html", null ],
+          [ "Phi_LHE_to_STDHEP", "classhpsmc_1_1tools_1_1Phi__LHE__to__STDHEP.html", null ],
           [ "RandomSample", "classhpsmc_1_1tools_1_1RandomSample.html", null ]
         ] ],
         [ "TarFiles", "classhpsmc_1_1tools_1_1TarFiles.html", null ],
