@@ -1,7 +1,8 @@
 """!
 @file signal_pulser_overlay_to_recon_job.py
 
-No idea what this is supposed to do.
+Overlay MC with pulser data (evio or slcio) and run readout + reconstruction.
+Automatically detects pulser input format from file name.
 """
 
 from hpsmc.tools import ExtractEventsWithHitAtHodoEcal, EvioToLcio, JobManager, FilterBunches, LCIOCount, HPSTR
@@ -28,6 +29,9 @@ if len(signal_file_name) == 0:
     raise Exception("Missing required input file(s) for signal")
 if len(pulser_file_name) == 0:
     raise Exception("Missing required input file(s) for pulser data")
+
+## Detect pulser input format by checking if 'evio' appears anywhere in the file name
+pulser_is_evio = 'evio' in pulser_file_name[0]
 
 ## Base name of intermediate signal files
 signal_name = 'signal'
@@ -87,5 +91,9 @@ count_recon = LCIOCount(inputs=recon.output_files())
 cnv = HPSTR(inputs=recon.output_files(), cfg='cnv')
 
 ## Add the components
-job.add([filter_events, count_filter, overlay, space_overlay,
-         count_space_overlay, readout, count_readout, recon, count_recon, cnv])
+if pulser_is_evio:
+    job.add([filter_events, count_filter, evio_to_lcio, overlay, space_overlay,
+             count_space_overlay, readout, count_readout, recon, count_recon, cnv])
+else:
+    job.add([filter_events, count_filter, overlay, space_overlay,
+             count_space_overlay, readout, count_readout, recon, count_recon, cnv])
