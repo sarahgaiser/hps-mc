@@ -92,8 +92,8 @@ cnv = HPSTR(inputs=recon.output_files(), cfg='cnv')
 
 ## Add the components
 if pulser_is_evio:
-	job.add([filter_events, count_filter, evio_to_lcio, overlay, space_overlay,
-         count_space_overlay, readout, count_readout, recon, count_recon, cnv])
+    job.add([filter_events, count_filter, evio_to_lcio, overlay, space_overlay,
+             count_space_overlay, readout, count_readout, recon, count_recon, cnv])
 else:
-	job.add([filter_events, count_filter, overlay, space_overlay,
-         count_space_overlay, readout, count_readout, recon, count_recon, cnv])
+    job.add([filter_events, count_filter, overlay, space_overlay,
+             count_space_overlay, readout, count_readout, recon, count_recon, cnv])

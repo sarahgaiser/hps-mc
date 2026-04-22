@@ -475,7 +475,7 @@ class MG5(MG):
         if "WAB" in self.name or "ap" in self.name:
             self.command = "python2 " + self.command
         # elif "muon" in self.name:
-        #     self.command = "python3.8 " + self.command 
+        #     self.command = "python3.8 " + self.command
         self.logger.debug("Executing '%s' from '%s'" % (self.name, os.getcwd()))
         returncode = Component.execute(self, log_out, log_err)
 
