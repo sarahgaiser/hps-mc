@@ -4,7 +4,7 @@
     "run_number": {{ run_number }},
     "bunches": {{ bunches }},
     "nevents": {{ nevents }},
-    "seed": {{ 42 + job_id }},
+    "seed": {{ 42 + job_id + 1000000 }},
     "run_params": "{{ run_params }}",
     "target_thickness": {{ target_thickness }},
     "beam_energy": {{ beam_energy }},
@@ -19,8 +19,9 @@
     "beam_rot_z": {{ beam_rot_z }},
     "detector": "{{ detector }}",
     "output_files": {
-        "RAD_unweighted_events.lhe.gz": "lhe/{{ dir_num + 1 }}/rad_{{ run_params }}_{{ job_id }}.lhe.gz",
-        "rad_mom_rot.slcio": "pass5_v9/slic/{{ dir_num + 1 }}/rad_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
+        "RAD_unweighted_events.lhe.gz": "lhe/{{ run_number }}/{{ dir_num + 1 }}/rad_{{ run_params }}_{{ job_id }}.lhe.gz",
+        "rad_mom_rot.stdhep": "pass5_v9/{{ detector }}/stdhep/{{ dir_num + 1 }}/rad_{{ run_params }}_mom_rot_{{ job_id }}.stdhep",
+        "rad_mom_rot.slcio": "pass5_v9/{{ detector }}/slic/{{ dir_num + 1 }}/rad_{{ run_params }}_mom_rot_{{ job_id }}.slcio"
     },
     "output_dir": "/sdf/data/hps/physics2021/mc/gen/rad/"
 }
